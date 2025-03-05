@@ -1,0 +1,16 @@
+FileId,LineKind,Count
+\dbo_AddRental.sql,Code,14
+\dbo_AddRental.sql,Comment,3
+\dbo_AddRental.sql,Blank,5
+\dbo_GetCustomerRentals.sql,Code,12
+\dbo_GetCustomerRentals.sql,Comment,0
+\dbo_GetCustomerRentals.sql,Blank,3
+\dbo_GetInactiveCustomers.sql,Code,10
+\dbo_GetInactiveCustomers.sql,Comment,0
+\dbo_GetInactiveCustomers.sql,Blank,2
+\dbo_GetStoreRevenue.sql,Code,13
+\dbo_GetStoreRevenue.sql,Comment,0
+\dbo_GetStoreRevenue.sql,Blank,2
+\dbo_GetTopRentedMovies.sql,Code,11
+\dbo_GetTopRentedMovies.sql,Comment,0
+\dbo_GetTopRentedMovies.sql,Blank,3

@@ -1,0 +1,47 @@
+[03/03/2025 14:09:20] A: Session id: 1326535c-8e77-4991-8f81-b3df51640d54
+[03/03/2025 14:09:20] A: Code Processor information: Name :SnowConvert, Version: 1.2.6.0
+[03/03/2025 14:09:20] A: Getting license
+[03/03/2025 14:09:20] A: License information
+	Status: Successful
+[03/03/2025 14:09:20] a: Starting to validate parameters
+[03/03/2025 14:09:20] a: Parameters to validate: 
+	Execution mode: Conversion
+	CommentIfMissingDependencies: False
+	CreateEstimationReports: False
+	Encoding: 65001
+	UseExistingNameQualification: False
+	PLTargetLanguage: SnowScript
+	TargetLag: 1 day
+	Warehouse: UPDATE_DUMMY_WAREHOUSE
+	ConversionRateMode: LoC
+[03/03/2025 14:09:20] a: Validation of parameters: Success
+[03/03/2025 14:09:20] A: Getting code descriptor
+[03/03/2025 14:09:20] A: Code descriptor information
+	Units: 63
+	Units type: LOC
+	All file bytes: 2208
+	All found extensions: .sql
+[03/03/2025 14:09:20] A: Calculating fingerprint
+[03/03/2025 14:09:20] A: Fingerprint information Fingerprint(size=2208,projects=1)
+[03/03/2025 14:09:20] a: Starting to validate active license
+[03/03/2025 14:09:20] a: Active license validation: Success
+[03/03/2025 14:09:20] A: License information
+	License key ends with: b554
+	Start date: 2025/02/25
+	Expiration date: 2025/05/25
+	Execution mode: Conversion
+	Unit type: Lines of Code
+	Created by: bhakti.patil@tulapi.ai
+	Remaining activations: -2
+	Products: SnowConvert
+[03/03/2025 14:09:20] A: Getting license
+[03/03/2025 14:09:20] A: License information
+	Status: Successful
+[03/03/2025 14:09:21] A: Starting the execution of the controller
+[03/03/2025 14:09:22] A: Executing the worker: SnowConvert
+[03/03/2025 14:09:32] A: Finished executing the worker: SnowConvert
+[03/03/2025 14:09:32] A: Executing the worker: GenericScanner
+[03/03/2025 14:09:32] A: Finished executing the worker: GenericScanner
+[03/03/2025 14:09:33] a: Controller execution ended
+[03/03/2025 14:09:33] a: Starting to upload the Assessment results
+[03/03/2025 14:09:35] a: A assessment upload

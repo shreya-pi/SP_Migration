@@ -1,0 +1,88 @@
+File,Technology,Keyword,Count
+\dbo_AddRental.sql,SQL,=,2
+\dbo_AddRental.sql,SQL,alter procedure,1
+\dbo_AddRental.sql,SQL,as,2
+\dbo_AddRental.sql,SQL,begin,1
+\dbo_AddRental.sql,SQL,datetime,1
+\dbo_AddRental.sql,SQL,declare,2
+\dbo_AddRental.sql,SQL,end,1
+\dbo_AddRental.sql,SQL,getdate,1
+\dbo_AddRental.sql,SQL,insert,1
+\dbo_AddRental.sql,SQL,int,4
+\dbo_AddRental.sql,SQL,into,1
+\dbo_AddRental.sql,SQL,null,1
+\dbo_AddRental.sql,SQL,on,1
+\dbo_AddRental.sql,SQL,select,1
+\dbo_AddRental.sql,SQL,set,2
+\dbo_AddRental.sql,SQL,values,1
+\dbo_GetCustomerRentals.sql,SQL,=,3
+\dbo_GetCustomerRentals.sql,SQL,alter procedure,1
+\dbo_GetCustomerRentals.sql,SQL,as,2
+\dbo_GetCustomerRentals.sql,SQL,begin,1
+\dbo_GetCustomerRentals.sql,SQL,desc,1
+\dbo_GetCustomerRentals.sql,SQL,end,1
+\dbo_GetCustomerRentals.sql,SQL,from,1
+\dbo_GetCustomerRentals.sql,SQL,inner join,2
+\dbo_GetCustomerRentals.sql,SQL,int,1
+\dbo_GetCustomerRentals.sql,SQL,on,3
+\dbo_GetCustomerRentals.sql,SQL,order by,1
+\dbo_GetCustomerRentals.sql,SQL,r,7
+\dbo_GetCustomerRentals.sql,SQL,select,1
+\dbo_GetCustomerRentals.sql,SQL,set,1
+\dbo_GetCustomerRentals.sql,SQL,title,1
+\dbo_GetCustomerRentals.sql,SQL,where,1
+\dbo_GetInactiveCustomers.sql,SQL,=,1
+\dbo_GetInactiveCustomers.sql,SQL,alter procedure,1
+\dbo_GetInactiveCustomers.sql,SQL,as,2
+\dbo_GetInactiveCustomers.sql,SQL,begin,1
+\dbo_GetInactiveCustomers.sql,SQL,dateadd,1
+\dbo_GetInactiveCustomers.sql,SQL,end,1
+\dbo_GetInactiveCustomers.sql,SQL,from,1
+\dbo_GetInactiveCustomers.sql,SQL,getdate,1
+\dbo_GetInactiveCustomers.sql,SQL,group by,1
+\dbo_GetInactiveCustomers.sql,SQL,having,1
+\dbo_GetInactiveCustomers.sql,SQL,is null,1
+\dbo_GetInactiveCustomers.sql,SQL,join,1
+\dbo_GetInactiveCustomers.sql,SQL,left,1
+\dbo_GetInactiveCustomers.sql,SQL,max,3
+\dbo_GetInactiveCustomers.sql,SQL,month,1
+\dbo_GetInactiveCustomers.sql,SQL,on,2
+\dbo_GetInactiveCustomers.sql,SQL,or,1
+\dbo_GetInactiveCustomers.sql,SQL,r,5
+\dbo_GetInactiveCustomers.sql,SQL,select,1
+\dbo_GetInactiveCustomers.sql,SQL,set,1
+\dbo_GetInactiveCustomers.sql,SQL,-,1
+\dbo_GetInactiveCustomers.sql,SQL,<,1
+\dbo_GetStoreRevenue.sql,SQL,=,4
+\dbo_GetStoreRevenue.sql,SQL,alter procedure,1
+\dbo_GetStoreRevenue.sql,SQL,as,2
+\dbo_GetStoreRevenue.sql,SQL,begin,1
+\dbo_GetStoreRevenue.sql,SQL,end,1
+\dbo_GetStoreRevenue.sql,SQL,from,1
+\dbo_GetStoreRevenue.sql,SQL,group by,1
+\dbo_GetStoreRevenue.sql,SQL,inner join,3
+\dbo_GetStoreRevenue.sql,SQL,int,1
+\dbo_GetStoreRevenue.sql,SQL,on,4
+\dbo_GetStoreRevenue.sql,SQL,r,2
+\dbo_GetStoreRevenue.sql,SQL,select,1
+\dbo_GetStoreRevenue.sql,SQL,set,1
+\dbo_GetStoreRevenue.sql,SQL,store,1
+\dbo_GetStoreRevenue.sql,SQL,sum,1
+\dbo_GetStoreRevenue.sql,SQL,where,1
+\dbo_GetTopRentedMovies.sql,SQL,=,2
+\dbo_GetTopRentedMovies.sql,SQL,alter procedure,1
+\dbo_GetTopRentedMovies.sql,SQL,as,2
+\dbo_GetTopRentedMovies.sql,SQL,begin,1
+\dbo_GetTopRentedMovies.sql,SQL,count,1
+\dbo_GetTopRentedMovies.sql,SQL,desc,1
+\dbo_GetTopRentedMovies.sql,SQL,end,1
+\dbo_GetTopRentedMovies.sql,SQL,from,1
+\dbo_GetTopRentedMovies.sql,SQL,group by,1
+\dbo_GetTopRentedMovies.sql,SQL,inner join,2
+\dbo_GetTopRentedMovies.sql,SQL,on,3
+\dbo_GetTopRentedMovies.sql,SQL,order by,1
+\dbo_GetTopRentedMovies.sql,SQL,r,3
+\dbo_GetTopRentedMovies.sql,SQL,select,1
+\dbo_GetTopRentedMovies.sql,SQL,set,1
+\dbo_GetTopRentedMovies.sql,SQL,title,2
+\dbo_GetTopRentedMovies.sql,SQL,top,1

@@ -1,0 +1,6 @@
+Path,Technology,FileKind,BinaryKind,Bytes,SupportedStatus
+\dbo_AddRental.sql,SQL,SourceCodeFile,NotBinary,577,DoesNotApply,DoesNotApply
+\dbo_GetCustomerRentals.sql,SQL,SourceCodeFile,NotBinary,410,DoesNotApply,DoesNotApply
+\dbo_GetInactiveCustomers.sql,SQL,SourceCodeFile,NotBinary,420,DoesNotApply,DoesNotApply
+\dbo_GetStoreRevenue.sql,SQL,SourceCodeFile,NotBinary,422,DoesNotApply,DoesNotApply
+\dbo_GetTopRentedMovies.sql,SQL,SourceCodeFile,NotBinary,379,DoesNotApply,DoesNotApply

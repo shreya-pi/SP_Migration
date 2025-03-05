@@ -1,0 +1,65 @@
+Command executed successfully:
+[04-03-2025 10:58:26] Info: SourceLanguage set to Transact based on the appsettings configuration.
+[04-03-2025 10:58:27] Info: No path specified for loading additional transformation rules
+[04-03-2025 10:58:27] Info: Starting to analyze the input path 'C:\Users\shreya.naik\Documents\Flask\Sp_demo\sql_output\Airbyte_demo_base'...
+[04-03-2025 10:58:31] Info: EFProcess 638766827117022279 started
+[04-03-2025 10:58:32] Info: Found 5 Sql files with a total size of 2.16KB
+[04-03-2025 10:58:32] Info: Starting the parsing process of 5 files with 2.16KB of code, this might take a while...
+[04-03-2025 10:58:32] Info: Step 1/8 - Loading Code: STARTED
+[04-03-2025 10:58:32] Info: Step 1/8 - Loading Code: COMPLETED
+[04-03-2025 10:58:32] Info: Step 2/8 - Semantic Analysis of Tables: STARTED
+[04-03-2025 10:58:32] Info: Step 2/8 - Semantic Analysis of Tables: COMPLETED
+[04-03-2025 10:58:32] Info: Step 3/8 - Semantic Analysis of Top Level Objects: STARTED
+[04-03-2025 10:58:33] Info: Step 3/8 - Semantic Analysis of Top Level Objects: STORING
+[04-03-2025 10:58:34] Info: Step 3/8 - Semantic Analysis of Top Level Objects: STORED
+[04-03-2025 10:58:34] Info: Step 3/8 - Semantic Analysis of Top Level Objects: COMPLETED
+[04-03-2025 10:58:34] Info: Step 4/8 - Pre-Processing: STARTED
+[04-03-2025 10:58:34] Info: Step 4/8 - Pre-Processing: COMPLETED
+[04-03-2025 10:58:34] Info: Step 5/8 - Data lineage analysis: STARTED
+[04-03-2025 10:58:35] Info: Step 5/8 - Data lineage analysis: COMPLETED
+[04-03-2025 10:58:35] Info: Step 6/8 - Pre-Conversion Assessment: STARTED
+[04-03-2025 10:58:35] Info: Step 6/8 - Pre-Conversion Assessment: COMPLETED
+[04-03-2025 10:58:35] Info: Step 7/8 - Conversion Execution: STARTED
+[04-03-2025 10:58:35] Info: Start transforming file dbo_GetStoreRevenue.sql
+[04-03-2025 10:58:35] Info: Start transforming file dbo_GetCustomerRentals.sql
+[04-03-2025 10:58:35] Info: Start transforming file dbo_GetInactiveCustomers.sql
+[04-03-2025 10:58:35] Info: Start transforming file dbo_GetTopRentedMovies.sql
+[04-03-2025 10:58:35] Info: Start transforming file dbo_AddRental.sql
+[04-03-2025 10:58:35] Info: Transformed file dbo_AddRental.sql
+[04-03-2025 10:58:35] Info: Transformed file dbo_GetStoreRevenue.sql
+[04-03-2025 10:58:35] Info: Transformed file dbo_GetInactiveCustomers.sql
+[04-03-2025 10:58:35] Info: Transformed file dbo_GetCustomerRentals.sql
+[04-03-2025 10:58:35] Info: Transformed file dbo_GetTopRentedMovies.sql
+[04-03-2025 10:58:36] Info: Step 7/8 - Conversion Execution: COMPLETED
+[04-03-2025 10:58:36] Info: EFProcess 638766827117022279 ended. Execution time: 00:00:04.3195684
+[04-03-2025 10:58:36] Info: STARTED Step 8/8: Stats and Reports
+[04-03-2025 10:58:36] Info: Writing the conversion summary report
+[04-03-2025 10:58:36] Info: Writing the Assessment report
+[04-03-2025 10:58:36] Info: Writing the Scope Validations report
+[04-03-2025 10:58:36] Info: Writing the raw assessment data report
+[04-03-2025 10:58:36] Info: Writing the Elements report
+[04-03-2025 10:58:36] Info: Writing the Issues report
+[04-03-2025 10:58:36] Info: Writing the missing objects report
+[04-03-2025 10:58:36] Info: Writing the object references report
+[04-03-2025 10:58:36] Info: Writing the top level code unit report
+[04-03-2025 10:58:36] Info: Uploading metadata
+[04-03-2025 10:58:36] Info: COMPLETED Step 8/8: Stats and Reports
+[04-03-2025 10:58:36] Info: 
+==============================================================================
+SnowConvert assessment execution summary
+ - Files: 5
+ - Files Not Generated: 0
+ - Total lines of code: 63
+ - Automatically converted: 90.48%
+ - Conversion time: 00:00:04
+ - Conversion speed: 14 lines of code per second
+See the report files for more details about the conversion status.
+==============================================================================
+
+[04-03-2025 10:58:36] Info: 
+==============================================================================
+SnowConvert Tool.
+Copyright c 2023-2025 Snowflake Inc. All rights reserved.
+==============================================================================
+
+Conversion was successful.

@@ -1,0 +1,6 @@
+FileName,Extension,Technology,Status,isBinary,Bytes,ContentType,ContentLines,CommentLines,BlankLines
+\dbo_AddRental.sql,sql,SQL,OK,a,577,Code,14,3,5
+\dbo_GetCustomerRentals.sql,sql,SQL,OK,a,410,Code,12,0,3
+\dbo_GetInactiveCustomers.sql,sql,SQL,OK,a,420,Code,10,0,2
+\dbo_GetStoreRevenue.sql,sql,SQL,OK,a,422,Code,13,0,2
+\dbo_GetTopRentedMovies.sql,sql,SQL,OK,a,379,Code,11,0,3
