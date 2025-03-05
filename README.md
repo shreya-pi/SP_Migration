@@ -1,4 +1,4 @@
-**Stored Procedure Extraction and Conversion Pipeline**
+## **Stored Procedure Extraction and Conversion Pipeline**
 The pipeline is designed to facilitate the extraction and conversion of stored procedures from SQL Server to Snowflake. It consists of the following stages:
 
 1. **Script Extraction and Generation**: 
@@ -23,3 +23,4 @@ The pipeline is designed to facilitate the extraction and conversion of stored p
     - Identify any discrepancies and export the differences to a CSV file for further analysis.
 
 This structured approach ensures a seamless transition of stored procedures from SQL Server to Snowflake, maintaining their integrity and performance.
+
