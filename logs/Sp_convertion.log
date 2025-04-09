@@ -1,0 +1,1158 @@
+2025-03-19 16:33:04,239 - INFO - \U0001f680 Starting the migration pipeline...
+
+2025-03-19 16:33:04,239 - INFO - \U0001f539 Generating SQL scripts from SQL Server...
+2025-03-19 16:33:04,240 - INFO - \u26a1 Running PowerShell script
+2025-03-19 16:34:04,300 - INFO - 
+\u23f3 Timeout: PowerShell script stopped after 60 seconds.
+2025-03-19 16:34:04,300 - INFO - \U0001f539 Converting SQL scripts using SnowConvert...
+2025-03-19 16:34:40,495 - INFO - Command executed successfully. Log saved to: C:\Users\shreya.naik\Documents\SP_Demo\Sp_demo_Copy\logs\assessment_log.txt
+2025-03-19 16:34:40,495 - INFO - \U0001f539 Processing converted SQL scripts...
+2025-03-19 16:34:40,499 - INFO - Processed: dbo_AddRental.sql \u2192 processed_dbo_AddRental.sql
+2025-03-19 16:34:40,500 - INFO - Processed: dbo_GetCustomerRentals.sql \u2192 processed_dbo_GetCustomerRentals.sql
+2025-03-19 16:34:40,502 - INFO - Processed: dbo_GetInactiveCustomers.sql \u2192 processed_dbo_GetInactiveCustomers.sql
+2025-03-19 16:34:40,503 - INFO - Processed: dbo_GetStoreRevenue.sql \u2192 processed_dbo_GetStoreRevenue.sql
+2025-03-19 16:34:40,504 - INFO - Processed: dbo_GetTopRentedMovies.sql \u2192 processed_dbo_GetTopRentedMovies.sql
+2025-03-19 16:34:40,504 - INFO - \U0001f539 Running unit tests on stored procedures...
+2025-03-19 16:34:40,505 - INFO - Snowflake Connector for Python Version: 3.14.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-03-19 16:34:40,506 - INFO - Connecting to GLOBAL Snowflake domain
+2025-03-19 16:34:40,506 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2025-03-19 16:34:42,274 - INFO - closed
+2025-03-19 16:34:42,359 - INFO - No async queries seem to be running, deleting session
+2025-03-19 16:34:42,466 - INFO - Test report generated: C:\Users\shreya.naik\Documents\SP_Demo\Sp_demo_Copy\py_results.html for AddRental @customer_id = 3, @inventory_id = 25, @staff_id = 2
+2025-03-19 16:34:42,468 - INFO - Snowflake Connector for Python Version: 3.14.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-03-19 16:34:42,468 - INFO - Connecting to GLOBAL Snowflake domain
+2025-03-19 16:34:42,468 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2025-03-19 16:34:43,138 - INFO - Stored procedure GetStoreRevenue(1) executed successfully.
+2025-03-19 16:34:43,461 - INFO - Stored procedure GetStoreRevenue(1) executed and returned results.
+2025-03-19 16:34:43,461 - INFO - closed
+2025-03-19 16:34:43,548 - INFO - No async queries seem to be running, deleting session
+2025-03-19 16:34:43,616 - INFO - Test report generated: C:\Users\shreya.naik\Documents\SP_Demo\Sp_demo_Copy\py_results.html for GetStoreRevenue(1)
+2025-03-19 16:34:43,616 - INFO - Snowflake Connector for Python Version: 3.14.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-03-19 16:34:43,616 - INFO - Connecting to GLOBAL Snowflake domain
+2025-03-19 16:34:43,616 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2025-03-19 16:34:44,419 - INFO - Stored procedure GetTopRentedMovies() executed successfully.
+2025-03-19 16:34:44,719 - INFO - Stored procedure GetTopRentedMovies() executed and returned results.
+2025-03-19 16:34:44,719 - INFO - closed
+2025-03-19 16:34:44,804 - INFO - No async queries seem to be running, deleting session
+2025-03-19 16:34:44,864 - INFO - Test report generated: C:\Users\shreya.naik\Documents\SP_Demo\Sp_demo_Copy\py_results.html for GetTopRentedMovies()
+2025-03-19 16:34:44,868 - INFO - Snowflake Connector for Python Version: 3.14.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-03-19 16:34:44,869 - INFO - Connecting to GLOBAL Snowflake domain
+2025-03-19 16:34:44,869 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2025-03-19 16:34:46,468 - INFO - Stored procedure GetInactiveCustomers() executed successfully.
+2025-03-19 16:34:46,932 - INFO - Stored procedure GetInactiveCustomers() executed and returned results.
+2025-03-19 16:34:46,932 - INFO - closed
+2025-03-19 16:34:47,186 - INFO - No async queries seem to be running, deleting session
+2025-03-19 16:34:47,303 - INFO - Test report generated: C:\Users\shreya.naik\Documents\SP_Demo\Sp_demo_Copy\py_results.html for GetInactiveCustomers()
+2025-03-19 16:34:47,303 - INFO - Snowflake Connector for Python Version: 3.14.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-03-19 16:34:47,303 - INFO - Connecting to GLOBAL Snowflake domain
+2025-03-19 16:34:47,303 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2025-03-19 16:34:48,505 - INFO - Stored procedure GetCustomerRentals @customer_id = 5 executed successfully.
+2025-03-19 16:34:48,751 - INFO - closed
+2025-03-19 16:34:48,829 - INFO - No async queries seem to be running, deleting session
+2025-03-19 16:34:48,936 - INFO - Test report generated: C:\Users\shreya.naik\Documents\SP_Demo\Sp_demo_Copy\py_results.html for GetCustomerRentals @customer_id = 5
+2025-03-19 16:34:48,936 - INFO - \U0001f539 Performing quality testing on database procedures...
+2025-03-19 16:34:48,936 - INFO - Executing Snowflake procedure: GetInActiveCustomers()
+2025-03-19 16:34:48,951 - INFO - Snowflake Connector for Python Version: 3.14.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-03-19 16:34:48,951 - INFO - Connecting to GLOBAL Snowflake domain
+2025-03-19 16:34:48,951 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2025-03-19 16:34:49,754 - INFO - closed
+2025-03-19 16:34:49,952 - INFO - No async queries seem to be running, deleting session
+2025-03-19 16:34:50,077 - INFO - Executing SQL Server procedure: GetInActiveCustomers
+2025-03-19 16:34:55,609 - INFO - Comparing results...
+2025-03-19 16:34:55,609 - ERROR - The results do not match!
+2025-03-19 16:34:55,640 - INFO - Number of differences detected: 99
+2025-03-19 16:34:55,640 - INFO - Executed Procedure: GetInActiveCustomers() | GetInActiveCustomers | Different
+2025-03-19 16:34:55,640 - INFO - Number of Rows: 632 | 599 | Different
+2025-03-19 16:34:55,640 - INFO - Column Names: last_name, customer_id, first_name, last_rental_date | last_name, customer_id, first_name, last_rental_date | Same
+2025-03-19 16:34:55,640 - INFO - Data Types: customer_id: int64, first_name: object, last_name: object, last_rental_date: datetime64[ns] | customer_id: int64, first_name: object, last_name: object, last_rental_date: datetime64[ns] | Same
+2025-03-19 16:34:55,640 - INFO - Data Comparison: 99 | 99 | Data mismatch detected
+2025-03-19 16:34:55,640 - INFO - HTML report generated: Dq_analysis/data_quality_report.html
+2025-03-19 16:34:55,640 - INFO - 
+\u2705 Pipeline execution completed successfully!
+2025-03-19 17:20:38,655 - INFO - \U0001f680 Starting the migration pipeline...
+
+2025-03-19 17:20:38,656 - INFO - \U0001f539 Performing quality testing on database procedures...
+2025-03-19 17:20:55,560 - INFO - \U0001f680 Starting the migration pipeline...
+
+2025-03-19 17:20:55,561 - INFO - \U0001f539 Performing quality testing on database procedures...
+2025-03-19 17:20:55,561 - INFO - Executing Snowflake procedure: GetCustomerRentals(5)
+2025-03-19 17:20:55,561 - INFO - Snowflake Connector for Python Version: 3.14.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-03-19 17:20:55,561 - INFO - Connecting to GLOBAL Snowflake domain
+2025-03-19 17:20:55,561 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2025-03-19 17:20:58,690 - INFO - closed
+2025-03-19 17:20:58,726 - INFO - No async queries seem to be running, deleting session
+2025-03-19 17:20:58,777 - INFO - Executing SQL Server procedure: GetCustomerRentals @customer_id = 5
+2025-03-19 17:21:02,071 - INFO - Comparing results...
+2025-03-19 17:21:02,079 - INFO - The results match perfectly!
+2025-03-19 17:21:02,079 - INFO - Executed Procedure: GetCustomerRentals(5) | GetCustomerRentals @customer_id = 5 | Different
+2025-03-19 17:21:02,079 - INFO - Number of Rows: 38 | 38 | Same
+2025-03-19 17:21:02,080 - INFO - Column Names: film_title, rental_id, rental_date, return_date | film_title, rental_id, rental_date, return_date | Same
+2025-03-19 17:21:02,080 - INFO - Data Types: rental_id: int64, film_title: object, rental_date: datetime64[ns], return_date: datetime64[ns] | rental_id: int64, film_title: object, rental_date: datetime64[ns], return_date: datetime64[ns] | Same
+2025-03-19 17:21:02,080 - INFO - Data Comparison: Exact Match | Exact Match | Same
+2025-03-19 17:22:20,294 - INFO - \U0001f680 Starting the migration pipeline...
+
+2025-03-19 17:22:20,294 - INFO - \U0001f539 Performing quality testing on database procedures...
+2025-03-19 17:22:20,295 - INFO - Executing Snowflake procedure: GetCustomerRentals(5)
+2025-03-19 17:22:20,295 - INFO - Snowflake Connector for Python Version: 3.14.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-03-19 17:22:20,296 - INFO - Connecting to GLOBAL Snowflake domain
+2025-03-19 17:22:20,296 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2025-03-19 17:22:21,862 - INFO - closed
+2025-03-19 17:22:21,957 - INFO - No async queries seem to be running, deleting session
+2025-03-19 17:22:22,043 - INFO - Executing SQL Server procedure: GetCustomerRentals @customer_id = 5
+2025-03-19 17:22:25,382 - INFO - Comparing results...
+2025-03-19 17:22:25,389 - INFO - The results match perfectly!
+2025-03-19 17:22:25,389 - INFO - Executed Procedure: GetCustomerRentals(5) | GetCustomerRentals @customer_id = 5 | Different
+2025-03-19 17:22:25,389 - INFO - Number of Rows: 38 | 38 | Same
+2025-03-19 17:22:25,389 - INFO - Column Names: rental_date, film_title, return_date, rental_id | rental_date, film_title, return_date, rental_id | Same
+2025-03-19 17:22:25,389 - INFO - Data Types: rental_id: int64, film_title: object, rental_date: datetime64[ns], return_date: datetime64[ns] | rental_id: int64, film_title: object, rental_date: datetime64[ns], return_date: datetime64[ns] | Same
+2025-03-19 17:22:25,389 - INFO - Data Comparison: Exact Match | Exact Match | Same
+2025-03-19 17:23:06,227 - INFO - \U0001f680 Starting the migration pipeline...
+
+2025-03-19 17:23:06,227 - INFO - \U0001f539 Performing quality testing on database procedures...
+2025-03-19 17:23:06,227 - INFO - Executing Snowflake procedure: GetCustomerRentals(5)
+2025-03-19 17:23:06,227 - INFO - Snowflake Connector for Python Version: 3.14.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-03-19 17:23:06,227 - INFO - Connecting to GLOBAL Snowflake domain
+2025-03-19 17:23:06,227 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2025-03-19 17:23:07,960 - INFO - closed
+2025-03-19 17:23:08,022 - INFO - No async queries seem to be running, deleting session
+2025-03-19 17:23:08,078 - INFO - Executing SQL Server procedure: GetCustomerRentals @customer_id = 5
+2025-03-19 17:23:11,151 - INFO - Comparing results...
+2025-03-19 17:23:11,159 - INFO - The results match perfectly!
+2025-03-19 17:23:11,159 - INFO - Executed Procedure: GetCustomerRentals(5) | GetCustomerRentals @customer_id = 5 | Different
+2025-03-19 17:23:11,159 - INFO - Number of Rows: 38 | 38 | Same
+2025-03-19 17:23:11,159 - INFO - Column Names: film_title, return_date, rental_id, rental_date | film_title, return_date, rental_id, rental_date | Same
+2025-03-19 17:23:11,159 - INFO - Data Types: rental_id: int64, film_title: object, rental_date: datetime64[ns], return_date: datetime64[ns] | rental_id: int64, film_title: object, rental_date: datetime64[ns], return_date: datetime64[ns] | Same
+2025-03-19 17:23:11,159 - INFO - Data Comparison: Exact Match | Exact Match | Same
+2025-03-19 17:23:11,159 - INFO - Executing Snowflake procedure: GetInactiveCustomers()
+2025-03-19 17:23:11,159 - INFO - Snowflake Connector for Python Version: 3.14.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-03-19 17:23:11,160 - INFO - Connecting to GLOBAL Snowflake domain
+2025-03-19 17:23:11,160 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2025-03-19 17:23:11,836 - INFO - closed
+2025-03-19 17:23:11,894 - INFO - No async queries seem to be running, deleting session
+2025-03-19 17:23:11,931 - INFO - Executing SQL Server procedure: GetInactiveCustomers()
+2025-03-19 17:25:35,261 - INFO - \U0001f680 Starting the migration pipeline...
+
+2025-03-19 17:25:35,261 - INFO - \U0001f539 Performing quality testing on database procedures...
+2025-03-19 17:25:35,261 - INFO - Executing Snowflake procedure: GetCustomerRentals(5)
+2025-03-19 17:25:35,261 - INFO - Snowflake Connector for Python Version: 3.14.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-03-19 17:25:35,261 - INFO - Connecting to GLOBAL Snowflake domain
+2025-03-19 17:25:35,261 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2025-03-19 17:25:36,526 - INFO - closed
+2025-03-19 17:25:36,620 - INFO - No async queries seem to be running, deleting session
+2025-03-19 17:25:36,690 - INFO - Executing SQL Server procedure: GetCustomerRentals @customer_id = 5
+2025-03-19 17:25:39,976 - INFO - Comparing results...
+2025-03-19 17:25:39,984 - INFO - The results match perfectly!
+2025-03-19 17:25:39,984 - INFO - Executed Procedure: GetCustomerRentals(5) | GetCustomerRentals @customer_id = 5 | Different
+2025-03-19 17:25:39,984 - INFO - Number of Rows: 38 | 38 | Same
+2025-03-19 17:25:39,985 - INFO - Column Names: rental_date, return_date, film_title, rental_id | rental_date, return_date, film_title, rental_id | Same
+2025-03-19 17:25:39,985 - INFO - Data Types: rental_id: int64, film_title: object, rental_date: datetime64[ns], return_date: datetime64[ns] | rental_id: int64, film_title: object, rental_date: datetime64[ns], return_date: datetime64[ns] | Same
+2025-03-19 17:25:39,985 - INFO - Data Comparison: Exact Match | Exact Match | Same
+2025-03-19 17:25:39,985 - INFO - Executing Snowflake procedure: GetInactiveCustomers()
+2025-03-19 17:25:39,986 - INFO - Snowflake Connector for Python Version: 3.14.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-03-19 17:25:39,986 - INFO - Connecting to GLOBAL Snowflake domain
+2025-03-19 17:25:39,987 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2025-03-19 17:25:40,588 - INFO - closed
+2025-03-19 17:25:40,654 - INFO - No async queries seem to be running, deleting session
+2025-03-19 17:25:40,705 - INFO - Executing SQL Server procedure: GetInactiveCustomers
+2025-03-19 17:25:41,578 - INFO - Comparing results...
+2025-03-19 17:25:41,582 - ERROR - The results do not match!
+2025-03-19 17:25:41,597 - INFO - Number of differences detected: 99
+2025-03-19 17:25:41,597 - INFO - Executed Procedure: GetInactiveCustomers() | GetInactiveCustomers | Different
+2025-03-19 17:25:41,597 - INFO - Number of Rows: 632 | 599 | Different
+2025-03-19 17:25:41,597 - INFO - Column Names: last_rental_date, first_name, customer_id, last_name | last_rental_date, first_name, customer_id, last_name | Same
+2025-03-19 17:25:41,597 - INFO - Data Types: customer_id: int64, first_name: object, last_name: object, last_rental_date: datetime64[ns] | customer_id: int64, first_name: object, last_name: object, last_rental_date: datetime64[ns] | Same
+2025-03-19 17:25:41,597 - INFO - Data Comparison: 99 | 99 | Data mismatch detected
+2025-03-19 17:25:41,598 - INFO - Executing Snowflake procedure: GetStoreRevenue(1)
+2025-03-19 17:25:41,598 - INFO - Snowflake Connector for Python Version: 3.14.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-03-19 17:25:41,598 - INFO - Connecting to GLOBAL Snowflake domain
+2025-03-19 17:25:41,598 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2025-03-19 17:25:42,191 - INFO - closed
+2025-03-19 17:25:42,239 - INFO - No async queries seem to be running, deleting session
+2025-03-19 17:25:42,298 - INFO - Executing SQL Server procedure: GetStoreRevenue(1)
+2025-03-19 17:26:43,114 - INFO - \U0001f680 Starting the migration pipeline...
+
+2025-03-19 17:26:43,114 - INFO - \U0001f539 Performing quality testing on database procedures...
+2025-03-19 17:26:43,114 - INFO - Executing Snowflake procedure: GetCustomerRentals(5)
+2025-03-19 17:26:43,114 - INFO - Snowflake Connector for Python Version: 3.14.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-03-19 17:26:43,114 - INFO - Connecting to GLOBAL Snowflake domain
+2025-03-19 17:26:43,114 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2025-03-19 17:26:44,663 - INFO - closed
+2025-03-19 17:26:44,752 - INFO - No async queries seem to be running, deleting session
+2025-03-19 17:26:44,884 - INFO - Executing SQL Server procedure: GetCustomerRentals @customer_id = 5
+2025-03-19 17:26:48,260 - INFO - Comparing results...
+2025-03-19 17:26:48,266 - INFO - The results match perfectly!
+2025-03-19 17:26:48,266 - INFO - Executed Procedure: GetCustomerRentals(5) | GetCustomerRentals @customer_id = 5 | Different
+2025-03-19 17:26:48,266 - INFO - Number of Rows: 38 | 38 | Same
+2025-03-19 17:26:48,266 - INFO - Column Names: film_title, rental_id, return_date, rental_date | film_title, rental_id, return_date, rental_date | Same
+2025-03-19 17:26:48,266 - INFO - Data Types: rental_id: int64, film_title: object, rental_date: datetime64[ns], return_date: datetime64[ns] | rental_id: int64, film_title: object, rental_date: datetime64[ns], return_date: datetime64[ns] | Same
+2025-03-19 17:26:48,267 - INFO - Data Comparison: Exact Match | Exact Match | Same
+2025-03-19 17:26:48,267 - INFO - Executing Snowflake procedure: GetInactiveCustomers()
+2025-03-19 17:26:48,268 - INFO - Snowflake Connector for Python Version: 3.14.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-03-19 17:26:48,268 - INFO - Connecting to GLOBAL Snowflake domain
+2025-03-19 17:26:48,268 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2025-03-19 17:26:49,042 - INFO - closed
+2025-03-19 17:26:49,101 - INFO - No async queries seem to be running, deleting session
+2025-03-19 17:26:49,146 - INFO - Executing SQL Server procedure: GetInactiveCustomers
+2025-03-19 17:26:50,193 - INFO - Comparing results...
+2025-03-19 17:26:50,198 - ERROR - The results do not match!
+2025-03-19 17:26:50,223 - INFO - Number of differences detected: 99
+2025-03-19 17:26:50,223 - INFO - Executed Procedure: GetInactiveCustomers() | GetInactiveCustomers | Different
+2025-03-19 17:26:50,223 - INFO - Number of Rows: 632 | 599 | Different
+2025-03-19 17:26:50,223 - INFO - Column Names: first_name, last_name, customer_id, last_rental_date | first_name, last_name, customer_id, last_rental_date | Same
+2025-03-19 17:26:50,223 - INFO - Data Types: customer_id: int64, first_name: object, last_name: object, last_rental_date: datetime64[ns] | customer_id: int64, first_name: object, last_name: object, last_rental_date: datetime64[ns] | Same
+2025-03-19 17:26:50,223 - INFO - Data Comparison: 99 | 99 | Data mismatch detected
+2025-03-19 17:26:50,223 - INFO - Executing Snowflake procedure: GetStoreRevenue(1)
+2025-03-19 17:26:50,223 - INFO - Snowflake Connector for Python Version: 3.14.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-03-19 17:26:50,224 - INFO - Connecting to GLOBAL Snowflake domain
+2025-03-19 17:26:50,224 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2025-03-19 17:26:51,680 - INFO - closed
+2025-03-19 17:26:51,736 - INFO - No async queries seem to be running, deleting session
+2025-03-19 17:26:51,802 - INFO - Executing SQL Server procedure: GetStoreRevenue @store_id = 1
+2025-03-19 17:26:52,829 - INFO - Comparing results...
+2025-03-19 17:26:52,836 - ERROR - The results do not match!
+2025-03-19 17:26:52,856 - INFO - Number of differences detected: 2
+2025-03-19 17:26:52,856 - INFO - Executed Procedure: GetStoreRevenue(1) | GetStoreRevenue @store_id = 1 | Different
+2025-03-19 17:26:52,856 - INFO - Number of Rows: 1 | 1 | Same
+2025-03-19 17:26:52,856 - INFO - Column Names: total_revenue, store_id | total_revenue, store_id | Same
+2025-03-19 17:26:52,856 - INFO - Data Types: store_id: int64, total_revenue: float64 | store_id: int64, total_revenue: object | Different
+2025-03-19 17:26:52,857 - INFO - Data Comparison: 2 | 2 | Data mismatch detected
+2025-03-19 17:26:52,857 - INFO - Executing Snowflake procedure: GetTopRentedMovies()
+2025-03-19 17:26:52,857 - INFO - Snowflake Connector for Python Version: 3.14.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-03-19 17:26:52,858 - INFO - Connecting to GLOBAL Snowflake domain
+2025-03-19 17:26:52,858 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2025-03-19 17:26:53,541 - INFO - closed
+2025-03-19 17:26:53,655 - INFO - No async queries seem to be running, deleting session
+2025-03-19 17:26:53,752 - INFO - Executing SQL Server procedure: GetTopRentedMovies
+2025-03-19 17:26:54,612 - INFO - Comparing results...
+2025-03-19 17:26:54,615 - ERROR - The results do not match!
+2025-03-19 17:26:54,626 - INFO - Number of differences detected: 6
+2025-03-19 17:26:54,627 - INFO - Executed Procedure: GetTopRentedMovies() | GetTopRentedMovies | Different
+2025-03-19 17:26:54,627 - INFO - Number of Rows: 10 | 10 | Same
+2025-03-19 17:26:54,627 - INFO - Column Names: film_id, total_rentals, title | film_id, total_rentals, title | Same
+2025-03-19 17:26:54,627 - INFO - Data Types: film_id: int64, title: object, total_rentals: int64 | film_id: int64, title: object, total_rentals: int64 | Same
+2025-03-19 17:26:54,627 - INFO - Data Comparison: 6 | 6 | Data mismatch detected
+2025-03-19 17:26:54,627 - INFO - Executing Snowflake procedure: AddRental(3, 25, 2)
+2025-03-19 17:26:54,627 - INFO - Snowflake Connector for Python Version: 3.14.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-03-19 17:26:54,628 - INFO - Connecting to GLOBAL Snowflake domain
+2025-03-19 17:26:54,628 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2025-03-19 17:26:55,086 - INFO - closed
+2025-03-19 17:26:55,087 - INFO - No async queries seem to be running, deleting session
+2025-03-19 17:31:02,051 - INFO - \U0001f680 Starting the migration pipeline...
+
+2025-03-19 17:31:02,051 - INFO - \U0001f539 Performing quality testing on database procedures...
+2025-03-19 17:31:02,051 - INFO - Executing Snowflake procedure: GetCustomerRentals(5)
+2025-03-19 17:31:02,052 - INFO - Snowflake Connector for Python Version: 3.14.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-03-19 17:31:02,052 - INFO - Connecting to GLOBAL Snowflake domain
+2025-03-19 17:31:02,052 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2025-03-19 17:31:03,524 - INFO - closed
+2025-03-19 17:31:03,556 - INFO - No async queries seem to be running, deleting session
+2025-03-19 17:31:03,645 - INFO - Executing SQL Server procedure: GetCustomerRentals @customer_id = 5
+2025-03-19 17:31:06,824 - INFO - Comparing results...
+2025-03-19 17:31:06,831 - INFO - The results match perfectly!
+2025-03-19 17:31:06,831 - INFO - Executed Procedure: GetCustomerRentals(5) | GetCustomerRentals @customer_id = 5 | Different
+2025-03-19 17:31:06,831 - INFO - Number of Rows: 38 | 38 | Same
+2025-03-19 17:31:06,831 - INFO - Column Names: film_title, rental_date, rental_id, return_date | film_title, rental_date, rental_id, return_date | Same
+2025-03-19 17:31:06,831 - INFO - Data Types: rental_id: int64, film_title: object, rental_date: datetime64[ns], return_date: datetime64[ns] | rental_id: int64, film_title: object, rental_date: datetime64[ns], return_date: datetime64[ns] | Same
+2025-03-19 17:31:06,831 - INFO - Data Comparison: Exact Match | Exact Match | Same
+2025-03-19 17:31:06,831 - INFO - Executing Snowflake procedure: GetInactiveCustomers()
+2025-03-19 17:31:06,831 - INFO - Snowflake Connector for Python Version: 3.14.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-03-19 17:31:06,831 - INFO - Connecting to GLOBAL Snowflake domain
+2025-03-19 17:31:06,831 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2025-03-19 17:31:07,660 - INFO - closed
+2025-03-19 17:31:07,693 - INFO - No async queries seem to be running, deleting session
+2025-03-19 17:31:07,739 - INFO - Executing SQL Server procedure: GetInactiveCustomers
+2025-03-19 17:31:08,607 - INFO - Comparing results...
+2025-03-19 17:31:08,610 - ERROR - The results do not match!
+2025-03-19 17:31:08,629 - INFO - Number of differences detected: 99
+2025-03-19 17:31:08,629 - INFO - Executed Procedure: GetInactiveCustomers() | GetInactiveCustomers | Different
+2025-03-19 17:31:08,629 - INFO - Number of Rows: 632 | 599 | Different
+2025-03-19 17:31:08,629 - INFO - Column Names: last_name, last_rental_date, customer_id, first_name | last_name, last_rental_date, customer_id, first_name | Same
+2025-03-19 17:31:08,629 - INFO - Data Types: customer_id: int64, first_name: object, last_name: object, last_rental_date: datetime64[ns] | customer_id: int64, first_name: object, last_name: object, last_rental_date: datetime64[ns] | Same
+2025-03-19 17:31:08,629 - INFO - Data Comparison: 99 | 99 | Data mismatch detected
+2025-03-19 17:31:08,629 - INFO - Executing Snowflake procedure: GetStoreRevenue(1)
+2025-03-19 17:31:08,629 - INFO - Snowflake Connector for Python Version: 3.14.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-03-19 17:31:08,630 - INFO - Connecting to GLOBAL Snowflake domain
+2025-03-19 17:31:08,630 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2025-03-19 17:31:09,179 - INFO - closed
+2025-03-19 17:31:09,293 - INFO - No async queries seem to be running, deleting session
+2025-03-19 17:31:09,344 - INFO - Executing SQL Server procedure: GetStoreRevenue @store_id = 1
+2025-03-19 17:31:10,244 - INFO - Comparing results...
+2025-03-19 17:31:10,249 - ERROR - The results do not match!
+2025-03-19 17:31:10,259 - INFO - Number of differences detected: 2
+2025-03-19 17:31:10,259 - INFO - Executed Procedure: GetStoreRevenue(1) | GetStoreRevenue @store_id = 1 | Different
+2025-03-19 17:31:10,259 - INFO - Number of Rows: 1 | 1 | Same
+2025-03-19 17:31:10,259 - INFO - Column Names: store_id, total_revenue | store_id, total_revenue | Same
+2025-03-19 17:31:10,259 - INFO - Data Types: store_id: int64, total_revenue: float64 | store_id: int64, total_revenue: object | Different
+2025-03-19 17:31:10,259 - INFO - Data Comparison: 2 | 2 | Data mismatch detected
+2025-03-19 17:31:10,259 - INFO - Executing Snowflake procedure: GetTopRentedMovies()
+2025-03-19 17:31:10,260 - INFO - Snowflake Connector for Python Version: 3.14.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-03-19 17:31:10,260 - INFO - Connecting to GLOBAL Snowflake domain
+2025-03-19 17:31:10,260 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2025-03-19 17:31:10,783 - INFO - closed
+2025-03-19 17:31:10,849 - INFO - No async queries seem to be running, deleting session
+2025-03-19 17:31:10,911 - INFO - Executing SQL Server procedure: GetTopRentedMovies
+2025-03-19 17:31:11,841 - INFO - Comparing results...
+2025-03-19 17:31:11,841 - ERROR - The results do not match!
+2025-03-19 17:31:11,860 - INFO - Number of differences detected: 6
+2025-03-19 17:31:11,860 - INFO - Executed Procedure: GetTopRentedMovies() | GetTopRentedMovies | Different
+2025-03-19 17:31:11,860 - INFO - Number of Rows: 10 | 10 | Same
+2025-03-19 17:31:11,860 - INFO - Column Names: title, film_id, total_rentals | title, film_id, total_rentals | Same
+2025-03-19 17:31:11,860 - INFO - Data Types: film_id: int64, title: object, total_rentals: int64 | film_id: int64, title: object, total_rentals: int64 | Same
+2025-03-19 17:31:11,861 - INFO - Data Comparison: 6 | 6 | Data mismatch detected
+2025-03-19 17:31:11,861 - INFO - Executing Snowflake procedure: AddRental(3, 25, 2)
+2025-03-19 17:31:11,861 - INFO - Snowflake Connector for Python Version: 3.14.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-03-19 17:31:11,861 - INFO - Connecting to GLOBAL Snowflake domain
+2025-03-19 17:31:11,861 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2025-03-19 17:31:12,367 - ERROR - Error executing Snowflake procedure AddRental(3, 25, 2): 002140 (42601): 01bb1c90-0001-4331-0008-8472000152f6: SQL compilation error:
+Unknown function ADDRENTAL
+2025-03-19 17:31:12,368 - INFO - Executing SQL Server procedure: AddRental @customer_id = 3, @inventory_id = 25, @staff_id = 2
+2025-03-19 17:31:12,825 - ERROR - Error executing SQL Server procedure AddRental @customer_id = 3, @inventory_id = 25, @staff_id = 2: ('23000', "[23000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot insert explicit value for identity column in table 'rental' when IDENTITY_INSERT is set to OFF. (544) (SQLExecDirectW); [23000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The statement has been terminated. (3621)")
+2025-03-19 17:31:12,826 - INFO - Comparing results...
+2025-03-19 17:31:12,837 - INFO - closed
+2025-03-19 17:31:12,837 - INFO - No async queries seem to be running, deleting session
+2025-03-19 17:33:31,365 - INFO - \U0001f680 Starting the migration pipeline...
+
+2025-03-19 17:33:31,365 - INFO - \U0001f539 Performing quality testing on database procedures...
+2025-03-19 17:33:31,366 - INFO - Executing Snowflake procedure: GetCustomerRentals(5)
+2025-03-19 17:33:31,366 - INFO - Snowflake Connector for Python Version: 3.14.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-03-19 17:33:31,366 - INFO - Connecting to GLOBAL Snowflake domain
+2025-03-19 17:33:31,366 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2025-03-19 17:33:32,778 - INFO - closed
+2025-03-19 17:33:32,974 - INFO - No async queries seem to be running, deleting session
+2025-03-19 17:33:33,045 - INFO - Executing SQL Server procedure: GetCustomerRentals @customer_id = 5
+2025-03-19 17:33:36,444 - INFO - Comparing results...
+2025-03-19 17:33:36,451 - INFO - The results match perfectly!
+2025-03-19 17:33:36,451 - INFO - Executed Procedure: GetCustomerRentals(5) | GetCustomerRentals @customer_id = 5 | Different
+2025-03-19 17:33:36,451 - INFO - Number of Rows: 38 | 38 | Same
+2025-03-19 17:33:36,451 - INFO - Column Names: return_date, film_title, rental_date, rental_id | return_date, film_title, rental_date, rental_id | Same
+2025-03-19 17:33:36,452 - INFO - Data Types: rental_id: int64, film_title: object, rental_date: datetime64[ns], return_date: datetime64[ns] | rental_id: int64, film_title: object, rental_date: datetime64[ns], return_date: datetime64[ns] | Same
+2025-03-19 17:33:36,452 - INFO - Data Comparison: Exact Match | Exact Match | Same
+2025-03-19 17:33:36,452 - INFO - Executing Snowflake procedure: GetInactiveCustomers()
+2025-03-19 17:33:36,452 - INFO - Snowflake Connector for Python Version: 3.14.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-03-19 17:33:36,452 - INFO - Connecting to GLOBAL Snowflake domain
+2025-03-19 17:33:36,453 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2025-03-19 17:33:37,547 - INFO - closed
+2025-03-19 17:33:37,618 - INFO - No async queries seem to be running, deleting session
+2025-03-19 17:33:37,806 - INFO - Executing SQL Server procedure: GetInactiveCustomers
+2025-03-19 17:33:40,570 - INFO - Comparing results...
+2025-03-19 17:33:40,575 - ERROR - The results do not match!
+2025-03-19 17:33:40,595 - INFO - Number of differences detected: 99
+2025-03-19 17:33:40,595 - INFO - Executed Procedure: GetInactiveCustomers() | GetInactiveCustomers | Different
+2025-03-19 17:33:40,595 - INFO - Number of Rows: 632 | 599 | Different
+2025-03-19 17:33:40,595 - INFO - Column Names: last_rental_date, first_name, customer_id, last_name | last_rental_date, first_name, customer_id, last_name | Same
+2025-03-19 17:33:40,595 - INFO - Data Types: customer_id: int64, first_name: object, last_name: object, last_rental_date: datetime64[ns] | customer_id: int64, first_name: object, last_name: object, last_rental_date: datetime64[ns] | Same
+2025-03-19 17:33:40,595 - INFO - Data Comparison: 99 | 99 | Data mismatch detected
+2025-03-19 17:33:40,595 - INFO - Executing Snowflake procedure: GetStoreRevenue(1)
+2025-03-19 17:33:40,595 - INFO - Snowflake Connector for Python Version: 3.14.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-03-19 17:33:40,596 - INFO - Connecting to GLOBAL Snowflake domain
+2025-03-19 17:33:40,596 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2025-03-19 17:33:41,329 - INFO - closed
+2025-03-19 17:33:41,394 - INFO - No async queries seem to be running, deleting session
+2025-03-19 17:33:41,497 - INFO - Executing SQL Server procedure: GetStoreRevenue @store_id = 1
+2025-03-19 17:33:42,682 - INFO - Comparing results...
+2025-03-19 17:33:42,682 - ERROR - The results do not match!
+2025-03-19 17:33:42,699 - INFO - Number of differences detected: 2
+2025-03-19 17:33:42,699 - INFO - Executed Procedure: GetStoreRevenue(1) | GetStoreRevenue @store_id = 1 | Different
+2025-03-19 17:33:42,699 - INFO - Number of Rows: 1 | 1 | Same
+2025-03-19 17:33:42,699 - INFO - Column Names: store_id, total_revenue | store_id, total_revenue | Same
+2025-03-19 17:33:42,699 - INFO - Data Types: store_id: int64, total_revenue: float64 | store_id: int64, total_revenue: object | Different
+2025-03-19 17:33:42,699 - INFO - Data Comparison: 2 | 2 | Data mismatch detected
+2025-03-19 17:33:42,701 - INFO - Executing Snowflake procedure: GetTopRentedMovies()
+2025-03-19 17:33:42,701 - INFO - Snowflake Connector for Python Version: 3.14.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-03-19 17:33:42,701 - INFO - Connecting to GLOBAL Snowflake domain
+2025-03-19 17:33:42,701 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2025-03-19 17:33:43,811 - INFO - closed
+2025-03-19 17:33:43,894 - INFO - No async queries seem to be running, deleting session
+2025-03-19 17:33:44,014 - INFO - Executing SQL Server procedure: GetTopRentedMovies
+2025-03-19 17:33:45,338 - INFO - Comparing results...
+2025-03-19 17:33:45,342 - ERROR - The results do not match!
+2025-03-19 17:33:45,355 - INFO - Number of differences detected: 6
+2025-03-19 17:33:45,355 - INFO - Executed Procedure: GetTopRentedMovies() | GetTopRentedMovies | Different
+2025-03-19 17:33:45,355 - INFO - Number of Rows: 10 | 10 | Same
+2025-03-19 17:33:45,355 - INFO - Column Names: film_id, title, total_rentals | film_id, title, total_rentals | Same
+2025-03-19 17:33:45,355 - INFO - Data Types: film_id: int64, title: object, total_rentals: int64 | film_id: int64, title: object, total_rentals: int64 | Same
+2025-03-19 17:33:45,355 - INFO - Data Comparison: 6 | 6 | Data mismatch detected
+2025-03-19 17:33:45,355 - INFO - Executing Snowflake procedure: AddRental(3, 25, 2)
+2025-03-19 17:33:45,355 - INFO - Snowflake Connector for Python Version: 3.14.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-03-19 17:33:45,355 - INFO - Connecting to GLOBAL Snowflake domain
+2025-03-19 17:33:45,355 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2025-03-19 17:33:45,811 - ERROR - Error executing Snowflake procedure AddRental(3, 25, 2): 002140 (42601): 01bb1c93-0001-43c0-0008-84720001346a: SQL compilation error:
+Unknown function ADDRENTAL
+2025-03-19 17:33:45,811 - INFO - Executing SQL Server procedure: AddRental @customer_id = 3, @inventory_id = 25, @staff_id = 2
+2025-03-19 17:33:46,289 - ERROR - Error executing SQL Server procedure AddRental @customer_id = 3, @inventory_id = 25, @staff_id = 2: ('23000', "[23000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot insert explicit value for identity column in table 'rental' when IDENTITY_INSERT is set to OFF. (544) (SQLExecDirectW); [23000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The statement has been terminated. (3621)")
+2025-03-19 17:33:46,290 - INFO - Comparing results...
+2025-03-19 17:33:46,290 - INFO - The results match perfectly!
+2025-03-19 17:33:46,290 - INFO - Executed Procedure: AddRental(3, 25, 2) | AddRental @customer_id = 3, @inventory_id = 25, @staff_id = 2 | Different
+2025-03-19 17:33:46,290 - INFO - Number of Rows: 0 | 0 | Same
+2025-03-19 17:33:46,290 - INFO - Column Names:  |  | Same
+2025-03-19 17:33:46,290 - INFO - Data Types:  |  | Same
+2025-03-19 17:33:46,290 - INFO - Data Comparison: Exact Match | Exact Match | Same
+2025-03-19 17:33:46,293 - INFO - HTML report generated: comparison_report.html
+2025-03-19 17:33:46,294 - INFO - 
+\u2705 Pipeline execution completed successfully!
+2025-03-19 17:33:46,294 - INFO - closed
+2025-03-19 17:33:46,294 - INFO - No async queries seem to be running, deleting session
+2025-03-19 17:41:10,883 - INFO - \U0001f680 Starting the migration pipeline...
+
+2025-03-19 17:41:10,883 - INFO - \U0001f539 Performing quality testing on database procedures...
+2025-03-19 17:41:10,883 - INFO - Executing Snowflake procedure: GetCustomerRentals(5)
+2025-03-19 17:41:10,884 - INFO - Snowflake Connector for Python Version: 3.14.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-03-19 17:41:10,884 - INFO - Connecting to GLOBAL Snowflake domain
+2025-03-19 17:41:10,884 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2025-03-19 17:41:12,477 - INFO - closed
+2025-03-19 17:41:12,523 - INFO - No async queries seem to be running, deleting session
+2025-03-19 17:41:12,646 - INFO - Executing SQL Server procedure: GetCustomerRentals @customer_id = 5
+2025-03-19 17:41:15,805 - INFO - Comparing results...
+2025-03-19 17:41:15,812 - INFO - The results match perfectly!
+2025-03-19 17:41:15,812 - INFO - Executed Procedure: GetCustomerRentals(5) | GetCustomerRentals @customer_id = 5 | Different
+2025-03-19 17:41:15,812 - INFO - Number of Rows: 38 | 38 | Same
+2025-03-19 17:41:15,812 - INFO - Column Names: rental_date, return_date, rental_id, film_title | rental_date, return_date, rental_id, film_title | Same
+2025-03-19 17:41:15,812 - INFO - Data Types: rental_id: int64, film_title: object, rental_date: datetime64[ns], return_date: datetime64[ns] | rental_id: int64, film_title: object, rental_date: datetime64[ns], return_date: datetime64[ns] | Same
+2025-03-19 17:41:15,812 - INFO - Data Comparison: Exact Match | Exact Match | Same
+2025-03-19 17:41:15,812 - INFO - Executing Snowflake procedure: GetInactiveCustomers()
+2025-03-19 17:41:15,813 - INFO - Snowflake Connector for Python Version: 3.14.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-03-19 17:41:15,813 - INFO - Connecting to GLOBAL Snowflake domain
+2025-03-19 17:41:15,813 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2025-03-19 17:41:16,487 - INFO - closed
+2025-03-19 17:41:16,556 - INFO - No async queries seem to be running, deleting session
+2025-03-19 17:41:16,601 - INFO - Executing SQL Server procedure: GetInactiveCustomers
+2025-03-19 17:41:17,462 - INFO - Comparing results...
+2025-03-19 17:41:17,466 - ERROR - The results do not match!
+2025-03-19 17:41:17,481 - INFO - Number of differences detected: 99
+2025-03-19 17:41:17,481 - INFO - Executed Procedure: GetInactiveCustomers() | GetInactiveCustomers | Different
+2025-03-19 17:41:17,482 - INFO - Number of Rows: 632 | 599 | Different
+2025-03-19 17:41:17,482 - INFO - Column Names: customer_id, last_rental_date, last_name, first_name | customer_id, last_rental_date, last_name, first_name | Same
+2025-03-19 17:41:17,482 - INFO - Data Types: customer_id: int64, first_name: object, last_name: object, last_rental_date: datetime64[ns] | customer_id: int64, first_name: object, last_name: object, last_rental_date: datetime64[ns] | Same
+2025-03-19 17:41:17,482 - INFO - Data Comparison: 99 | 99 | Data mismatch detected
+2025-03-19 17:41:17,482 - INFO - Executing Snowflake procedure: GetStoreRevenue(1)
+2025-03-19 17:41:17,482 - INFO - Snowflake Connector for Python Version: 3.14.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-03-19 17:41:17,483 - INFO - Connecting to GLOBAL Snowflake domain
+2025-03-19 17:41:17,483 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2025-03-19 17:41:18,261 - INFO - closed
+2025-03-19 17:41:18,308 - INFO - No async queries seem to be running, deleting session
+2025-03-19 17:41:18,392 - INFO - Executing SQL Server procedure: GetStoreRevenue @store_id = 1
+2025-03-19 17:41:19,337 - INFO - Comparing results...
+2025-03-19 17:41:19,341 - ERROR - The results do not match!
+2025-03-19 17:41:19,353 - INFO - Number of differences detected: 2
+2025-03-19 17:41:19,353 - INFO - Executed Procedure: GetStoreRevenue(1) | GetStoreRevenue @store_id = 1 | Different
+2025-03-19 17:41:19,353 - INFO - Number of Rows: 1 | 1 | Same
+2025-03-19 17:41:19,353 - INFO - Column Names: store_id, total_revenue | store_id, total_revenue | Same
+2025-03-19 17:41:19,353 - INFO - Data Types: store_id: int64, total_revenue: float64 | store_id: int64, total_revenue: object | Different
+2025-03-19 17:41:19,353 - INFO - Data Comparison: 2 | 2 | Data mismatch detected
+2025-03-19 17:41:19,353 - INFO - Executing Snowflake procedure: GetTopRentedMovies()
+2025-03-19 17:41:19,354 - INFO - Snowflake Connector for Python Version: 3.14.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-03-19 17:41:19,354 - INFO - Connecting to GLOBAL Snowflake domain
+2025-03-19 17:41:19,354 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2025-03-19 17:41:19,947 - INFO - closed
+2025-03-19 17:41:20,048 - INFO - No async queries seem to be running, deleting session
+2025-03-19 17:41:20,098 - INFO - Executing SQL Server procedure: GetTopRentedMovies
+2025-03-19 17:41:20,995 - INFO - Comparing results...
+2025-03-19 17:41:21,000 - ERROR - The results do not match!
+2025-03-19 17:41:21,015 - INFO - Number of differences detected: 6
+2025-03-19 17:41:21,015 - INFO - Executed Procedure: GetTopRentedMovies() | GetTopRentedMovies | Different
+2025-03-19 17:41:21,015 - INFO - Number of Rows: 10 | 10 | Same
+2025-03-19 17:41:21,015 - INFO - Column Names: title, total_rentals, film_id | title, total_rentals, film_id | Same
+2025-03-19 17:41:21,015 - INFO - Data Types: film_id: int64, title: object, total_rentals: int64 | film_id: int64, title: object, total_rentals: int64 | Same
+2025-03-19 17:41:21,015 - INFO - Data Comparison: 6 | 6 | Data mismatch detected
+2025-03-19 17:41:21,015 - INFO - Executing Snowflake procedure: AddRental(3, 25, 2)
+2025-03-19 17:41:21,015 - INFO - Snowflake Connector for Python Version: 3.14.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-03-19 17:41:21,016 - INFO - Connecting to GLOBAL Snowflake domain
+2025-03-19 17:41:21,016 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2025-03-19 17:41:21,523 - ERROR - Error executing Snowflake procedure AddRental(3, 25, 2): 002140 (42601): 01bb1c9a-0001-4331-0008-847200015312: SQL compilation error:
+Unknown function ADDRENTAL
+2025-03-19 17:41:21,524 - INFO - Executing SQL Server procedure: AddRental @customer_id = 3, @inventory_id = 25, @staff_id = 2
+2025-03-19 17:41:21,959 - ERROR - Error executing SQL Server procedure AddRental @customer_id = 3, @inventory_id = 25, @staff_id = 2: ('23000', "[23000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot insert explicit value for identity column in table 'rental' when IDENTITY_INSERT is set to OFF. (544) (SQLExecDirectW); [23000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The statement has been terminated. (3621)")
+2025-03-19 17:41:21,961 - INFO - Comparing results...
+2025-03-19 17:41:21,962 - INFO - The results match perfectly!
+2025-03-19 17:41:21,963 - INFO - Executed Procedure: AddRental(3, 25, 2) | AddRental @customer_id = 3, @inventory_id = 25, @staff_id = 2 | Different
+2025-03-19 17:41:21,963 - INFO - Number of Rows: 0 | 0 | Same
+2025-03-19 17:41:21,963 - INFO - Column Names:  |  | Same
+2025-03-19 17:41:21,963 - INFO - Data Types:  |  | Same
+2025-03-19 17:41:21,964 - INFO - Data Comparison: Exact Match | Exact Match | Same
+2025-03-19 17:41:21,967 - INFO - HTML report generated: Dq_analysis/data_quality_report.html
+2025-03-19 17:41:21,968 - INFO - 
+\u2705 Pipeline execution completed successfully!
+2025-03-19 17:41:21,968 - INFO - closed
+2025-03-19 17:41:21,968 - INFO - No async queries seem to be running, deleting session
+2025-03-19 17:44:47,578 - INFO - \U0001f680 Starting the migration pipeline...
+
+2025-03-19 17:44:47,578 - INFO - \U0001f539 Performing quality testing on database procedures...
+2025-03-19 17:44:47,578 - INFO - Executing Snowflake procedure: GetCustomerRentals(5)
+2025-03-19 17:44:47,579 - INFO - Snowflake Connector for Python Version: 3.14.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-03-19 17:44:47,579 - INFO - Connecting to GLOBAL Snowflake domain
+2025-03-19 17:44:47,579 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2025-03-19 17:44:49,311 - INFO - closed
+2025-03-19 17:44:49,425 - INFO - No async queries seem to be running, deleting session
+2025-03-19 17:44:49,489 - INFO - Executing SQL Server procedure: GetCustomerRentals @customer_id = 5
+2025-03-19 17:44:54,569 - INFO - Comparing results...
+2025-03-19 17:44:54,573 - INFO - The results match perfectly!
+2025-03-19 17:44:54,574 - INFO - Executed Procedure: GetCustomerRentals(5) | GetCustomerRentals @customer_id = 5 | Different
+2025-03-19 17:44:54,574 - INFO - Number of Rows: 38 | 38 | Same
+2025-03-19 17:44:54,574 - INFO - Column Names: rental_id, rental_date, film_title, return_date | rental_id, rental_date, film_title, return_date | Same
+2025-03-19 17:44:54,574 - INFO - Data Types: rental_id: int64, film_title: object, rental_date: datetime64[ns], return_date: datetime64[ns] | rental_id: int64, film_title: object, rental_date: datetime64[ns], return_date: datetime64[ns] | Same
+2025-03-19 17:44:54,574 - INFO - Data Comparison: Exact Match | Exact Match | Same
+2025-03-19 17:44:54,574 - INFO - Executing Snowflake procedure: GetInactiveCustomers()
+2025-03-19 17:44:54,575 - INFO - Snowflake Connector for Python Version: 3.14.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-03-19 17:44:54,575 - INFO - Connecting to GLOBAL Snowflake domain
+2025-03-19 17:44:54,575 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2025-03-19 17:44:55,462 - INFO - closed
+2025-03-19 17:44:55,517 - INFO - No async queries seem to be running, deleting session
+2025-03-19 17:44:55,676 - INFO - Executing SQL Server procedure: GetInactiveCustomers
+2025-03-19 17:44:57,151 - INFO - Comparing results...
+2025-03-19 17:44:57,155 - ERROR - The results do not match!
+2025-03-19 17:44:57,179 - INFO - Number of differences detected: 99
+2025-03-19 17:44:57,179 - INFO - Executed Procedure: GetInactiveCustomers() | GetInactiveCustomers | Different
+2025-03-19 17:44:57,179 - INFO - Number of Rows: 632 | 599 | Different
+2025-03-19 17:44:57,179 - INFO - Column Names: customer_id, last_name, first_name, last_rental_date | customer_id, last_name, first_name, last_rental_date | Same
+2025-03-19 17:44:57,179 - INFO - Data Types: customer_id: int64, first_name: object, last_name: object, last_rental_date: datetime64[ns] | customer_id: int64, first_name: object, last_name: object, last_rental_date: datetime64[ns] | Same
+2025-03-19 17:44:57,179 - INFO - Data Comparison: 99 | 99 | Data mismatch detected
+2025-03-19 17:44:57,179 - INFO - Executing Snowflake procedure: GetStoreRevenue(1)
+2025-03-19 17:44:57,179 - INFO - Snowflake Connector for Python Version: 3.14.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-03-19 17:44:57,179 - INFO - Connecting to GLOBAL Snowflake domain
+2025-03-19 17:44:57,179 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2025-03-19 17:44:58,085 - INFO - closed
+2025-03-19 17:44:58,233 - INFO - No async queries seem to be running, deleting session
+2025-03-19 17:44:58,315 - INFO - Executing SQL Server procedure: GetStoreRevenue @store_id = 1
+2025-03-19 17:44:59,685 - INFO - Comparing results...
+2025-03-19 17:44:59,689 - ERROR - The results do not match!
+2025-03-19 17:44:59,700 - INFO - Number of differences detected: 2
+2025-03-19 17:44:59,700 - INFO - Executed Procedure: GetStoreRevenue(1) | GetStoreRevenue @store_id = 1 | Different
+2025-03-19 17:44:59,700 - INFO - Number of Rows: 1 | 1 | Same
+2025-03-19 17:44:59,700 - INFO - Column Names: total_revenue, store_id | total_revenue, store_id | Same
+2025-03-19 17:44:59,700 - INFO - Data Types: store_id: int64, total_revenue: float64 | store_id: int64, total_revenue: object | Different
+2025-03-19 17:44:59,700 - INFO - Data Comparison: 2 | 2 | Data mismatch detected
+2025-03-19 17:44:59,700 - INFO - Executing Snowflake procedure: GetTopRentedMovies()
+2025-03-19 17:44:59,700 - INFO - Snowflake Connector for Python Version: 3.14.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-03-19 17:44:59,700 - INFO - Connecting to GLOBAL Snowflake domain
+2025-03-19 17:44:59,700 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2025-03-19 17:45:00,502 - INFO - closed
+2025-03-19 17:45:00,580 - INFO - No async queries seem to be running, deleting session
+2025-03-19 17:45:00,641 - INFO - Executing SQL Server procedure: GetTopRentedMovies
+2025-03-19 17:45:02,762 - INFO - Comparing results...
+2025-03-19 17:45:02,766 - ERROR - The results do not match!
+2025-03-19 17:45:02,783 - INFO - Number of differences detected: 6
+2025-03-19 17:45:02,783 - INFO - Executed Procedure: GetTopRentedMovies() | GetTopRentedMovies | Different
+2025-03-19 17:45:02,783 - INFO - Number of Rows: 10 | 10 | Same
+2025-03-19 17:45:02,784 - INFO - Column Names: film_id, total_rentals, title | film_id, total_rentals, title | Same
+2025-03-19 17:45:02,784 - INFO - Data Types: film_id: int64, title: object, total_rentals: int64 | film_id: int64, title: object, total_rentals: int64 | Same
+2025-03-19 17:45:02,784 - INFO - Data Comparison: 6 | 6 | Data mismatch detected
+2025-03-19 17:45:02,784 - INFO - Executing Snowflake procedure: AddRental(3, 25, 2)
+2025-03-19 17:45:02,784 - INFO - Snowflake Connector for Python Version: 3.14.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-03-19 17:45:02,785 - INFO - Connecting to GLOBAL Snowflake domain
+2025-03-19 17:45:02,785 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2025-03-19 17:45:04,019 - ERROR - Error executing Snowflake procedure AddRental(3, 25, 2): 002140 (42601): 01bb1c9e-0001-4331-0008-84720001532e: SQL compilation error:
+Unknown function ADDRENTAL
+2025-03-19 17:45:04,020 - INFO - Executing SQL Server procedure: AddRental @customer_id = 3, @inventory_id = 25, @staff_id = 2
+2025-03-19 17:45:04,875 - ERROR - Error executing SQL Server procedure AddRental @customer_id = 3, @inventory_id = 25, @staff_id = 2: ('23000', "[23000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot insert explicit value for identity column in table 'rental' when IDENTITY_INSERT is set to OFF. (544) (SQLExecDirectW); [23000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The statement has been terminated. (3621)")
+2025-03-19 17:45:04,878 - INFO - Comparing results...
+2025-03-19 17:45:04,879 - INFO - The results match perfectly!
+2025-03-19 17:45:04,879 - INFO - Executed Procedure: AddRental(3, 25, 2) | AddRental @customer_id = 3, @inventory_id = 25, @staff_id = 2 | Different
+2025-03-19 17:45:04,879 - INFO - Number of Rows: 0 | 0 | Same
+2025-03-19 17:45:04,879 - INFO - Column Names:  |  | Same
+2025-03-19 17:45:04,879 - INFO - Data Types:  |  | Same
+2025-03-19 17:45:04,879 - INFO - Data Comparison: Exact Match | Exact Match | Same
+2025-03-19 17:45:04,881 - INFO - HTML report generated: Dq_analysis/data_quality_report.html
+2025-03-19 17:45:04,881 - INFO - 
+\u2705 Pipeline execution completed successfully!
+2025-03-19 17:45:04,882 - INFO - closed
+2025-03-19 17:45:04,882 - INFO - No async queries seem to be running, deleting session
+2025-03-19 17:48:07,667 - INFO - \U0001f680 Starting the migration pipeline...
+
+2025-03-19 17:48:07,667 - INFO - \U0001f539 Performing quality testing on database procedures...
+2025-03-19 17:48:07,668 - INFO - Executing Snowflake procedure: GetCustomerRentals(5)
+2025-03-19 17:48:07,668 - INFO - Snowflake Connector for Python Version: 3.14.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-03-19 17:48:07,668 - INFO - Connecting to GLOBAL Snowflake domain
+2025-03-19 17:48:07,668 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2025-03-19 17:48:10,698 - INFO - closed
+2025-03-19 17:48:11,603 - INFO - No async queries seem to be running, deleting session
+2025-03-19 17:48:12,061 - INFO - Executing SQL Server procedure: GetCustomerRentals @customer_id = 5
+2025-03-19 17:48:19,316 - INFO - Comparing results...
+2025-03-19 17:48:19,323 - INFO - The results match perfectly!
+2025-03-19 17:48:19,323 - INFO - Executed Procedure: GetCustomerRentals(5) | GetCustomerRentals @customer_id = 5 | Different
+2025-03-19 17:48:19,324 - INFO - Number of Rows: 38 | 38 | Same
+2025-03-19 17:48:19,324 - INFO - Column Names: rental_id, film_title, return_date, rental_date | rental_id, film_title, return_date, rental_date | Same
+2025-03-19 17:48:19,324 - INFO - Data Types: rental_id: int64, film_title: object, rental_date: datetime64[ns], return_date: datetime64[ns] | rental_id: int64, film_title: object, rental_date: datetime64[ns], return_date: datetime64[ns] | Same
+2025-03-19 17:48:19,324 - INFO - Data Comparison: Exact Match | Exact Match | Same
+2025-03-19 17:48:19,324 - INFO - Executing Snowflake procedure: GetInactiveCustomers()
+2025-03-19 17:48:19,325 - INFO - Snowflake Connector for Python Version: 3.14.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-03-19 17:48:19,325 - INFO - Connecting to GLOBAL Snowflake domain
+2025-03-19 17:48:19,325 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2025-03-19 17:48:20,791 - INFO - closed
+2025-03-19 17:48:21,015 - INFO - No async queries seem to be running, deleting session
+2025-03-19 17:48:21,078 - INFO - Executing SQL Server procedure: GetInactiveCustomers
+2025-03-19 17:48:23,035 - INFO - Comparing results...
+2025-03-19 17:48:23,041 - ERROR - The results do not match!
+2025-03-19 17:48:23,069 - INFO - Number of differences detected: 99
+2025-03-19 17:48:23,069 - INFO - Executed Procedure: GetInactiveCustomers() | GetInactiveCustomers | Different
+2025-03-19 17:48:23,069 - INFO - Number of Rows: 632 | 599 | Different
+2025-03-19 17:48:23,069 - INFO - Column Names: first_name, last_rental_date, customer_id, last_name | first_name, last_rental_date, customer_id, last_name | Same
+2025-03-19 17:48:23,069 - INFO - Data Types: customer_id: int64, first_name: object, last_name: object, last_rental_date: datetime64[ns] | customer_id: int64, first_name: object, last_name: object, last_rental_date: datetime64[ns] | Same
+2025-03-19 17:48:23,069 - INFO - Data Comparison: 99 | 99 | Data mismatch detected
+2025-03-19 17:48:23,069 - INFO - Executing Snowflake procedure: GetStoreRevenue(1)
+2025-03-19 17:48:23,069 - INFO - Snowflake Connector for Python Version: 3.14.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-03-19 17:48:23,070 - INFO - Connecting to GLOBAL Snowflake domain
+2025-03-19 17:48:23,070 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2025-03-19 17:48:24,688 - INFO - closed
+2025-03-19 17:48:25,028 - INFO - No async queries seem to be running, deleting session
+2025-03-19 17:48:25,260 - INFO - Executing SQL Server procedure: GetStoreRevenue @store_id = 1
+2025-03-19 17:48:27,461 - INFO - Comparing results...
+2025-03-19 17:48:27,461 - ERROR - The results do not match!
+2025-03-19 17:48:27,485 - INFO - Number of differences detected: 2
+2025-03-19 17:48:27,486 - INFO - Executed Procedure: GetStoreRevenue(1) | GetStoreRevenue @store_id = 1 | Different
+2025-03-19 17:48:27,486 - INFO - Number of Rows: 1 | 1 | Same
+2025-03-19 17:48:27,486 - INFO - Column Names: store_id, total_revenue | store_id, total_revenue | Same
+2025-03-19 17:48:27,486 - INFO - Data Types: store_id: int64, total_revenue: float64 | store_id: int64, total_revenue: object | Different
+2025-03-19 17:48:27,486 - INFO - Data Comparison: 2 | 2 | Data mismatch detected
+2025-03-19 17:48:27,486 - INFO - Executing Snowflake procedure: GetTopRentedMovies()
+2025-03-19 17:48:27,487 - INFO - Snowflake Connector for Python Version: 3.14.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-03-19 17:48:27,487 - INFO - Connecting to GLOBAL Snowflake domain
+2025-03-19 17:48:27,487 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2025-03-19 17:48:29,976 - INFO - closed
+2025-03-19 17:48:30,326 - INFO - No async queries seem to be running, deleting session
+2025-03-19 17:48:31,093 - INFO - Executing SQL Server procedure: GetTopRentedMovies
+2025-03-19 17:48:33,110 - INFO - Comparing results...
+2025-03-19 17:48:33,111 - ERROR - The results do not match!
+2025-03-19 17:48:33,117 - INFO - Number of differences detected: 6
+2025-03-19 17:48:33,117 - INFO - Executed Procedure: GetTopRentedMovies() | GetTopRentedMovies | Different
+2025-03-19 17:48:33,117 - INFO - Number of Rows: 10 | 10 | Same
+2025-03-19 17:48:33,117 - INFO - Column Names: total_rentals, film_id, title | total_rentals, film_id, title | Same
+2025-03-19 17:48:33,117 - INFO - Data Types: film_id: int64, title: object, total_rentals: int64 | film_id: int64, title: object, total_rentals: int64 | Same
+2025-03-19 17:48:33,117 - INFO - Data Comparison: 6 | 6 | Data mismatch detected
+2025-03-19 17:48:33,117 - INFO - Executing Snowflake procedure: AddRental(3, 25, 2)
+2025-03-19 17:48:33,117 - INFO - Snowflake Connector for Python Version: 3.14.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-03-19 17:48:33,117 - INFO - Connecting to GLOBAL Snowflake domain
+2025-03-19 17:48:33,117 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2025-03-19 17:48:34,253 - ERROR - Error executing Snowflake procedure AddRental(3, 25, 2): 002140 (42601): 01bb1ca2-0001-4331-0008-847200015342: SQL compilation error:
+Unknown function ADDRENTAL
+2025-03-19 17:48:34,253 - INFO - Executing SQL Server procedure: AddRental @customer_id = 3, @inventory_id = 25, @staff_id = 2
+2025-03-19 17:48:35,608 - ERROR - Error executing SQL Server procedure AddRental @customer_id = 3, @inventory_id = 25, @staff_id = 2: ('23000', "[23000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot insert explicit value for identity column in table 'rental' when IDENTITY_INSERT is set to OFF. (544) (SQLExecDirectW); [23000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The statement has been terminated. (3621)")
+2025-03-19 17:48:35,610 - INFO - Comparing results...
+2025-03-19 17:48:35,612 - INFO - The results match perfectly!
+2025-03-19 17:48:35,612 - INFO - Executed Procedure: AddRental(3, 25, 2) | AddRental @customer_id = 3, @inventory_id = 25, @staff_id = 2 | Different
+2025-03-19 17:48:35,612 - INFO - Number of Rows: 0 | 0 | Same
+2025-03-19 17:48:35,613 - INFO - Column Names:  |  | Same
+2025-03-19 17:48:35,613 - INFO - Data Types:  |  | Same
+2025-03-19 17:48:35,613 - INFO - Data Comparison: Exact Match | Exact Match | Same
+2025-03-19 17:48:35,635 - INFO - HTML report generated: Dq_analysis/data_quality_report.html
+2025-03-19 17:48:35,635 - INFO - 
+\u2705 Pipeline execution completed successfully!
+2025-03-19 17:48:35,635 - INFO - closed
+2025-03-19 17:48:35,635 - INFO - No async queries seem to be running, deleting session
+2025-03-19 17:52:35,357 - INFO - \U0001f680 Starting the migration pipeline...
+
+2025-03-19 17:52:35,357 - INFO - \U0001f539 Performing quality testing on database procedures...
+2025-03-19 17:52:35,357 - INFO - Executing Snowflake procedure: GetCustomerRentals(5)
+2025-03-19 17:52:35,358 - INFO - Snowflake Connector for Python Version: 3.14.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-03-19 17:52:35,358 - INFO - Connecting to GLOBAL Snowflake domain
+2025-03-19 17:52:35,358 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2025-03-19 17:52:36,944 - INFO - closed
+2025-03-19 17:52:37,008 - INFO - No async queries seem to be running, deleting session
+2025-03-19 17:52:37,106 - INFO - Executing SQL Server procedure: GetCustomerRentals @customer_id = 5
+2025-03-19 17:52:41,873 - INFO - Comparing results...
+2025-03-19 17:52:41,876 - INFO - The results match perfectly!
+2025-03-19 17:52:41,876 - INFO - Executed Procedure: GetCustomerRentals(5) | GetCustomerRentals @customer_id = 5 | Different
+2025-03-19 17:52:41,876 - INFO - Number of Rows: 38 | 38 | Same
+2025-03-19 17:52:41,876 - INFO - Column Names: rental_id, rental_date, return_date, film_title | rental_id, rental_date, return_date, film_title | Same
+2025-03-19 17:52:41,876 - INFO - Data Types: rental_id: int64, film_title: object, rental_date: datetime64[ns], return_date: datetime64[ns] | rental_id: int64, film_title: object, rental_date: datetime64[ns], return_date: datetime64[ns] | Same
+2025-03-19 17:52:41,876 - INFO - Data Comparison: Exact Match | Exact Match | Same
+2025-03-19 17:52:41,876 - INFO - Executing Snowflake procedure: GetInactiveCustomers()
+2025-03-19 17:52:41,876 - INFO - Snowflake Connector for Python Version: 3.14.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-03-19 17:52:41,877 - INFO - Connecting to GLOBAL Snowflake domain
+2025-03-19 17:52:41,877 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2025-03-19 17:52:42,851 - INFO - closed
+2025-03-19 17:52:42,950 - INFO - No async queries seem to be running, deleting session
+2025-03-19 17:52:43,013 - INFO - Executing SQL Server procedure: GetInactiveCustomers
+2025-03-19 17:52:44,724 - INFO - Comparing results...
+2025-03-19 17:52:44,728 - ERROR - The results do not match!
+2025-03-19 17:52:44,754 - INFO - Number of differences detected: 99
+2025-03-19 17:52:44,754 - INFO - Executed Procedure: GetInactiveCustomers() | GetInactiveCustomers | Different
+2025-03-19 17:52:44,754 - INFO - Number of Rows: 632 | 599 | Different
+2025-03-19 17:52:44,754 - INFO - Column Names: last_rental_date, first_name, customer_id, last_name | last_rental_date, first_name, customer_id, last_name | Same
+2025-03-19 17:52:44,754 - INFO - Data Types: customer_id: int64, first_name: object, last_name: object, last_rental_date: datetime64[ns] | customer_id: int64, first_name: object, last_name: object, last_rental_date: datetime64[ns] | Same
+2025-03-19 17:52:44,754 - INFO - Data Comparison: 99 | 99 | Data mismatch detected
+2025-03-19 17:52:44,755 - INFO - Executing Snowflake procedure: GetStoreRevenue(1)
+2025-03-19 17:52:44,755 - INFO - Snowflake Connector for Python Version: 3.14.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-03-19 17:52:44,755 - INFO - Connecting to GLOBAL Snowflake domain
+2025-03-19 17:52:44,755 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2025-03-19 17:52:45,425 - INFO - closed
+2025-03-19 17:52:45,575 - INFO - No async queries seem to be running, deleting session
+2025-03-19 17:52:45,743 - INFO - Executing SQL Server procedure: GetStoreRevenue @store_id = 1
+2025-03-19 17:52:46,867 - INFO - Comparing results...
+2025-03-19 17:52:46,871 - ERROR - The results do not match!
+2025-03-19 17:52:46,883 - INFO - Number of differences detected: 2
+2025-03-19 17:52:46,883 - INFO - Executed Procedure: GetStoreRevenue(1) | GetStoreRevenue @store_id = 1 | Different
+2025-03-19 17:52:46,883 - INFO - Number of Rows: 1 | 1 | Same
+2025-03-19 17:52:46,883 - INFO - Column Names: store_id, total_revenue | store_id, total_revenue | Same
+2025-03-19 17:52:46,883 - INFO - Data Types: store_id: int64, total_revenue: float64 | store_id: int64, total_revenue: object | Different
+2025-03-19 17:52:46,883 - INFO - Data Comparison: 2 | 2 | Data mismatch detected
+2025-03-19 17:52:46,883 - INFO - Executing Snowflake procedure: GetTopRentedMovies()
+2025-03-19 17:52:46,884 - INFO - Snowflake Connector for Python Version: 3.14.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-03-19 17:52:46,884 - INFO - Connecting to GLOBAL Snowflake domain
+2025-03-19 17:52:46,884 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2025-03-19 17:52:48,453 - INFO - closed
+2025-03-19 17:52:48,613 - INFO - No async queries seem to be running, deleting session
+2025-03-19 17:52:48,661 - INFO - Executing SQL Server procedure: GetTopRentedMovies
+2025-03-19 17:52:49,870 - INFO - Comparing results...
+2025-03-19 17:52:49,875 - ERROR - The results do not match!
+2025-03-19 17:52:49,893 - INFO - Number of differences detected: 6
+2025-03-19 17:52:49,893 - INFO - Executed Procedure: GetTopRentedMovies() | GetTopRentedMovies | Different
+2025-03-19 17:52:49,893 - INFO - Number of Rows: 10 | 10 | Same
+2025-03-19 17:52:49,893 - INFO - Column Names: total_rentals, film_id, title | total_rentals, film_id, title | Same
+2025-03-19 17:52:49,893 - INFO - Data Types: film_id: int64, title: object, total_rentals: int64 | film_id: int64, title: object, total_rentals: int64 | Same
+2025-03-19 17:52:49,893 - INFO - Data Comparison: 6 | 6 | Data mismatch detected
+2025-03-19 17:52:49,894 - INFO - Executing Snowflake procedure: AddRental(3, 25, 2)
+2025-03-19 17:52:49,894 - INFO - Snowflake Connector for Python Version: 3.14.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-03-19 17:52:49,894 - INFO - Connecting to GLOBAL Snowflake domain
+2025-03-19 17:52:49,894 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2025-03-19 17:52:50,616 - ERROR - Error executing Snowflake procedure AddRental(3, 25, 2): 002140 (42601): 01bb1ca6-0001-43c0-0008-8472000134b6: SQL compilation error:
+Unknown function ADDRENTAL
+2025-03-19 17:52:50,617 - INFO - Executing SQL Server procedure: AddRental @customer_id = 3, @inventory_id = 25, @staff_id = 2
+2025-03-19 17:52:51,194 - ERROR - Error executing SQL Server procedure AddRental @customer_id = 3, @inventory_id = 25, @staff_id = 2: ('23000', "[23000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot insert explicit value for identity column in table 'rental' when IDENTITY_INSERT is set to OFF. (544) (SQLExecDirectW); [23000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The statement has been terminated. (3621)")
+2025-03-19 17:52:51,194 - INFO - Comparing results...
+2025-03-19 17:52:51,195 - INFO - The results match perfectly!
+2025-03-19 17:52:51,195 - INFO - Executed Procedure: AddRental(3, 25, 2) | AddRental @customer_id = 3, @inventory_id = 25, @staff_id = 2 | Different
+2025-03-19 17:52:51,195 - INFO - Number of Rows: 0 | 0 | Same
+2025-03-19 17:52:51,195 - INFO - Column Names:  |  | Same
+2025-03-19 17:52:51,195 - INFO - Data Types:  |  | Same
+2025-03-19 17:52:51,195 - INFO - Data Comparison: Exact Match | Exact Match | Same
+2025-03-19 17:52:51,207 - INFO - HTML report generated: Dq_analysis/data_quality_report.html
+2025-03-19 17:52:51,207 - INFO - 
+\u2705 Pipeline execution completed successfully!
+2025-03-19 17:52:51,208 - INFO - closed
+2025-03-19 17:52:51,208 - INFO - No async queries seem to be running, deleting session
+2025-03-19 17:56:56,404 - INFO - \U0001f680 Starting the migration pipeline...
+
+2025-03-19 17:56:56,404 - INFO - \U0001f539 Performing quality testing on database procedures...
+2025-03-19 17:56:56,404 - INFO - Executing Snowflake procedure: GetCustomerRentals(5)
+2025-03-19 17:56:56,405 - INFO - Snowflake Connector for Python Version: 3.14.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-03-19 17:56:56,405 - INFO - Connecting to GLOBAL Snowflake domain
+2025-03-19 17:56:56,405 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2025-03-19 17:56:57,775 - INFO - closed
+2025-03-19 17:56:57,818 - INFO - No async queries seem to be running, deleting session
+2025-03-19 17:56:57,952 - INFO - Executing SQL Server procedure: GetCustomerRentals @customer_id = 5
+2025-03-19 17:57:01,889 - INFO - Comparing results...
+2025-03-19 17:57:01,897 - INFO - The results match perfectly!
+2025-03-19 17:57:01,898 - INFO - Executed Procedure: GetCustomerRentals(5) | GetCustomerRentals @customer_id = 5 | Different
+2025-03-19 17:57:01,898 - INFO - Number of Rows: 38 | 38 | Same
+2025-03-19 17:57:01,898 - INFO - Column Names: rental_id, rental_date, return_date, film_title | rental_id, rental_date, return_date, film_title | Same
+2025-03-19 17:57:01,898 - INFO - Data Types: rental_id: int64, film_title: object, rental_date: datetime64[ns], return_date: datetime64[ns] | rental_id: int64, film_title: object, rental_date: datetime64[ns], return_date: datetime64[ns] | Same
+2025-03-19 17:57:01,898 - INFO - Data Comparison: Exact Match | Exact Match | Same
+2025-03-19 17:57:01,899 - INFO - Executing Snowflake procedure: GetInactiveCustomers()
+2025-03-19 17:57:01,899 - INFO - Snowflake Connector for Python Version: 3.14.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-03-19 17:57:01,900 - INFO - Connecting to GLOBAL Snowflake domain
+2025-03-19 17:57:01,900 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2025-03-19 17:57:03,674 - INFO - closed
+2025-03-19 17:57:03,840 - INFO - No async queries seem to be running, deleting session
+2025-03-19 17:57:03,942 - INFO - Executing SQL Server procedure: GetInactiveCustomers
+2025-03-19 17:57:05,204 - INFO - Comparing results...
+2025-03-19 17:57:05,208 - ERROR - The results do not match!
+2025-03-19 17:57:05,238 - INFO - Number of differences detected: 99
+2025-03-19 17:57:05,238 - INFO - Executed Procedure: GetInactiveCustomers() | GetInactiveCustomers | Different
+2025-03-19 17:57:05,239 - INFO - Number of Rows: 632 | 599 | Different
+2025-03-19 17:57:05,239 - INFO - Column Names: last_name, first_name, customer_id, last_rental_date | last_name, first_name, customer_id, last_rental_date | Same
+2025-03-19 17:57:05,239 - INFO - Data Types: customer_id: int64, first_name: object, last_name: object, last_rental_date: datetime64[ns] | customer_id: int64, first_name: object, last_name: object, last_rental_date: datetime64[ns] | Same
+2025-03-19 17:57:05,239 - INFO - Data Comparison: 99 | 99 | Data mismatch detected
+2025-03-19 17:57:05,239 - INFO - Executing Snowflake procedure: GetStoreRevenue(1)
+2025-03-19 17:57:05,239 - INFO - Snowflake Connector for Python Version: 3.14.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-03-19 17:57:05,240 - INFO - Connecting to GLOBAL Snowflake domain
+2025-03-19 17:57:05,240 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2025-03-19 17:57:05,899 - INFO - closed
+2025-03-19 17:57:06,014 - INFO - No async queries seem to be running, deleting session
+2025-03-19 17:57:06,090 - INFO - Executing SQL Server procedure: GetStoreRevenue @store_id = 1
+2025-03-19 17:57:07,049 - INFO - Comparing results...
+2025-03-19 17:57:07,050 - ERROR - The results do not match!
+2025-03-19 17:57:07,056 - INFO - Number of differences detected: 2
+2025-03-19 17:57:07,056 - INFO - Executed Procedure: GetStoreRevenue(1) | GetStoreRevenue @store_id = 1 | Different
+2025-03-19 17:57:07,056 - INFO - Number of Rows: 1 | 1 | Same
+2025-03-19 17:57:07,056 - INFO - Column Names: store_id, total_revenue | store_id, total_revenue | Same
+2025-03-19 17:57:07,056 - INFO - Data Types: store_id: int64, total_revenue: float64 | store_id: int64, total_revenue: object | Different
+2025-03-19 17:57:07,056 - INFO - Data Comparison: 2 | 2 | Data mismatch detected
+2025-03-19 17:57:07,056 - INFO - Executing Snowflake procedure: GetTopRentedMovies()
+2025-03-19 17:57:07,056 - INFO - Snowflake Connector for Python Version: 3.14.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-03-19 17:57:07,056 - INFO - Connecting to GLOBAL Snowflake domain
+2025-03-19 17:57:07,056 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2025-03-19 17:57:08,360 - INFO - closed
+2025-03-19 17:57:08,439 - INFO - No async queries seem to be running, deleting session
+2025-03-19 17:57:08,566 - INFO - Executing SQL Server procedure: GetTopRentedMovies
+2025-03-19 17:57:09,750 - INFO - Comparing results...
+2025-03-19 17:57:09,753 - ERROR - The results do not match!
+2025-03-19 17:57:09,761 - INFO - Number of differences detected: 6
+2025-03-19 17:57:09,761 - INFO - Executed Procedure: GetTopRentedMovies() | GetTopRentedMovies | Different
+2025-03-19 17:57:09,761 - INFO - Number of Rows: 10 | 10 | Same
+2025-03-19 17:57:09,761 - INFO - Column Names: total_rentals, film_id, title | total_rentals, film_id, title | Same
+2025-03-19 17:57:09,761 - INFO - Data Types: film_id: int64, title: object, total_rentals: int64 | film_id: int64, title: object, total_rentals: int64 | Same
+2025-03-19 17:57:09,761 - INFO - Data Comparison: 6 | 6 | Data mismatch detected
+2025-03-19 17:57:09,761 - INFO - Executing Snowflake procedure: AddRental(3, 25, 2)
+2025-03-19 17:57:09,761 - INFO - Snowflake Connector for Python Version: 3.14.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-03-19 17:57:09,761 - INFO - Connecting to GLOBAL Snowflake domain
+2025-03-19 17:57:09,761 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2025-03-19 17:57:10,290 - ERROR - Error executing Snowflake procedure AddRental(3, 25, 2): 002140 (42601): 01bb1caa-0001-4331-0008-8472000153ae: SQL compilation error:
+Unknown function ADDRENTAL
+2025-03-19 17:57:10,290 - INFO - Executing SQL Server procedure: AddRental @customer_id = 3, @inventory_id = 25, @staff_id = 2
+2025-03-19 17:57:10,821 - ERROR - Error executing SQL Server procedure AddRental @customer_id = 3, @inventory_id = 25, @staff_id = 2: ('23000', "[23000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot insert explicit value for identity column in table 'rental' when IDENTITY_INSERT is set to OFF. (544) (SQLExecDirectW); [23000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The statement has been terminated. (3621)")
+2025-03-19 17:57:10,821 - INFO - Comparing results...
+2025-03-19 17:57:10,822 - INFO - The results match perfectly!
+2025-03-19 17:57:10,822 - INFO - Executed Procedure: AddRental(3, 25, 2) | AddRental @customer_id = 3, @inventory_id = 25, @staff_id = 2 | Different
+2025-03-19 17:57:10,822 - INFO - Number of Rows: 0 | 0 | Same
+2025-03-19 17:57:10,822 - INFO - Column Names:  |  | Same
+2025-03-19 17:57:10,822 - INFO - Data Types:  |  | Same
+2025-03-19 17:57:10,822 - INFO - Data Comparison: Exact Match | Exact Match | Same
+2025-03-19 17:57:10,825 - INFO - HTML report generated: Dq_analysis/data_quality_report.html
+2025-03-19 17:57:10,825 - INFO - 
+\u2705 Pipeline execution completed successfully!
+2025-03-19 17:57:10,825 - INFO - closed
+2025-03-19 17:57:10,825 - INFO - No async queries seem to be running, deleting session
+2025-03-19 17:59:11,616 - INFO - \U0001f680 Starting the migration pipeline...
+
+2025-03-19 17:59:11,616 - INFO - \U0001f539 Performing quality testing on database procedures...
+2025-03-19 17:59:11,616 - INFO - Executing Snowflake procedure: GetCustomerRentals(5)
+2025-03-19 17:59:11,616 - INFO - Snowflake Connector for Python Version: 3.14.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-03-19 17:59:11,617 - INFO - Connecting to GLOBAL Snowflake domain
+2025-03-19 17:59:11,617 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2025-03-19 17:59:14,607 - INFO - closed
+2025-03-19 17:59:14,690 - INFO - No async queries seem to be running, deleting session
+2025-03-19 17:59:14,784 - INFO - Executing SQL Server procedure: GetCustomerRentals @customer_id = 5
+2025-03-19 17:59:18,928 - INFO - Comparing results...
+2025-03-19 17:59:18,932 - INFO - The results match perfectly!
+2025-03-19 17:59:18,932 - INFO - Executed Procedure: GetCustomerRentals(5) | GetCustomerRentals @customer_id = 5 | Different
+2025-03-19 17:59:18,933 - INFO - Number of Rows: 38 | 38 | Same
+2025-03-19 17:59:18,933 - INFO - Column Names: return_date, rental_date, rental_id, film_title | return_date, rental_date, rental_id, film_title | Same
+2025-03-19 17:59:18,933 - INFO - Data Types: rental_id: int64, film_title: object, rental_date: datetime64[ns], return_date: datetime64[ns] | rental_id: int64, film_title: object, rental_date: datetime64[ns], return_date: datetime64[ns] | Same
+2025-03-19 17:59:18,933 - INFO - Data Comparison: Exact Match | Exact Match | Same
+2025-03-19 17:59:18,933 - INFO - Executing Snowflake procedure: GetInactiveCustomers()
+2025-03-19 17:59:18,933 - INFO - Snowflake Connector for Python Version: 3.14.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-03-19 17:59:18,934 - INFO - Connecting to GLOBAL Snowflake domain
+2025-03-19 17:59:18,934 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2025-03-19 17:59:19,813 - INFO - closed
+2025-03-19 17:59:19,962 - INFO - No async queries seem to be running, deleting session
+2025-03-19 17:59:20,022 - INFO - Executing SQL Server procedure: GetInactiveCustomers
+2025-03-19 17:59:21,087 - INFO - Comparing results...
+2025-03-19 17:59:21,092 - ERROR - The results do not match!
+2025-03-19 17:59:21,114 - INFO - Number of differences detected: 99
+2025-03-19 17:59:21,114 - INFO - Executed Procedure: GetInactiveCustomers() | GetInactiveCustomers | Different
+2025-03-19 17:59:21,114 - INFO - Number of Rows: 632 | 599 | Different
+2025-03-19 17:59:21,114 - INFO - Column Names: customer_id, first_name, last_name, last_rental_date | customer_id, first_name, last_name, last_rental_date | Same
+2025-03-19 17:59:21,114 - INFO - Data Types: customer_id: int64, first_name: object, last_name: object, last_rental_date: datetime64[ns] | customer_id: int64, first_name: object, last_name: object, last_rental_date: datetime64[ns] | Same
+2025-03-19 17:59:21,114 - INFO - Data Comparison: 99 | 99 | Data mismatch detected
+2025-03-19 17:59:21,115 - INFO - Executing Snowflake procedure: GetStoreRevenue(1)
+2025-03-19 17:59:21,115 - INFO - Snowflake Connector for Python Version: 3.14.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-03-19 17:59:21,115 - INFO - Connecting to GLOBAL Snowflake domain
+2025-03-19 17:59:21,115 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2025-03-19 17:59:22,072 - INFO - closed
+2025-03-19 17:59:22,220 - INFO - No async queries seem to be running, deleting session
+2025-03-19 17:59:22,324 - INFO - Executing SQL Server procedure: GetStoreRevenue @store_id = 1
+2025-03-19 17:59:23,334 - INFO - Comparing results...
+2025-03-19 17:59:23,338 - ERROR - The results do not match!
+2025-03-19 17:59:23,352 - INFO - Number of differences detected: 2
+2025-03-19 17:59:23,352 - INFO - Executed Procedure: GetStoreRevenue(1) | GetStoreRevenue @store_id = 1 | Different
+2025-03-19 17:59:23,352 - INFO - Number of Rows: 1 | 1 | Same
+2025-03-19 17:59:23,353 - INFO - Column Names: total_revenue, store_id | total_revenue, store_id | Same
+2025-03-19 17:59:23,353 - INFO - Data Types: store_id: int64, total_revenue: float64 | store_id: int64, total_revenue: object | Different
+2025-03-19 17:59:23,353 - INFO - Data Comparison: 2 | 2 | Data mismatch detected
+2025-03-19 17:59:23,353 - INFO - Executing Snowflake procedure: GetTopRentedMovies()
+2025-03-19 17:59:23,353 - INFO - Snowflake Connector for Python Version: 3.14.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-03-19 17:59:23,353 - INFO - Connecting to GLOBAL Snowflake domain
+2025-03-19 17:59:23,353 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2025-03-19 17:59:24,144 - INFO - closed
+2025-03-19 17:59:24,601 - INFO - No async queries seem to be running, deleting session
+2025-03-19 17:59:24,766 - INFO - Executing SQL Server procedure: GetTopRentedMovies
+2025-03-19 17:59:26,822 - INFO - Comparing results...
+2025-03-19 17:59:26,828 - ERROR - The results do not match!
+2025-03-19 17:59:26,847 - INFO - Number of differences detected: 6
+2025-03-19 17:59:26,847 - INFO - Executed Procedure: GetTopRentedMovies() | GetTopRentedMovies | Different
+2025-03-19 17:59:26,847 - INFO - Number of Rows: 10 | 10 | Same
+2025-03-19 17:59:26,847 - INFO - Column Names: total_rentals, title, film_id | total_rentals, title, film_id | Same
+2025-03-19 17:59:26,848 - INFO - Data Types: film_id: int64, title: object, total_rentals: int64 | film_id: int64, title: object, total_rentals: int64 | Same
+2025-03-19 17:59:26,848 - INFO - Data Comparison: 6 | 6 | Data mismatch detected
+2025-03-19 17:59:26,848 - INFO - Executing Snowflake procedure: AddRental(3, 25, 2)
+2025-03-19 17:59:26,848 - INFO - Snowflake Connector for Python Version: 3.14.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-03-19 17:59:26,849 - INFO - Connecting to GLOBAL Snowflake domain
+2025-03-19 17:59:26,849 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2025-03-19 17:59:27,811 - ERROR - Error executing Snowflake procedure AddRental(3, 25, 2): 002140 (42601): 01bb1cac-0001-4331-0008-8472000153da: SQL compilation error:
+Unknown function ADDRENTAL
+2025-03-19 17:59:27,812 - INFO - Executing SQL Server procedure: AddRental @customer_id = 3, @inventory_id = 25, @staff_id = 2
+2025-03-19 17:59:28,670 - ERROR - Error executing SQL Server procedure AddRental @customer_id = 3, @inventory_id = 25, @staff_id = 2: ('23000', "[23000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot insert explicit value for identity column in table 'rental' when IDENTITY_INSERT is set to OFF. (544) (SQLExecDirectW); [23000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The statement has been terminated. (3621)")
+2025-03-19 17:59:28,671 - INFO - Comparing results...
+2025-03-19 17:59:28,671 - INFO - The results match perfectly!
+2025-03-19 17:59:28,672 - INFO - Executed Procedure: AddRental(3, 25, 2) | AddRental @customer_id = 3, @inventory_id = 25, @staff_id = 2 | Different
+2025-03-19 17:59:28,672 - INFO - Number of Rows: 0 | 0 | Same
+2025-03-19 17:59:28,672 - INFO - Column Names:  |  | Same
+2025-03-19 17:59:28,672 - INFO - Data Types:  |  | Same
+2025-03-19 17:59:28,672 - INFO - Data Comparison: Exact Match | Exact Match | Same
+2025-03-19 17:59:28,679 - INFO - HTML report generated: Dq_analysis/data_quality_report.html
+2025-03-19 17:59:28,679 - INFO - 
+\u2705 Pipeline execution completed successfully!
+2025-03-19 17:59:28,680 - INFO - closed
+2025-03-19 17:59:28,680 - INFO - No async queries seem to be running, deleting session
+2025-03-19 18:03:35,052 - INFO - \U0001f680 Starting the migration pipeline...
+
+2025-03-19 18:03:35,052 - INFO - \U0001f539 Performing quality testing on database procedures...
+2025-03-19 18:03:35,052 - INFO - Executing Snowflake procedure: GetCustomerRentals(5)
+2025-03-19 18:03:35,052 - INFO - Snowflake Connector for Python Version: 3.14.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-03-19 18:03:35,053 - INFO - Connecting to GLOBAL Snowflake domain
+2025-03-19 18:03:35,053 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2025-03-19 18:03:36,625 - INFO - closed
+2025-03-19 18:03:36,771 - INFO - No async queries seem to be running, deleting session
+2025-03-19 18:03:36,878 - INFO - Executing SQL Server procedure: GetCustomerRentals @customer_id = 5
+2025-03-19 18:03:40,047 - INFO - Comparing results...
+2025-03-19 18:03:40,054 - INFO - The results match perfectly!
+2025-03-19 18:03:40,054 - INFO - Executed Procedure: GetCustomerRentals(5) | GetCustomerRentals @customer_id = 5 | Different
+2025-03-19 18:03:40,054 - INFO - Number of Rows: 38 | 38 | Same
+2025-03-19 18:03:40,054 - INFO - Column Names: return_date, rental_date, film_title, rental_id | return_date, rental_date, film_title, rental_id | Same
+2025-03-19 18:03:40,054 - INFO - Data Types: rental_id: int64, film_title: object, rental_date: datetime64[ns], return_date: datetime64[ns] | rental_id: int64, film_title: object, rental_date: datetime64[ns], return_date: datetime64[ns] | Same
+2025-03-19 18:03:40,054 - INFO - Data Comparison: Exact Match | Exact Match | Same
+2025-03-19 18:03:40,054 - INFO - Executing Snowflake procedure: GetInactiveCustomers()
+2025-03-19 18:03:40,055 - INFO - Snowflake Connector for Python Version: 3.14.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-03-19 18:03:40,055 - INFO - Connecting to GLOBAL Snowflake domain
+2025-03-19 18:03:40,055 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2025-03-19 18:03:40,825 - INFO - closed
+2025-03-19 18:03:40,853 - INFO - No async queries seem to be running, deleting session
+2025-03-19 18:03:40,914 - INFO - Executing SQL Server procedure: GetInactiveCustomers
+2025-03-19 18:03:41,760 - INFO - Comparing results...
+2025-03-19 18:03:41,762 - ERROR - The results do not match!
+2025-03-19 18:03:41,771 - INFO - Number of differences detected: 99
+2025-03-19 18:03:41,771 - INFO - Executed Procedure: GetInactiveCustomers() | GetInactiveCustomers | Different
+2025-03-19 18:03:41,771 - INFO - Number of Rows: 632 | 599 | Different
+2025-03-19 18:03:41,771 - INFO - Column Names: last_rental_date, last_name, customer_id, first_name | last_rental_date, last_name, customer_id, first_name | Same
+2025-03-19 18:03:41,772 - INFO - Data Types: customer_id: int64, first_name: object, last_name: object, last_rental_date: datetime64[ns] | customer_id: int64, first_name: object, last_name: object, last_rental_date: datetime64[ns] | Same
+2025-03-19 18:03:41,772 - INFO - Data Comparison: 99 | 99 | Data mismatch detected
+2025-03-19 18:03:41,772 - INFO - Executing Snowflake procedure: GetStoreRevenue(1)
+2025-03-19 18:03:41,772 - INFO - Snowflake Connector for Python Version: 3.14.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-03-19 18:03:41,773 - INFO - Connecting to GLOBAL Snowflake domain
+2025-03-19 18:03:41,773 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2025-03-19 18:03:42,423 - INFO - closed
+2025-03-19 18:03:42,496 - INFO - No async queries seem to be running, deleting session
+2025-03-19 18:03:42,581 - INFO - Executing SQL Server procedure: GetStoreRevenue @store_id = 1
+2025-03-19 18:03:43,729 - INFO - Comparing results...
+2025-03-19 18:03:43,740 - ERROR - The results do not match!
+2025-03-19 18:03:43,750 - INFO - Number of differences detected: 2
+2025-03-19 18:03:43,750 - INFO - Executed Procedure: GetStoreRevenue(1) | GetStoreRevenue @store_id = 1 | Different
+2025-03-19 18:03:43,750 - INFO - Number of Rows: 1 | 1 | Same
+2025-03-19 18:03:43,750 - INFO - Column Names: store_id, total_revenue | store_id, total_revenue | Same
+2025-03-19 18:03:43,750 - INFO - Data Types: store_id: int64, total_revenue: float64 | store_id: int64, total_revenue: object | Different
+2025-03-19 18:03:43,750 - INFO - Data Comparison: 2 | 2 | Data mismatch detected
+2025-03-19 18:03:43,751 - INFO - Executing Snowflake procedure: GetTopRentedMovies()
+2025-03-19 18:03:43,751 - INFO - Snowflake Connector for Python Version: 3.14.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-03-19 18:03:43,751 - INFO - Connecting to GLOBAL Snowflake domain
+2025-03-19 18:03:43,751 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2025-03-19 18:03:44,606 - INFO - closed
+2025-03-19 18:03:44,650 - INFO - No async queries seem to be running, deleting session
+2025-03-19 18:03:44,724 - INFO - Executing SQL Server procedure: GetTopRentedMovies
+2025-03-19 18:03:45,641 - INFO - Comparing results...
+2025-03-19 18:03:45,643 - ERROR - The results do not match!
+2025-03-19 18:03:45,651 - INFO - Number of differences detected: 6
+2025-03-19 18:03:45,652 - INFO - Executed Procedure: GetTopRentedMovies() | GetTopRentedMovies | Different
+2025-03-19 18:03:45,652 - INFO - Number of Rows: 10 | 10 | Same
+2025-03-19 18:03:45,652 - INFO - Column Names: title, total_rentals, film_id | title, total_rentals, film_id | Same
+2025-03-19 18:03:45,652 - INFO - Data Types: film_id: int64, title: object, total_rentals: int64 | film_id: int64, title: object, total_rentals: int64 | Same
+2025-03-19 18:03:45,652 - INFO - Data Comparison: 6 | 6 | Data mismatch detected
+2025-03-19 18:03:45,652 - INFO - Executing Snowflake procedure: AddRental(3, 25, 2)
+2025-03-19 18:03:45,652 - INFO - Snowflake Connector for Python Version: 3.14.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-03-19 18:03:45,652 - INFO - Connecting to GLOBAL Snowflake domain
+2025-03-19 18:03:45,652 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2025-03-19 18:03:45,965 - ERROR - Error executing Snowflake procedure AddRental(3, 25, 2): 002140 (42601): 01bb1cb1-0001-43c0-0008-847200013566: SQL compilation error:
+Unknown function ADDRENTAL
+2025-03-19 18:03:45,966 - INFO - Executing SQL Server procedure: AddRental @customer_id = 3, @inventory_id = 25, @staff_id = 2
+2025-03-19 18:03:46,401 - ERROR - Error executing SQL Server procedure AddRental @customer_id = 3, @inventory_id = 25, @staff_id = 2: ('23000', "[23000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot insert explicit value for identity column in table 'rental' when IDENTITY_INSERT is set to OFF. (544) (SQLExecDirectW); [23000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The statement has been terminated. (3621)")
+2025-03-19 18:03:46,402 - INFO - Comparing results...
+2025-03-19 18:03:46,404 - INFO - The results match perfectly!
+2025-03-19 18:03:46,404 - INFO - Executed Procedure: AddRental(3, 25, 2) | AddRental @customer_id = 3, @inventory_id = 25, @staff_id = 2 | Different
+2025-03-19 18:03:46,404 - INFO - Number of Rows: 0 | 0 | Same
+2025-03-19 18:03:46,404 - INFO - Column Names:  |  | Same
+2025-03-19 18:03:46,405 - INFO - Data Types:  |  | Same
+2025-03-19 18:03:46,405 - INFO - Data Comparison: Exact Match | Exact Match | Same
+2025-03-19 18:03:46,412 - INFO - HTML report generated: Dq_analysis/data_quality_report.html
+2025-03-19 18:03:46,412 - INFO - 
+\u2705 Pipeline execution completed successfully!
+2025-03-19 18:03:46,412 - INFO - closed
+2025-03-19 18:03:46,412 - INFO - No async queries seem to be running, deleting session
+2025-03-19 18:37:16,581 - INFO - \U0001f680 Starting the migration pipeline...
+
+2025-03-19 18:37:16,581 - INFO - \U0001f539 Performing quality testing on database procedures...
+2025-03-19 18:37:16,581 - INFO - Executing Snowflake procedure: GetCustomerRentals(5)
+2025-03-19 18:37:16,581 - INFO - Snowflake Connector for Python Version: 3.14.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-03-19 18:37:16,581 - INFO - Connecting to GLOBAL Snowflake domain
+2025-03-19 18:37:16,581 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2025-03-19 18:37:19,074 - INFO - closed
+2025-03-19 18:37:19,127 - INFO - No async queries seem to be running, deleting session
+2025-03-19 18:37:19,205 - INFO - Executing SQL Server procedure: GetCustomerRentals @customer_id = 5
+2025-03-19 18:37:22,459 - INFO - Comparing results...
+2025-03-19 18:37:22,475 - INFO - The results match perfectly!
+2025-03-19 18:37:22,475 - INFO - Executed Procedure: GetCustomerRentals(5) | GetCustomerRentals @customer_id = 5 | Different
+2025-03-19 18:37:22,475 - INFO - Number of Rows: 38 | 38 | Same
+2025-03-19 18:37:22,475 - INFO - Column Names: rental_date, rental_id, film_title, return_date | rental_date, rental_id, film_title, return_date | Same
+2025-03-19 18:37:22,475 - INFO - Data Types: rental_id: int64, film_title: object, rental_date: datetime64[ns], return_date: datetime64[ns] | rental_id: int64, film_title: object, rental_date: datetime64[ns], return_date: datetime64[ns] | Same
+2025-03-19 18:37:22,475 - INFO - Data Comparison: Exact Match | Exact Match | Same
+2025-03-19 18:37:22,475 - INFO - Executing Snowflake procedure: GetInactiveCustomers()
+2025-03-19 18:37:22,475 - INFO - Snowflake Connector for Python Version: 3.14.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-03-19 18:37:22,475 - INFO - Connecting to GLOBAL Snowflake domain
+2025-03-19 18:37:22,475 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2025-03-19 18:37:24,832 - INFO - closed
+2025-03-19 18:37:24,879 - INFO - No async queries seem to be running, deleting session
+2025-03-19 18:37:24,933 - INFO - Executing SQL Server procedure: GetInactiveCustomers
+2025-03-19 18:37:26,610 - INFO - Comparing results...
+2025-03-19 18:37:26,610 - ERROR - The results do not match!
+2025-03-19 18:37:26,641 - INFO - Number of differences detected: 99
+2025-03-19 18:37:26,641 - INFO - Executed Procedure: GetInactiveCustomers() | GetInactiveCustomers | Different
+2025-03-19 18:37:26,641 - INFO - Number of Rows: 632 | 599 | Different
+2025-03-19 18:37:26,641 - INFO - Column Names: customer_id, last_rental_date, first_name, last_name | customer_id, last_rental_date, first_name, last_name | Same
+2025-03-19 18:37:26,641 - INFO - Data Types: customer_id: int64, first_name: object, last_name: object, last_rental_date: datetime64[ns] | customer_id: int64, first_name: object, last_name: object, last_rental_date: datetime64[ns] | Same
+2025-03-19 18:37:26,641 - INFO - Data Comparison: 99 | 99 | Data mismatch detected
+2025-03-19 18:37:26,641 - INFO - HTML report generated: Dq_analysis/data_quality_report.html
+2025-03-19 18:37:26,641 - INFO - 
+\u2705 Pipeline execution completed successfully!
+2025-03-19 18:42:53,352 - INFO - \U0001f680 Starting the migration pipeline...
+
+2025-03-19 18:42:53,352 - INFO - \U0001f539 Performing quality testing on database procedures...
+2025-03-19 18:43:22,262 - INFO - \U0001f680 Starting the migration pipeline...
+
+2025-03-19 18:43:22,262 - INFO - \U0001f539 Performing quality testing on database procedures...
+2025-03-19 18:43:22,262 - INFO - Executing Snowflake procedure: GetCustomerRentals(5)
+2025-03-19 18:43:22,262 - INFO - Snowflake Connector for Python Version: 3.14.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-03-19 18:43:22,263 - INFO - Connecting to GLOBAL Snowflake domain
+2025-03-19 18:43:22,263 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2025-03-19 18:43:24,484 - INFO - closed
+2025-03-19 18:43:24,523 - INFO - No async queries seem to be running, deleting session
+2025-03-19 18:43:24,567 - INFO - Executing SQL Server procedure: GetCustomerRentals @customer_id = 5
+2025-03-19 18:43:27,899 - INFO - Comparing results...
+2025-03-19 18:43:27,907 - INFO - The results match perfectly!
+2025-03-19 18:43:27,907 - INFO - Executed Procedure: GetCustomerRentals(5) | GetCustomerRentals @customer_id = 5 | Different
+2025-03-19 18:43:27,907 - INFO - Number of Rows: 38 | 38 | Same
+2025-03-19 18:43:27,907 - INFO - Column Names: film_title, return_date, rental_id, rental_date | film_title, return_date, rental_id, rental_date | Same
+2025-03-19 18:43:27,907 - INFO - Data Types: rental_id: int64, film_title: object, rental_date: datetime64[ns], return_date: datetime64[ns] | rental_id: int64, film_title: object, rental_date: datetime64[ns], return_date: datetime64[ns] | Same
+2025-03-19 18:43:27,907 - INFO - Data Comparison: Exact Match | Exact Match | Same
+2025-03-19 18:43:27,907 - INFO - Executing Snowflake procedure: GetInactiveCustomers()
+2025-03-19 18:43:27,908 - INFO - Snowflake Connector for Python Version: 3.14.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-03-19 18:43:27,908 - INFO - Connecting to GLOBAL Snowflake domain
+2025-03-19 18:43:27,908 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2025-03-19 18:43:28,672 - INFO - closed
+2025-03-19 18:43:28,737 - INFO - No async queries seem to be running, deleting session
+2025-03-19 18:43:28,803 - INFO - Executing SQL Server procedure: GetInactiveCustomers
+2025-03-19 18:43:29,843 - INFO - Comparing results...
+2025-03-19 18:43:29,848 - ERROR - The results do not match!
+2025-03-19 18:43:29,864 - INFO - Number of differences detected: 99
+2025-03-19 18:43:29,864 - INFO - Executed Procedure: GetInactiveCustomers() | GetInactiveCustomers | Different
+2025-03-19 18:43:29,864 - INFO - Number of Rows: 632 | 599 | Different
+2025-03-19 18:43:29,864 - INFO - Column Names: last_rental_date, customer_id, first_name, last_name | last_rental_date, customer_id, first_name, last_name | Same
+2025-03-19 18:43:29,864 - INFO - Data Types: customer_id: int64, first_name: object, last_name: object, last_rental_date: datetime64[ns] | customer_id: int64, first_name: object, last_name: object, last_rental_date: datetime64[ns] | Same
+2025-03-19 18:43:29,864 - INFO - Data Comparison: 99 | 99 | Data mismatch detected
+2025-03-19 18:43:29,871 - INFO - HTML report generated: Dq_analysis/data_quality_report.html
+2025-03-19 18:43:29,871 - INFO - 
+\u2705 Pipeline execution completed successfully!
+2025-03-19 18:46:25,520 - INFO - \U0001f680 Starting the migration pipeline...
+
+2025-03-19 18:46:25,521 - INFO - \U0001f539 Performing quality testing on database procedures...
+2025-03-19 18:46:25,521 - INFO - Executing Snowflake procedure: GetCustomerRentals(5)
+2025-03-19 18:46:25,521 - INFO - Snowflake Connector for Python Version: 3.14.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-03-19 18:46:25,521 - INFO - Connecting to GLOBAL Snowflake domain
+2025-03-19 18:46:25,521 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2025-03-19 18:46:27,030 - INFO - closed
+2025-03-19 18:46:27,066 - INFO - No async queries seem to be running, deleting session
+2025-03-19 18:46:27,132 - INFO - Executing SQL Server procedure: GetCustomerRentals @customer_id = 5
+2025-03-19 18:46:31,609 - INFO - Comparing results...
+2025-03-19 18:46:31,614 - INFO - The results match perfectly!
+2025-03-19 18:46:31,614 - INFO - Executed Procedure: GetCustomerRentals(5) | GetCustomerRentals @customer_id = 5 | Different
+2025-03-19 18:46:31,614 - INFO - Number of Rows: 38 | 38 | Same
+2025-03-19 18:46:31,614 - INFO - Column Names: rental_id, rental_date, film_title, return_date | rental_id, rental_date, film_title, return_date | Same
+2025-03-19 18:46:31,614 - INFO - Data Types: rental_id: int64, film_title: object, rental_date: datetime64[ns], return_date: datetime64[ns] | rental_id: int64, film_title: object, rental_date: datetime64[ns], return_date: datetime64[ns] | Same
+2025-03-19 18:46:31,614 - INFO - Data Comparison: Exact Match | Exact Match | Same
+2025-03-19 18:46:31,614 - INFO - Executing Snowflake procedure: GetInactiveCustomers()
+2025-03-19 18:46:31,615 - INFO - Snowflake Connector for Python Version: 3.14.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-03-19 18:46:31,615 - INFO - Connecting to GLOBAL Snowflake domain
+2025-03-19 18:46:31,615 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2025-03-19 18:46:32,611 - INFO - closed
+2025-03-19 18:46:32,691 - INFO - No async queries seem to be running, deleting session
+2025-03-19 18:46:32,744 - INFO - Executing SQL Server procedure: GetInactiveCustomers
+2025-03-19 18:46:34,700 - INFO - Comparing results...
+2025-03-19 18:46:34,704 - ERROR - The results do not match!
+2025-03-19 18:46:34,728 - INFO - Number of differences detected: 99
+2025-03-19 18:46:34,728 - INFO - Executed Procedure: GetInactiveCustomers() | GetInactiveCustomers | Different
+2025-03-19 18:46:34,728 - INFO - Number of Rows: 632 | 599 | Different
+2025-03-19 18:46:34,728 - INFO - Column Names: last_name, last_rental_date, first_name, customer_id | last_name, last_rental_date, first_name, customer_id | Same
+2025-03-19 18:46:34,728 - INFO - Data Types: customer_id: int64, first_name: object, last_name: object, last_rental_date: datetime64[ns] | customer_id: int64, first_name: object, last_name: object, last_rental_date: datetime64[ns] | Same
+2025-03-19 18:46:34,728 - INFO - Data Comparison: 99 | 99 | Data mismatch detected
+2025-03-19 18:46:34,734 - INFO - HTML report generated: Dq_analysis/data_quality_report.html
+2025-03-19 18:46:34,735 - INFO - 
+\u2705 Pipeline execution completed successfully!
+2025-03-19 18:47:19,081 - INFO - \U0001f680 Starting the migration pipeline...
+
+2025-03-19 18:47:19,082 - INFO - \U0001f539 Performing quality testing on database procedures...
+2025-03-19 18:47:19,082 - INFO - Executing Snowflake procedure: GetCustomerRentals(5)
+2025-03-19 18:47:19,082 - INFO - Snowflake Connector for Python Version: 3.14.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-03-19 18:47:19,082 - INFO - Connecting to GLOBAL Snowflake domain
+2025-03-19 18:47:19,082 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2025-03-19 18:47:20,306 - INFO - closed
+2025-03-19 18:47:20,387 - INFO - No async queries seem to be running, deleting session
+2025-03-19 18:47:20,432 - INFO - Executing SQL Server procedure: GetCustomerRentals @customer_id = 5
+2025-03-19 18:47:25,735 - INFO - Comparing results...
+2025-03-19 18:47:25,744 - INFO - The results match perfectly!
+2025-03-19 18:47:25,744 - INFO - Executed Procedure: GetCustomerRentals(5) | GetCustomerRentals @customer_id = 5 | Different
+2025-03-19 18:47:25,744 - INFO - Number of Rows: 38 | 38 | Same
+2025-03-19 18:47:25,744 - INFO - Column Names: rental_id, rental_date, film_title, return_date | rental_id, rental_date, film_title, return_date | Same
+2025-03-19 18:47:25,744 - INFO - Data Types: rental_id: int64, film_title: object, rental_date: datetime64[ns], return_date: datetime64[ns] | rental_id: int64, film_title: object, rental_date: datetime64[ns], return_date: datetime64[ns] | Same
+2025-03-19 18:47:25,744 - INFO - Data Comparison: Exact Match | Exact Match | Same
+2025-03-19 18:47:25,744 - INFO - Executing Snowflake procedure: GetInactiveCustomers()
+2025-03-19 18:47:25,745 - INFO - Snowflake Connector for Python Version: 3.14.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-03-19 18:47:25,745 - INFO - Connecting to GLOBAL Snowflake domain
+2025-03-19 18:47:25,745 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2025-03-19 18:47:26,385 - INFO - closed
+2025-03-19 18:47:26,427 - INFO - No async queries seem to be running, deleting session
+2025-03-19 18:47:26,473 - INFO - Executing SQL Server procedure: GetInactiveCustomers
+2025-03-19 18:47:28,031 - INFO - Comparing results...
+2025-03-19 18:47:28,035 - ERROR - The results do not match!
+2025-03-19 18:47:28,058 - INFO - Number of differences detected: 99
+2025-03-19 18:47:28,058 - INFO - Executed Procedure: GetInactiveCustomers() | GetInactiveCustomers | Different
+2025-03-19 18:47:28,058 - INFO - Number of Rows: 632 | 599 | Different
+2025-03-19 18:47:28,058 - INFO - Column Names: first_name, last_name, customer_id, last_rental_date | first_name, last_name, customer_id, last_rental_date | Same
+2025-03-19 18:47:28,059 - INFO - Data Types: customer_id: int64, first_name: object, last_name: object, last_rental_date: datetime64[ns] | customer_id: int64, first_name: object, last_name: object, last_rental_date: datetime64[ns] | Same
+2025-03-19 18:47:28,059 - INFO - Data Comparison: 99 | 99 | Data mismatch detected
+2025-03-19 18:47:28,059 - INFO - Executing Snowflake procedure: GetStoreRevenue(1)
+2025-03-19 18:47:28,059 - INFO - Snowflake Connector for Python Version: 3.14.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-03-19 18:47:28,059 - INFO - Connecting to GLOBAL Snowflake domain
+2025-03-19 18:47:28,059 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2025-03-19 18:47:28,672 - INFO - closed
+2025-03-19 18:47:28,746 - INFO - No async queries seem to be running, deleting session
+2025-03-19 18:47:28,823 - INFO - Executing SQL Server procedure: GetStoreRevenue @store_id = 1
+2025-03-19 18:47:29,745 - INFO - Comparing results...
+2025-03-19 18:47:29,749 - ERROR - The results do not match!
+2025-03-19 18:47:29,778 - INFO - Number of differences detected: 2
+2025-03-19 18:47:29,779 - INFO - Executed Procedure: GetStoreRevenue(1) | GetStoreRevenue @store_id = 1 | Different
+2025-03-19 18:47:29,779 - INFO - Number of Rows: 1 | 1 | Same
+2025-03-19 18:47:29,779 - INFO - Column Names: store_id, total_revenue | store_id, total_revenue | Same
+2025-03-19 18:47:29,780 - INFO - Data Types: store_id: int64, total_revenue: float64 | store_id: int64, total_revenue: object | Different
+2025-03-19 18:47:29,780 - INFO - Data Comparison: 2 | 2 | Data mismatch detected
+2025-03-19 18:47:29,780 - INFO - Executing Snowflake procedure: GetTopRentedMovies()
+2025-03-19 18:47:29,781 - INFO - Snowflake Connector for Python Version: 3.14.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-03-19 18:47:29,782 - INFO - Connecting to GLOBAL Snowflake domain
+2025-03-19 18:47:29,782 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2025-03-19 18:47:30,386 - INFO - closed
+2025-03-19 18:47:30,441 - INFO - No async queries seem to be running, deleting session
+2025-03-19 18:47:30,486 - INFO - Executing SQL Server procedure: GetTopRentedMovies
+2025-03-19 18:47:31,356 - INFO - Comparing results...
+2025-03-19 18:47:31,362 - ERROR - The results do not match!
+2025-03-19 18:47:31,379 - INFO - Number of differences detected: 6
+2025-03-19 18:47:31,379 - INFO - Executed Procedure: GetTopRentedMovies() | GetTopRentedMovies | Different
+2025-03-19 18:47:31,379 - INFO - Number of Rows: 10 | 10 | Same
+2025-03-19 18:47:31,380 - INFO - Column Names: film_id, total_rentals, title | film_id, total_rentals, title | Same
+2025-03-19 18:47:31,380 - INFO - Data Types: film_id: int64, title: object, total_rentals: int64 | film_id: int64, title: object, total_rentals: int64 | Same
+2025-03-19 18:47:31,380 - INFO - Data Comparison: 6 | 6 | Data mismatch detected
+2025-03-19 18:47:31,380 - INFO - Executing Snowflake procedure: AddRental(3, 25, 2)
+2025-03-19 18:47:31,381 - INFO - Snowflake Connector for Python Version: 3.14.0, Python Version: 3.12.8, Platform: Windows-10-10.0.19045-SP0
+2025-03-19 18:47:31,381 - INFO - Connecting to GLOBAL Snowflake domain
+2025-03-19 18:47:31,381 - INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2025-03-19 18:47:32,064 - ERROR - Error executing Snowflake procedure AddRental(3, 25, 2): 002140 (42601): 01bb1cdd-0001-43c0-0008-84720001357a: SQL compilation error:
+Unknown function ADDRENTAL
+2025-03-19 18:47:32,066 - INFO - Executing SQL Server procedure: AddRental @customer_id = 3, @inventory_id = 25, @staff_id = 2
+2025-03-19 18:47:32,525 - ERROR - Error executing SQL Server procedure AddRental @customer_id = 3, @inventory_id = 25, @staff_id = 2: ('23000', "[23000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot insert explicit value for identity column in table 'rental' when IDENTITY_INSERT is set to OFF. (544) (SQLExecDirectW); [23000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The statement has been terminated. (3621)")
+2025-03-19 18:47:32,527 - INFO - Comparing results...
+2025-03-19 18:47:32,529 - INFO - The results match perfectly!
+2025-03-19 18:47:32,530 - INFO - Executed Procedure: AddRental(3, 25, 2) | AddRental @customer_id = 3, @inventory_id = 25, @staff_id = 2 | Different
+2025-03-19 18:47:32,530 - INFO - Number of Rows: 0 | 0 | Same
+2025-03-19 18:47:32,530 - INFO - Column Names:  |  | Same
+2025-03-19 18:47:32,530 - INFO - Data Types:  |  | Same
+2025-03-19 18:47:32,531 - INFO - Data Comparison: Exact Match | Exact Match | Same
+2025-03-19 18:47:32,540 - INFO - HTML report generated: Dq_analysis/data_quality_report.html
+2025-03-19 18:47:32,540 - INFO - 
+\u2705 Pipeline execution completed successfully!
+2025-03-19 18:47:32,541 - INFO - closed
+2025-03-19 18:47:32,541 - INFO - No async queries seem to be running, deleting session

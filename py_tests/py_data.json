@@ -1,0 +1,23 @@
+[
+    {
+      "query": "AddRental(3,25,2)",
+      "input_file": "processed_output/processed_dbo_AddRental.sql"
+    },
+    {
+      "query": "GetStoreRevenue(1)",
+      "input_file": "processed_output/processed_dbo_GetStoreRevenue.sql"
+    },
+    {
+      "query": "GetTopRentedMovies()",
+      "input_file": "processed_output/processed_dbo_GetTopRentedMovies.sql"
+    },
+    {
+      "query": "GetInactiveCustomers()",
+      "input_file": "processed_output/processed_dbo_GetInactiveCustomers.sql"
+    },
+    {
+      "query": "GetCustomerRentals(5)",
+      "input_file": "processed_output/processed_dbo_GetCustomerRentals.sql"
+    }
+  ]
+  

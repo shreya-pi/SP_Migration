@@ -1,6 +1,7 @@
 import re
 import os
 from pathlib import Path
+from .log import log_info,log_error
 
 
 class ScScriptProcessor:
@@ -43,7 +44,7 @@ class ScScriptProcessor:
 
 
         # Step 5: Convert 'dbo' to 'TESTSCHEMA_MG'
-        sql_script = re.sub(r'\bdbo\b', 'TESTSCHEMA_MG', sql_script)
+        sql_script = re.sub(r'\bdbo\b', 'DB_SCHEMA', sql_script)
 
         return sql_script
 
@@ -60,7 +61,7 @@ class ScScriptProcessor:
             with output_file_path.open("w", encoding="utf-8") as output_file:
                 output_file.write(processed_sql)
 
-            print(f"Processed: {sql_file.name} → {output_file_path.name}")
+            log_info(f"Processed: {sql_file.name} → {output_file_path.name}")
 
 
 

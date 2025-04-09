@@ -2,7 +2,7 @@
 CREATE OR REPLACE PROCEDURE dbo.GetInactiveCustomers ()
 RETURNS TABLE()
 LANGUAGE SQL
-COMMENT = '{ "origin": "sf_sc", "name": "snowconvert", "version": {  "major": 1,  "minor": 2,  "patch": "6.0" }, "attributes": {  "component": "transact",  "convertedOn": "03-04-2025",  "domain": "test" }}'
+COMMENT = '{ "origin": "sf_sc", "name": "snowconvert", "version": {  "major": 1,  "minor": 2,  "patch": "6.0" }, "attributes": {  "component": "transact",  "convertedOn": "03-19-2025",  "domain": "test" }}'
 EXECUTE AS CALLER
 AS
 $$

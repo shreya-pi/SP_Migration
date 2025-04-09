@@ -1,0 +1,287 @@
+Table: cdc.captured_columns
+Columns:
+- object_id (int, NOT NULL)
+- column_name (nvarchar(128), NOT NULL)
+- column_id (int, NULL)
+- column_type (nvarchar(128), NOT NULL)
+- column_ordinal (int, NOT NULL)
+- is_computed (bit, NULL)
+- masking_function (nvarchar(4000), NULL)
+
+Table: cdc.cdc_jobs
+Columns:
+- job_type (nvarchar(20), NOT NULL)
+- maxtrans (int, NULL)
+- maxscans (int, NULL)
+- continuous (bit, NULL)
+- pollinginterval (bigint, NULL)
+- retention (bigint, NULL)
+- threshold (bigint, NULL)
+
+Table: cdc.change_tables
+Columns:
+- object_id (int, NOT NULL)
+- version (int, NULL)
+- source_object_id (int, NULL)
+- capture_instance (nvarchar(128), NOT NULL)
+- start_lsn (binary(10), NULL)
+- end_lsn (binary(10), NULL)
+- supports_net_changes (bit, NULL)
+- has_drop_pending (bit, NULL)
+- role_name (nvarchar(128), NULL)
+- index_name (nvarchar(128), NULL)
+- filegroup_name (nvarchar(128), NULL)
+- create_date (datetime, NULL)
+- partition_switch (bit, NOT NULL)
+
+Table: cdc.dbo_Demo_CT
+Columns:
+- __$start_lsn (binary(10), NOT NULL)
+- __$end_lsn (binary(10), NULL)
+- __$seqval (binary(10), NOT NULL)
+- __$operation (int, NOT NULL)
+- __$update_mask (varbinary(128), NULL)
+- DemoID (int, NULL)
+- DemoName (varchar(50), NULL)
+- CreatedAt (datetime, NULL)
+- __$command_id (int, NULL)
+
+Table: cdc.ddl_history
+Columns:
+- source_object_id (int, NULL)
+- object_id (int, NOT NULL)
+- required_column_update (bit, NULL)
+- ddl_command (nvarchar(-1), NULL)
+- ddl_lsn (binary(10), NOT NULL)
+- ddl_time (datetime, NULL)
+
+Table: cdc.index_columns
+Columns:
+- object_id (int, NOT NULL)
+- column_name (nvarchar(128), NOT NULL)
+- index_ordinal (tinyint, NOT NULL)
+- column_id (int, NOT NULL)
+
+Table: cdc.lsn_time_mapping
+Columns:
+- start_lsn (binary(10), NOT NULL)
+- tran_begin_time (datetime, NULL)
+- tran_end_time (datetime, NULL)
+- tran_id (varbinary(10), NULL)
+- tran_begin_lsn (binary(10), NULL)
+
+Table: cdc.sakila_actor_CT
+Columns:
+- __$start_lsn (binary(10), NOT NULL)
+- __$end_lsn (binary(10), NULL)
+- __$seqval (binary(10), NOT NULL)
+- __$operation (int, NOT NULL)
+- __$update_mask (varbinary(128), NULL)
+- actor_id (int, NULL)
+- first_name (nvarchar(45), NULL)
+- last_name (nvarchar(45), NULL)
+- last_update (datetime, NULL)
+- __$command_id (int, NULL)
+
+Table: cdc.sakila_country_CT
+Columns:
+- __$start_lsn (binary(10), NOT NULL)
+- __$end_lsn (binary(10), NULL)
+- __$seqval (binary(10), NOT NULL)
+- __$operation (int, NOT NULL)
+- __$update_mask (varbinary(128), NULL)
+- country_id (int, NULL)
+- country (nvarchar(50), NULL)
+- last_update (datetime, NULL)
+- __$command_id (int, NULL)
+
+Table: cdc.sakila_Demo_CT
+Columns:
+- __$start_lsn (binary(10), NOT NULL)
+- __$end_lsn (binary(10), NULL)
+- __$seqval (binary(10), NOT NULL)
+- __$operation (int, NOT NULL)
+- __$update_mask (varbinary(128), NULL)
+- DemoID (int, NULL)
+- DemoName (varchar(50), NULL)
+- CreatedAt (datetime, NULL)
+- __$command_id (int, NULL)
+
+Table: dbo.Demo
+Columns:
+- DemoID (int, NOT NULL)
+- DemoName (varchar(50), NOT NULL)
+- CreatedAt (datetime, NOT NULL)
+
+Table: dbo.systranschemas
+Columns:
+- tabid (int, NOT NULL)
+- startlsn (binary(10), NOT NULL)
+- endlsn (binary(10), NOT NULL)
+- typeid (int, NOT NULL)
+
+Table: sakila.actor
+Columns:
+- actor_id (int, NOT NULL)
+- first_name (nvarchar(45), NOT NULL)
+- last_name (nvarchar(45), NOT NULL)
+- last_update (datetime, NOT NULL)
+
+Table: sakila.address
+Columns:
+- address_id (int, NOT NULL)
+- address (nvarchar(50), NOT NULL)
+- address2 (nvarchar(50), NULL)
+- district (nvarchar(20), NOT NULL)
+- city_id (int, NOT NULL)
+- postal_code (nvarchar(10), NULL)
+- phone (nvarchar(20), NOT NULL)
+- location (geometry(-1), NOT NULL)
+- last_update (datetime, NOT NULL)
+
+Table: sakila.category
+Columns:
+- category_id (tinyint, NOT NULL)
+- name (nvarchar(25), NOT NULL)
+- last_update (datetime, NOT NULL)
+
+Table: sakila.city
+Columns:
+- city_id (int, NOT NULL)
+- city (nvarchar(50), NOT NULL)
+- country_id (int, NOT NULL)
+- last_update (datetime, NOT NULL)
+
+Table: sakila.country
+Columns:
+- country_id (int, NOT NULL)
+- country (nvarchar(50), NOT NULL)
+- last_update (datetime, NOT NULL)
+
+Table: sakila.customer
+Columns:
+- customer_id (int, NOT NULL)
+- store_id (tinyint, NOT NULL)
+- first_name (nvarchar(45), NOT NULL)
+- last_name (nvarchar(45), NOT NULL)
+- email (nvarchar(50), NULL)
+- address_id (int, NOT NULL)
+- active (smallint, NOT NULL)
+- create_date (datetime2, NOT NULL)
+- last_update (datetime, NULL)
+
+
+Table: sakila.Demo
+Columns:
+- DemoID (int, NOT NULL)
+- DemoName (varchar(50), NOT NULL)
+- CreatedAt (datetime, NOT NULL)
+
+Table: sakila.film
+Columns:
+- film_id (int, NOT NULL)
+- title (nvarchar(128), NOT NULL)
+- description (nvarchar(-1), NULL)
+- release_year (smallint, NULL)
+- language_id (tinyint, NOT NULL)
+- original_language_id (tinyint, NULL)
+- rental_duration (tinyint, NOT NULL)
+- rental_rate (decimal, NOT NULL)
+- length (int, NULL)
+- replacement_cost (decimal, NOT NULL)
+- rating (nvarchar(5), NULL)
+- special_features (nvarchar(54), NULL)
+- last_update (datetime, NOT NULL)
+- ssma$rowid (uniqueidentifier, NOT NULL)
+
+Table: sakila.film_actor
+Columns:
+- actor_id (int, NOT NULL)
+- film_id (int, NOT NULL)
+- last_update (datetime, NOT NULL)
+
+Table: sakila.film_category
+Columns:
+- film_id (int, NOT NULL)
+- category_id (tinyint, NOT NULL)
+- last_update (datetime, NOT NULL)
+
+Table: sakila.film_text
+Columns:
+- film_id (int, NOT NULL)
+- title (nvarchar(255), NOT NULL)
+- description (nvarchar(-1), NULL)
+
+Table: sakila.inventory
+Columns:
+- inventory_id (int, NOT NULL)
+- film_id (int, NOT NULL)
+- store_id (tinyint, NOT NULL)
+- last_update (datetime, NOT NULL)
+
+Table: sakila.language
+Columns:
+- language_id (tinyint, NOT NULL)
+- name (nchar(20), NOT NULL)
+- last_update (datetime, NOT NULL)
+
+Table: sakila.payment
+Columns:
+- payment_id (int, NOT NULL)
+- customer_id (int, NOT NULL)
+- staff_id (tinyint, NOT NULL)
+- rental_id (int, NULL)
+- amount (decimal, NOT NULL)
+- payment_date (datetime2, NOT NULL)
+- last_update (datetime, NULL)
+
+Table: sakila.rental
+Columns:
+- rental_id (int, NOT NULL)
+- rental_date (datetime2, NOT NULL)
+- inventory_id (int, NOT NULL)
+- customer_id (int, NOT NULL)
+- return_date (datetime2, NULL)
+- staff_id (tinyint, NOT NULL)
+- last_update (datetime, NOT NULL)
+
+Table: sakila.staff
+Columns:
+- staff_id (tinyint, NOT NULL)
+- first_name (nvarchar(45), NOT NULL)
+- last_name (nvarchar(45), NOT NULL)
+- address_id (int, NOT NULL)
+- picture (varbinary(-1), NULL)
+- email (nvarchar(50), NULL)
+- store_id (tinyint, NOT NULL)
+- active (smallint, NOT NULL)
+- username (nvarchar(16), NOT NULL)
+- password (nvarchar(40), NULL)
+- last_update (datetime, NOT NULL)
+
+Table: sakila.staff_list
+Columns:
+- ID (tinyint, NOT NULL)
+- name (nvarchar(91), NOT NULL)
+- address (nvarchar(50), NOT NULL)
+- zip code (nvarchar(10), NULL)
+- phone (nvarchar(20), NOT NULL)
+- city (nvarchar(50), NOT NULL)
+- country (nvarchar(50), NOT NULL)
+- SID (tinyint, NOT NULL)
+
+Table: sakila.store
+Columns:
+- store_id (tinyint, NOT NULL)
+- manager_staff_id (tinyint, NOT NULL)
+- address_id (int, NOT NULL)
+- last_update (datetime, NOT NULL)
+
+Table: sys.database_firewall_rules
+Columns:
+- id (int, NOT NULL)
+- name (nvarchar(128), NOT NULL)
+- start_ip_address (varchar(45), NOT NULL)
+- end_ip_address (varchar(45), NOT NULL)
+- create_date (datetime, NOT NULL)
+- modify_date (datetime, NOT NULL)

@@ -1,0 +1,37 @@
+SessionID,Category,Grammar Element,File Type,Total Count,Not Converted Count (Self)
+74e8eb53-f761-42b6-903e-e4cc419bda17,Functions & Expressions,SCOPE_IDENTITY,SQL,1,1
+74e8eb53-f761-42b6-903e-e4cc419bda17,Statement,DECLARE VARIABLE,SQL,2,0
+74e8eb53-f761-42b6-903e-e4cc419bda17,Statement,DECLARE,SQL,2,0
+74e8eb53-f761-42b6-903e-e4cc419bda17,Data Type,DATETIME,SQL,1,0
+74e8eb53-f761-42b6-903e-e4cc419bda17,Query,LEFT JOIN,SQL,1,0
+74e8eb53-f761-42b6-903e-e4cc419bda17,Query,SELECT,SQL,5,0
+74e8eb53-f761-42b6-903e-e4cc419bda17,Query,HAVING,SQL,1,0
+74e8eb53-f761-42b6-903e-e4cc419bda17,Functions & Expressions,SUM,SQL,1,0
+74e8eb53-f761-42b6-903e-e4cc419bda17,Query,ORDER BY,SQL,2,0
+74e8eb53-f761-42b6-903e-e4cc419bda17,<TSqlsBatch-UNKNOWN>,GOTO / LABEL,SQL,5,0
+74e8eb53-f761-42b6-903e-e4cc419bda17,Data Type,INT,SQL,6,0
+74e8eb53-f761-42b6-903e-e4cc419bda17,Statement - Control of Flow,BEGIN...END,SQL,5,0
+74e8eb53-f761-42b6-903e-e4cc419bda17,Set Operator,EXCEPT,SQL,12,0
+74e8eb53-f761-42b6-903e-e4cc419bda17,Functions & Expressions,NULL,SQL,2,0
+74e8eb53-f761-42b6-903e-e4cc419bda17,Functions & Expressions,MAX,SQL,3,0
+74e8eb53-f761-42b6-903e-e4cc419bda17,Query,VALUES,SQL,1,0
+74e8eb53-f761-42b6-903e-e4cc419bda17,Query,DESC,SQL,2,0
+74e8eb53-f761-42b6-903e-e4cc419bda17,Operator,-,SQL,1,0
+74e8eb53-f761-42b6-903e-e4cc419bda17,Operator,=,SQL,11,0
+74e8eb53-f761-42b6-903e-e4cc419bda17,Operator,OR,SQL,1,0
+74e8eb53-f761-42b6-903e-e4cc419bda17,Query,GROUP BY,SQL,3,0
+74e8eb53-f761-42b6-903e-e4cc419bda17,Statement,SET @local_variable,SQL,1,0
+74e8eb53-f761-42b6-903e-e4cc419bda17,DML,INTO,SQL,1,0
+74e8eb53-f761-42b6-903e-e4cc419bda17,Functions & Expressions,GETDATE,SQL,2,0
+74e8eb53-f761-42b6-903e-e4cc419bda17,Functions & Expressions,COUNT,SQL,1,0
+74e8eb53-f761-42b6-903e-e4cc419bda17,Statement,ASSIGNMENT EXPR,SQL,1,0
+74e8eb53-f761-42b6-903e-e4cc419bda17,Functions & Expressions,DATEADD,SQL,1,0
+74e8eb53-f761-42b6-903e-e4cc419bda17,Operator,<,SQL,1,0
+74e8eb53-f761-42b6-903e-e4cc419bda17,Query,TOP,SQL,1,0
+74e8eb53-f761-42b6-903e-e4cc419bda17,Query,FROM,SQL,4,0
+74e8eb53-f761-42b6-903e-e4cc419bda17,Query,ON,SQL,8,0
+74e8eb53-f761-42b6-903e-e4cc419bda17,Query,INNER JOIN,SQL,7,0
+74e8eb53-f761-42b6-903e-e4cc419bda17,Statement,SET,SQL,5,5
+74e8eb53-f761-42b6-903e-e4cc419bda17,Query,WHERE,SQL,2,0
+74e8eb53-f761-42b6-903e-e4cc419bda17,DML,INSERT,SQL,1,0
+74e8eb53-f761-42b6-903e-e4cc419bda17,DDL,CREATE PROCEDURE,SQL,5,0

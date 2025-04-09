@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stored Procedure Test Report</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { border: 1px solid black; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+        .success { color: green; font-weight: bold; }
+        .failure { color: red; font-weight: bold; }
+        pre { white-space: pre-wrap; word-wrap: break-word; max-height: 200px; overflow-y: auto; }
+    </style>
+</head>
+<body>
+    <h2>Stored Procedure Test Report</h2>
+    <table>
+        <tr>
+            <th>Stored Procedure</th>
+            <th>Test Name/Type</th>
+            <th>Status</th>
+            <th>Reason for Failure</th>
+        </tr>
+        <tr>
+            <td>AddRental @customer_id = 3, @inventory_id = 25, @staff_id = 2</td>
+            <td>test_create_procedure</td>
+            <td class="failure">❌ Failed</td>
+            <td>001003 (42000): 01bb1c58-0001-4331-0000-00088472ef41: SQL compilation error:
+syntax error line 15 at position 8 unexpected 'ProcedureResultSet'.
+syntax error line 19 at position 23 unexpected 'AS'.</td>
+            <td><pre></pre></td>
+        </tr>
+        <tr>
+            <td>AddRental @customer_id = 3, @inventory_id = 25, @staff_id = 2</td>
+            <td>test_procedure_execution</td>
+            <td class="failure">❌ Failed</td>
+            <td>001003 (42000): 01bb1c58-0001-43b6-0008-8472000120f6: SQL compilation error:
+syntax error line 1 at position 15 unexpected '@customer_id'.</td>
+            <td><pre></pre></td>
+        </tr>
+        <tr>
+            <td>GetStoreRevenue(1)</td>
+            <td>test_create_procedure</td>
+            <td class="success">✅ Success</td>
+            <td>-</td>
+            <td><pre></pre></td>
+        </tr>
+        <tr>
+            <td>GetStoreRevenue(1)</td>
+            <td>test_procedure_execution</td>
+            <td class="success">✅ Success</td>
+            <td>-</td>
+            <td><pre></pre></td>
+        </tr>
+        <tr>
+            <td>GetTopRentedMovies()</td>
+            <td>test_create_procedure</td>
+            <td class="success">✅ Success</td>
+            <td>-</td>
+            <td><pre></pre></td>
+        </tr>
+        <tr>
+            <td>GetTopRentedMovies()</td>
+            <td>test_procedure_execution</td>
+            <td class="success">✅ Success</td>
+            <td>-</td>
+            <td><pre></pre></td>
+        </tr>
+        <tr>
+            <td>GetInactiveCustomers()</td>
+            <td>test_create_procedure</td>
+            <td class="success">✅ Success</td>
+            <td>-</td>
+            <td><pre></pre></td>
+        </tr>
+        <tr>
+            <td>GetInactiveCustomers()</td>
+            <td>test_procedure_execution</td>
+            <td class="success">✅ Success</td>
+            <td>-</td>
+            <td><pre></pre></td>
+        </tr>
+        <tr>
+            <td>GetCustomerRentals @customer_id = 5</td>
+            <td>test_create_procedure</td>
+            <td class="success">✅ Success</td>
+            <td>-</td>
+            <td><pre></pre></td>
+        </tr>
+        <tr>
+            <td>GetCustomerRentals @customer_id = 5</td>
+            <td>test_procedure_execution</td>
+            <td class="failure">❌ Failed</td>
+            <td>001003 (42000): 01bb1c58-0001-4331-0000-00088472ef51: SQL compilation error:
+syntax error line 1 at position 24 unexpected '@customer_id'.</td>
+            <td><pre></pre></td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,18 @@
+[
+    {"snowflake_proc_query":"GetCustomerRentals(5)",
+"sqlserver_proc_query":"GetCustomerRentals @customer_id = 5"},
+
+{"snowflake_proc_query":"GetInactiveCustomers()",
+"sqlserver_proc_query":"GetInactiveCustomers"},
+
+
+{"snowflake_proc_query":"GetStoreRevenue(1)",
+"sqlserver_proc_query":"GetStoreRevenue @store_id = 1"},
+
+{"snowflake_proc_query":"GetTopRentedMovies()",
+"sqlserver_proc_query":"GetTopRentedMovies"},
+
+{"snowflake_proc_query":"AddRental(3, 25, 2)",
+"sqlserver_proc_query":"AddRental @customer_id = 3, @inventory_id = 25, @staff_id = 2"}
+
+]

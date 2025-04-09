@@ -1,0 +1,100 @@
+,customer_id,first_name,last_name,last_rental_date,_merge
+5,6,JENNIFER,DAVIS,2005-08-23 06:41:32,left_only
+22,23,SARAH,LEWIS,2006-02-14 15:16:03,left_only
+45,46,CATHERINE,CAMPBELL,2005-08-23 12:47:26,left_only
+48,49,JOYCE,EDWARDS,2005-08-21 20:02:18,left_only
+70,71,KATHY,JAMES,2005-08-23 20:44:36,left_only
+92,93,PHYLLIS,FOSTER,2005-08-23 17:48:30,left_only
+93,94,NORMA,GONZALES,2006-02-14 15:16:03,left_only
+122,123,SHANNON,FREEMAN,2005-08-23 13:51:57,left_only
+167,168,REGINA,BERRY,2006-02-14 15:16:03,left_only
+173,174,YVONNE,WATKINS,2005-08-23 20:06:23,left_only
+222,223,MELINDA,FERNANDEZ,2005-08-23 08:52:50,left_only
+235,236,MARCIA,DEAN,2006-02-14 15:16:03,left_only
+237,238,NELLIE,GARRETT,2005-08-23 01:05:00,left_only
+248,249,DORA,MEDINA,2005-08-22 14:33:50,left_only
+303,304,DAVID,ROYAL,2005-08-22 06:05:38,left_only
+307,308,THOMAS,GRIGSBY,2005-08-23 15:03:13,left_only
+320,321,KEVIN,SCHULER,2005-08-23 16:56:14,left_only
+327,328,JEFFREY,SPEAR,2005-08-23 16:17:09,left_only
+344,345,CARL,ARTIS,2005-08-23 04:28:25,left_only
+370,371,BILLY,POULIN,2005-08-23 15:09:17,left_only
+388,389,ALAN,KAHN,2005-08-23 21:11:33,left_only
+408,409,RODNEY,MOELLER,2005-08-21 20:49:21,left_only
+412,413,MARVIN,YEE,2005-08-23 09:23:45,left_only
+502,503,ANGEL,BARCLAY,2005-08-23 14:13:47,left_only
+515,516,ELMER,NOE,2006-02-14 15:16:03,left_only
+527,528,CLAUDE,HERZOG,2005-08-23 16:43:54,left_only
+531,532,NEIL,RENNER,2006-02-14 15:16:03,left_only
+533,534,CHRISTIAN,JUNG,2006-02-14 15:16:03,left_only
+548,549,NELSON,CHRISTENSON,2005-08-21 11:40:46,left_only
+558,559,EVERETT,BANDA,2005-08-23 16:33:33,left_only
+571,572,SIDNEY,BURLESON,2005-08-20 08:59:38,left_only
+578,579,DARYL,LARUE,2006-02-14 15:16:03,left_only
+591,592,TERRANCE,ROUSH,2006-02-14 15:16:03,left_only
+599,600,Rebecca Wilson,Jonathan Ballard,,right_only
+600,601,Jasmine Clark,Kyle Hodges,,right_only
+601,602,Lisa Hampton,Dr. Daniel Morgan MD,,right_only
+602,603,Ashley Burton,Ebony Hernandez,,right_only
+603,604,Carrie Daniels,Jason Mejia,,right_only
+604,605,Blake Frank,Donna Moore,,left_only
+605,605,Ian Christian,Robin Mckay,,right_only
+606,606,Cynthia Chang,Bryan Cabrera,,left_only
+607,606,Geoffrey Bryan,Christopher Lewis,,right_only
+608,607,Gregory Smith,William Lambert,,right_only
+609,607,Michele Mcdonald,Elizabeth Hernandez,,left_only
+610,608,Jerome Romero,Juan Short,,right_only
+611,608,Jose Nguyen,Tina Murphy,,left_only
+612,609,Luis West,Jennifer Jackson,,right_only
+613,609,Scott Davis,Juan Franco,,left_only
+614,610,Lori Jones,Joseph Mckee,,right_only
+615,610,Matthew Jackson,Jerry Norton,,left_only
+616,611,Angela Wood,Dr. Dawn Taylor MD,,left_only
+617,611,Wesley Rodriguez,Amy Stone,,right_only
+618,612,John Beasley,Nicholas Pruitt,,left_only
+619,612,Ryan Li,John Williams,,right_only
+620,613,Jason Jefferson,Erica Smith,,left_only
+621,613,Michael Whitehead,Kelly Singh,,right_only
+622,614,Jeremy Vargas,Melissa Joseph,,right_only
+623,614,Steven Shea,Richard Maldonado,,left_only
+624,615,Barry Adams,Terri Giles,,left_only
+625,615,Jasmine Rosales,Andrew Anderson,,right_only
+626,616,Ann Wong,Dr. Melanie Simon DVM,,left_only
+627,616,Katherine Price,Tiffany Roberson,,right_only
+628,617,Alfred Phillips,Louis Salazar,,right_only
+629,617,Carlos Le,Aaron Everett,,left_only
+630,618,Amber Lynn,Christina Salas,,left_only
+631,618,Ashley Allen,Ashley Coleman,,right_only
+632,619,Anthony Ferguson,Joseph Jacobs,,left_only
+633,619,Donald Duncan,Jessica Atkinson,,right_only
+634,620,Joshua Simpson,Kristin Murphy,,left_only
+635,620,Sandra Rice,Alexander Johnson,,right_only
+636,621,Kayla Mullins,Kendra Brooks,,right_only
+637,621,Stephen Miller,Nicholas Ramirez,,left_only
+638,622,William Donaldson,Devin Mitchell,,right_only
+639,622,William Murphy,Dawn Gould,,left_only
+640,623,Caleb Robinson,Brittany Johnson,,left_only
+641,623,Pamela Reynolds,Pamela Walters,,right_only
+642,624,Alyssa Osborne,Joseph Raymond,,left_only
+643,624,Sherry Cooke,Terry Carroll,,right_only
+644,625,Justin Ramirez,Nathaniel Cruz,,left_only
+645,625,Leonard Mcintosh,Whitney Melendez,,right_only
+646,626,Emily Campbell,Danielle Crane,,right_only
+647,626,Yolanda Fernandez,Jacob Hansen,,left_only
+648,627,Pamela Williams,Kathryn Shaffer,,left_only
+649,627,Rhonda Valdez,Edward Bell,,right_only
+650,628,Jessica Berger,Claudia Webb,,right_only
+651,628,Michael Macdonald,Wendy Jones,,left_only
+652,629,Nicolas Massey,Dana Henderson,,right_only
+653,629,Tyler Jensen,Andrea Green,,left_only
+654,630,Daisy Johnson,Veronica Christensen,,left_only
+655,631,Kenneth Walter,David Garner,,right_only
+656,631,Sarah Morris,Dr. Samantha Cisneros,,left_only
+657,632,Joshua Jordan,April Mahoney,,left_only
+658,632,Ricardo Ramos,Larry Clark,,right_only
+659,633,Michelle Boyd,Jason Hines,,right_only
+660,633,Tina Scott,Janet Mueller,,left_only
+661,634,Richard Dean,Rebecca Glass,,left_only
+662,635,Mark George,Joseph Bennett,,left_only
+663,636,Emily Bartlett,Brandon Rhodes,,left_only
+664,637,Bradley Brooks,Walter Anderson,,left_only

@@ -1,4 +1,5 @@
 import subprocess
+from .log import log_info,log_error
 
 class SnowConvertRunner:
     def __init__(self, input_path, output_path, schema_name, log_file):
@@ -21,10 +22,10 @@ class SnowConvertRunner:
         try:
             result = subprocess.run(command, check=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
             self._write_log("Command executed successfully:\n" + result.stdout)
-            print(f"Command executed successfully. Log saved to: {self.log_file}")
+            log_info(f"Command executed successfully. Log saved to: {self.log_file}")
         except subprocess.CalledProcessError as e:
             self._write_log("Error executing command:\n" + e.stderr)
-            print(f"Error executing command. Check log file: {self.log_file}")
+            log_error(f"Error executing command. Check log file: {self.log_file}")
 
     def _write_log(self, content):
         """Writes logs to the specified log file."""

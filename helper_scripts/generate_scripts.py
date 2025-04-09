@@ -2,6 +2,7 @@ import os
 import subprocess
 import time
 from config import SQL_SERVER_CONFIG 
+from .log import log_info,log_error
 
 class SQLServerScripter:
     # def __init__(self, server, database, output_dir):
@@ -111,7 +112,7 @@ class SQLServerScripter:
     def run_powershell_script(self):
         """Runs PowerShell script with a countdown and stops it after 60 seconds if it runs too long."""
         script = self.generate_powershell_script()
-        print(f"⚡ Running PowerShell script")
+        log_info(f"⚡ Running PowerShell script")
 
         process = subprocess.Popen(["powershell", "-Command", script], stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
 
@@ -124,7 +125,7 @@ class SQLServerScripter:
 
             if remaining_time <= 0:
                 process.terminate()  # 🔴 Gracefully stop the process
-                print("\n⏳ Timeout: PowerShell script stopped after 60 seconds.")
+                log_info("\n⏳ Timeout: PowerShell script stopped after 60 seconds.")
                 return
 
             print(f"⏳ Time remaining: {remaining_time}s", end="\r", flush=True)
@@ -132,7 +133,9 @@ class SQLServerScripter:
 
         stdout, stderr = process.communicate()
         if process.returncode == 0:
-            print("\n✅ PowerShell script completed successfully!")
-            print(stdout)
+            log_info("\n✅ PowerShell script completed successfully!")
+            log_info(stdout)
         else:
-            print(f"\n❌ PowerShell script failed. Error:\n{stderr}")
+            # print(f"\n❌ PowerShell script failed. Error:\n{stderr}")
+            log_error(f"\n❌ PowerShell script failed")
+            log_error(stdout)

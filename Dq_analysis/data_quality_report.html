@@ -1,0 +1,218 @@
+
+        <html>
+        <head>
+            <title>Comparison Report</title>
+            <style>
+                body {
+                    font-family: Arial, sans-serif;
+                    margin: 20px;
+                }
+                table {
+                    width: 100%;
+                    border-collapse: collapse;
+                    margin-bottom: 20px;
+                }
+                th, td {
+                    border: 1px solid black;
+                    padding: 8px;
+                    text-align: left;
+                }
+                th {
+                    background-color: #4CAF50;
+                    color: white;
+                }
+                .mismatch {
+                    background-color: #ffcccc;
+                }
+                .procedure-header {
+                    font-size: 18px;
+                    font-weight: bold;
+                    background-color: #ddd;
+                    padding: 10px;
+                    margin-top: 20px;
+                    border: 1px solid black;
+                    text-align: center;
+                }
+            </style>
+        </head>
+        <body>
+            <h2>Comparison Report</h2>
+        <div class="procedure-header">GetCustomerRentals(5)</div><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Attribute</th>
+      <th>Snowflake Procedure Output</th>
+      <th>SQL Server Procedure Output</th>
+      <th>Comparison</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Number of Rows</td>
+      <td>38</td>
+      <td>38</td>
+      <td>Same</td>
+    </tr>
+    <tr>
+      <td>Column Names</td>
+      <td>rental_id, rental_date, film_title, return_date</td>
+      <td>rental_id, rental_date, film_title, return_date</td>
+      <td>Same</td>
+    </tr>
+    <tr>
+      <td>Data Types</td>
+      <td>rental_id: int64, film_title: object, rental_date: datetime64[ns], return_date: datetime64[ns]</td>
+      <td>rental_id: int64, film_title: object, rental_date: datetime64[ns], return_date: datetime64[ns]</td>
+      <td>Same</td>
+    </tr>
+    <tr>
+      <td>Data Comparison</td>
+      <td>Exact Match</td>
+      <td>Exact Match</td>
+      <td>Same</td>
+    </tr>
+  </tbody>
+</table><div class="procedure-header">GetInactiveCustomers()</div><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Attribute</th>
+      <th>Snowflake Procedure Output</th>
+      <th>SQL Server Procedure Output</th>
+      <th>Comparison</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Number of Rows</td>
+      <td>632</td>
+      <td>599</td>
+      <td>Different</td>
+    </tr>
+    <tr>
+      <td>Column Names</td>
+      <td>first_name, last_name, customer_id, last_rental_date</td>
+      <td>first_name, last_name, customer_id, last_rental_date</td>
+      <td>Same</td>
+    </tr>
+    <tr>
+      <td>Data Types</td>
+      <td>customer_id: int64, first_name: object, last_name: object, last_rental_date: datetime64[ns]</td>
+      <td>customer_id: int64, first_name: object, last_name: object, last_rental_date: datetime64[ns]</td>
+      <td>Same</td>
+    </tr>
+    <tr>
+      <td>Data Comparison</td>
+      <td>99</td>
+      <td>99</td>
+      <td>Data mismatch detected</td>
+    </tr>
+  </tbody>
+</table><div class="procedure-header">GetStoreRevenue(1)</div><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Attribute</th>
+      <th>Snowflake Procedure Output</th>
+      <th>SQL Server Procedure Output</th>
+      <th>Comparison</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Number of Rows</td>
+      <td>1</td>
+      <td>1</td>
+      <td>Same</td>
+    </tr>
+    <tr>
+      <td>Column Names</td>
+      <td>store_id, total_revenue</td>
+      <td>store_id, total_revenue</td>
+      <td>Same</td>
+    </tr>
+    <tr>
+      <td>Data Types</td>
+      <td>store_id: int64, total_revenue: float64</td>
+      <td>store_id: int64, total_revenue: object</td>
+      <td>Different</td>
+    </tr>
+    <tr>
+      <td>Data Comparison</td>
+      <td>2</td>
+      <td>2</td>
+      <td>Data mismatch detected</td>
+    </tr>
+  </tbody>
+</table><div class="procedure-header">GetTopRentedMovies()</div><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Attribute</th>
+      <th>Snowflake Procedure Output</th>
+      <th>SQL Server Procedure Output</th>
+      <th>Comparison</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Number of Rows</td>
+      <td>10</td>
+      <td>10</td>
+      <td>Same</td>
+    </tr>
+    <tr>
+      <td>Column Names</td>
+      <td>film_id, total_rentals, title</td>
+      <td>film_id, total_rentals, title</td>
+      <td>Same</td>
+    </tr>
+    <tr>
+      <td>Data Types</td>
+      <td>film_id: int64, title: object, total_rentals: int64</td>
+      <td>film_id: int64, title: object, total_rentals: int64</td>
+      <td>Same</td>
+    </tr>
+    <tr>
+      <td>Data Comparison</td>
+      <td>6</td>
+      <td>6</td>
+      <td>Data mismatch detected</td>
+    </tr>
+  </tbody>
+</table><div class="procedure-header">AddRental(3, 25, 2)</div><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Attribute</th>
+      <th>Snowflake Procedure Output</th>
+      <th>SQL Server Procedure Output</th>
+      <th>Comparison</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Number of Rows</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Same</td>
+    </tr>
+    <tr>
+      <td>Column Names</td>
+      <td></td>
+      <td></td>
+      <td>Same</td>
+    </tr>
+    <tr>
+      <td>Data Types</td>
+      <td></td>
+      <td></td>
+      <td>Same</td>
+    </tr>
+    <tr>
+      <td>Data Comparison</td>
+      <td>Exact Match</td>
+      <td>Exact Match</td>
+      <td>Same</td>
+    </tr>
+  </tbody>
+</table>
+        </body>
+        </html>
+        

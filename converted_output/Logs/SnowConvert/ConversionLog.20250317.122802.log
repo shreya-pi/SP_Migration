@@ -1,0 +1,127 @@
+[17-03-2025 12:28:02] Info: SourceLanguage set to Transact based on the appsettings configuration.
+[17-03-2025 12:28:02] Info: No path specified for loading additional transformation rules
+[17-03-2025 12:28:02] Info: Starting to analyze the input path 'C:\Users\shreya.naik\Documents\SP_Demo\Sp_demo - Copy\sql_output\Airbyte_demo_base'...
+[17-03-2025 12:28:06] Info: EFProcess 638778112865374784 started
+[17-03-2025 12:28:06] Debug: TaskParam TaskProvider = Mobilize.Snow.ConversionTool.Tasks.SnowConvertTaskProvider
+[17-03-2025 12:28:06] Debug: TaskParam ConversionBeginTask.Input = C:\Users\shreya.naik\Documents\SP_Demo\Sp_demo - Copy\sql_output\Airbyte_demo_base\input.wsp
+[17-03-2025 12:28:06] Debug: TaskParam workingSet = Value is not created.
+[17-03-2025 12:28:06] Debug: TaskParam ConversionBeginTask.ItemMedatada = Artinsoft.Common.Store.ItemMetadata
+[17-03-2025 12:28:06] Debug: TaskParam ConversionBeginTask.Enabled = True
+[17-03-2025 12:28:06] Debug: TaskParam Repository = Value is not created.
+[17-03-2025 12:28:06] Debug: TaskParam RepositoryDirectory = C:\Users\shreya.naik\Documents\SP_Demo\Sp_demo - Copy\converted_output\.mobilize\CommonEF
+[17-03-2025 12:28:06] Info: Found 5 Sql files with a total size of 2.16KB
+[17-03-2025 12:28:06] Info: Starting the parsing process of 5 files with 2.16KB of code, this might take a while...
+[17-03-2025 12:28:06] Info: Step 1/8 - Loading Code: STARTED
+[17-03-2025 12:28:07] Info: Step 1/8 - Loading Code: COMPLETED
+[17-03-2025 12:28:07] Debug: TaskParam TaskProvider = Mobilize.Snow.ConversionTool.Tasks.SnowConvertTaskProvider
+[17-03-2025 12:28:07] Debug: TaskParam SymbolTableFillingTask.Input = C:\Users\shreya.naik\Documents\SP_Demo\Sp_demo - Copy\sql_output\Airbyte_demo_base\input.wsp
+[17-03-2025 12:28:07] Debug: TaskParam workingSet = Artinsoft.Common.Store.RepositoryWorkingSet`2[System.String,Artinsoft.Common.Store.IItemContainer]
+[17-03-2025 12:28:07] Debug: TaskParam SymbolTableFillingTask.ItemMedatada = Artinsoft.Common.Store.ItemMetadata
+[17-03-2025 12:28:07] Debug: TaskParam SymbolTableFillingTask.Enabled = True
+[17-03-2025 12:28:07] Debug: TaskParam Repository = Artinsoft.Common.Store.Repository
+[17-03-2025 12:28:07] Debug: TaskParam RepositoryDirectory = C:\Users\shreya.naik\Documents\SP_Demo\Sp_demo - Copy\converted_output\.mobilize\CommonEF
+[17-03-2025 12:28:07] Info: Step 2/8 - Semantic Analysis of Tables: STARTED
+[17-03-2025 12:28:07] Info: Step 2/8 - Semantic Analysis of Tables: COMPLETED
+[17-03-2025 12:28:07] Debug: TaskParam TaskProvider = Mobilize.Snow.ConversionTool.Tasks.SnowConvertTaskProvider
+[17-03-2025 12:28:07] Debug: TaskParam SymbolTableFillingSecondTask.Input = C:\Users\shreya.naik\Documents\SP_Demo\Sp_demo - Copy\sql_output\Airbyte_demo_base\input.wsp
+[17-03-2025 12:28:07] Debug: TaskParam workingSet = Artinsoft.Common.Store.RepositoryWorkingSet`2[System.String,Artinsoft.Common.Store.IItemContainer]
+[17-03-2025 12:28:07] Debug: TaskParam SymbolTableFillingSecondTask.ItemMedatada = Artinsoft.Common.Store.ItemMetadata
+[17-03-2025 12:28:07] Debug: TaskParam SymbolTableFillingSecondTask.Enabled = True
+[17-03-2025 12:28:07] Debug: TaskParam Repository = Artinsoft.Common.Store.Repository
+[17-03-2025 12:28:07] Debug: TaskParam RepositoryDirectory = C:\Users\shreya.naik\Documents\SP_Demo\Sp_demo - Copy\converted_output\.mobilize\CommonEF
+[17-03-2025 12:28:07] Info: Step 3/8 - Semantic Analysis of Top Level Objects: STARTED
+[17-03-2025 12:28:08] Info: Step 3/8 - Semantic Analysis of Top Level Objects: STORING
+[17-03-2025 12:28:09] Info: Step 3/8 - Semantic Analysis of Top Level Objects: STORED
+[17-03-2025 12:28:09] Info: Step 3/8 - Semantic Analysis of Top Level Objects: COMPLETED
+[17-03-2025 12:28:09] Debug: TaskParam TaskProvider = Mobilize.Snow.ConversionTool.Tasks.SnowConvertTaskProvider
+[17-03-2025 12:28:09] Debug: TaskParam PreProcessTask.Input = C:\Users\shreya.naik\Documents\SP_Demo\Sp_demo - Copy\sql_output\Airbyte_demo_base\input.wsp
+[17-03-2025 12:28:09] Debug: TaskParam workingSet = Artinsoft.Common.Store.RepositoryWorkingSet`2[System.String,Artinsoft.Common.Store.IItemContainer]
+[17-03-2025 12:28:09] Debug: TaskParam PreProcessTask.ItemMedatada = Artinsoft.Common.Store.ItemMetadata
+[17-03-2025 12:28:09] Debug: TaskParam PreProcessTask.Enabled = True
+[17-03-2025 12:28:09] Debug: TaskParam Repository = Artinsoft.Common.Store.Repository
+[17-03-2025 12:28:09] Debug: TaskParam RepositoryDirectory = C:\Users\shreya.naik\Documents\SP_Demo\Sp_demo - Copy\converted_output\.mobilize\CommonEF
+[17-03-2025 12:28:09] Info: Step 4/8 - Pre-Processing: STARTED
+[17-03-2025 12:28:09] Info: Step 4/8 - Pre-Processing: COMPLETED
+[17-03-2025 12:28:09] Debug: TaskParam Lineage.Input = C:\Users\shreya.naik\Documents\SP_Demo\Sp_demo - Copy\sql_output\Airbyte_demo_base\input.wsp
+[17-03-2025 12:28:09] Debug: TaskParam workingSet = Artinsoft.Common.Store.RepositoryWorkingSet`2[System.String,Artinsoft.Common.Store.IItemContainer]
+[17-03-2025 12:28:09] Debug: TaskParam Lineage.ItemMedatada = Artinsoft.Common.Store.ItemMetadata
+[17-03-2025 12:28:09] Debug: TaskParam Lineage.Enabled = True
+[17-03-2025 12:28:09] Debug: TaskParam Repository = Artinsoft.Common.Store.Repository
+[17-03-2025 12:28:09] Debug: TaskParam RepositoryDirectory = C:\Users\shreya.naik\Documents\SP_Demo\Sp_demo - Copy\converted_output\.mobilize\CommonEF
+[17-03-2025 12:28:09] Info: Step 5/8 - Data lineage analysis: STARTED
+[17-03-2025 12:28:10] Info: Step 5/8 - Data lineage analysis: COMPLETED
+[17-03-2025 12:28:10] Debug: TaskParam TaskProvider = Mobilize.Snow.ConversionTool.Tasks.SnowConvertTaskProvider
+[17-03-2025 12:28:10] Debug: TaskParam PreConversionAssessmentTask.Input = C:\Users\shreya.naik\Documents\SP_Demo\Sp_demo - Copy\sql_output\Airbyte_demo_base\input.wsp
+[17-03-2025 12:28:10] Debug: TaskParam workingSet = Artinsoft.Common.Store.RepositoryWorkingSet`2[System.String,Artinsoft.Common.Store.IItemContainer]
+[17-03-2025 12:28:10] Debug: TaskParam PreConversionAssessmentTask.ItemMedatada = Artinsoft.Common.Store.ItemMetadata
+[17-03-2025 12:28:10] Debug: TaskParam PreConversionAssessmentTask.Enabled = True
+[17-03-2025 12:28:10] Debug: TaskParam Repository = Artinsoft.Common.Store.Repository
+[17-03-2025 12:28:10] Debug: TaskParam RepositoryDirectory = C:\Users\shreya.naik\Documents\SP_Demo\Sp_demo - Copy\converted_output\.mobilize\CommonEF
+[17-03-2025 12:28:10] Info: Step 6/8 - Pre-Conversion Assessment: STARTED
+[17-03-2025 12:28:10] Info: Step 6/8 - Pre-Conversion Assessment: COMPLETED
+[17-03-2025 12:28:10] Debug: TaskParam TaskProvider = Mobilize.Snow.ConversionTool.Tasks.SnowConvertTaskProvider
+[17-03-2025 12:28:10] Debug: TaskParam TransformationsTask.Input = C:\Users\shreya.naik\Documents\SP_Demo\Sp_demo - Copy\sql_output\Airbyte_demo_base\input.wsp
+[17-03-2025 12:28:10] Debug: TaskParam workingSet = Artinsoft.Common.Store.RepositoryWorkingSet`2[System.String,Artinsoft.Common.Store.IItemContainer]
+[17-03-2025 12:28:10] Debug: TaskParam TransformationsTask.ItemMedatada = Artinsoft.Common.Store.ItemMetadata
+[17-03-2025 12:28:10] Debug: TaskParam TransformationsTask.Enabled = True
+[17-03-2025 12:28:10] Debug: TaskParam Repository = Artinsoft.Common.Store.Repository
+[17-03-2025 12:28:10] Debug: TaskParam RepositoryDirectory = C:\Users\shreya.naik\Documents\SP_Demo\Sp_demo - Copy\converted_output\.mobilize\CommonEF
+[17-03-2025 12:28:10] Info: Step 7/8 - Conversion Execution: STARTED
+[17-03-2025 12:28:10] Info: Start transforming file dbo_GetCustomerRentals.sql
+[17-03-2025 12:28:10] Info: Start transforming file dbo_GetInactiveCustomers.sql
+[17-03-2025 12:28:10] Info: Start transforming file dbo_AddRental.sql
+[17-03-2025 12:28:10] Info: Start transforming file dbo_GetTopRentedMovies.sql
+[17-03-2025 12:28:10] Info: Start transforming file dbo_GetStoreRevenue.sql
+[17-03-2025 12:28:11] Info: Transformed file dbo_AddRental.sql
+[17-03-2025 12:28:11] Info: Transformed file dbo_GetStoreRevenue.sql
+[17-03-2025 12:28:11] Info: Transformed file dbo_GetInactiveCustomers.sql
+[17-03-2025 12:28:11] Info: Transformed file dbo_GetCustomerRentals.sql
+[17-03-2025 12:28:11] Info: Transformed file dbo_GetTopRentedMovies.sql
+[17-03-2025 12:28:11] Info: Step 7/8 - Conversion Execution: COMPLETED
+[17-03-2025 12:28:11] Debug: TaskParam SnowScript = True
+[17-03-2025 12:28:11] Debug: TaskParam reportPath = C:\Users\shreya.naik\Documents\SP_Demo\Sp_demo - Copy\converted_output\Reports\SnowConvert
+[17-03-2025 12:28:11] Debug: TaskParam totalProcessedLOC = 0
+[17-03-2025 12:28:11] Debug: TaskParam inputPath = C:\Users\shreya.naik\Documents\SP_Demo\Sp_demo - Copy\sql_output\Airbyte_demo_base
+[17-03-2025 12:28:11] Debug: TaskParam outputPath = C:\Users\shreya.naik\Documents\SP_Demo\Sp_demo - Copy\converted_output\Output\SnowConvert
+[17-03-2025 12:28:11] Debug: TaskParam SessionTimestamp = 20250317.122802
+[17-03-2025 12:28:11] Debug: TaskParam snowConfiguration = Mobilize.Snow.Configuration.SnowConfiguration
+[17-03-2025 12:28:11] Debug: TaskParam DashboardMode = False
+[17-03-2025 12:28:11] Debug: TaskParam writeResultsProgressDescriptor = Mobilize.Common.Utils.Progress.SingleProgressDescriptor
+[17-03-2025 12:28:11] Debug: TaskParam snowExecutionResult = Mobilize.Snow.Assessment.SnowExecutionResult
+[17-03-2025 12:28:11] Debug: TaskParam ConversionEndTask.Input = C:\Users\shreya.naik\Documents\SP_Demo\Sp_demo - Copy\sql_output\Airbyte_demo_base\input.wsp
+[17-03-2025 12:28:11] Debug: TaskParam workingSet = Artinsoft.Common.Store.RepositoryWorkingSet`2[System.String,Artinsoft.Common.Store.IItemContainer]
+[17-03-2025 12:28:11] Debug: TaskParam ConversionEndTask.ItemMedatada = Artinsoft.Common.Store.ItemMetadata
+[17-03-2025 12:28:11] Debug: TaskParam ConversionEndTask.Enabled = True
+[17-03-2025 12:28:11] Debug: TaskParam Repository = Artinsoft.Common.Store.Repository
+[17-03-2025 12:28:11] Debug: TaskParam RepositoryDirectory = C:\Users\shreya.naik\Documents\SP_Demo\Sp_demo - Copy\converted_output\.mobilize\CommonEF
+[17-03-2025 12:28:11] Info: EFProcess 638778112865374784 ended. Execution time: 00:00:04.8267396
+[17-03-2025 12:28:11] Info: STARTED Step 8/8: Stats and Reports
+[17-03-2025 12:28:11] Info: Writing the conversion summary report
+[17-03-2025 12:28:11] Info: Writing the Assessment report
+[17-03-2025 12:28:11] Info: Writing the Scope Validations report
+[17-03-2025 12:28:11] Info: Writing the raw assessment data report
+[17-03-2025 12:28:11] Info: Writing the Elements report
+[17-03-2025 12:28:11] Info: Writing the Issues report
+[17-03-2025 12:28:11] Info: Writing the missing objects report
+[17-03-2025 12:28:11] Info: Writing the object references report
+[17-03-2025 12:28:11] Info: Writing the top level code unit report
+[17-03-2025 12:28:11] Info: Uploading metadata
+[17-03-2025 12:28:12] Info: COMPLETED Step 8/8: Stats and Reports
+[17-03-2025 12:28:12] Info: 
+==============================================================================
+SnowConvert assessment execution summary
+ - Files: 5
+ - Files Not Generated: 0
+ - Total lines of code: 63
+ - Automatically converted: 90.48%
+ - Conversion time: 00:00:04
+ - Conversion speed: 12 lines of code per second
+See the report files for more details about the conversion status.
+==============================================================================
+
+[17-03-2025 12:28:12] Info: 
+==============================================================================
+SnowConvert Tool.
+Copyright © 2023-2025 Snowflake Inc. All rights reserved.
+==============================================================================
+

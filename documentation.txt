@@ -1,0 +1,86 @@
+# Migration Pipeline Documentation
+
+## Overview
+The `MigrationPipeline` class is designed to handle the end-to-end process of migrating stored procedures from SQL Server to Snowflake. The pipeline automates various stages of the migration, including script generation, conversion, processing, testing, and quality assurance.
+
+---
+
+## Workflow
+
+### 1. **Generate SQL Scripts**
+    - **Description**: Extracts SQL scripts from the SQL Server database.
+    - **Implementation**: Uses the `SQLServerScripter` class to run a PowerShell script and generate SQL scripts.
+    - **Output**: SQL scripts are saved in the specified output directory.
+
+### 2. **Convert SQL Scripts**
+    - **Description**: Converts the extracted SQL scripts into Snowflake-compatible scripts.
+    - **Implementation**: Utilizes the `SnowConvertRunner` class to apply SnowConvert transformations.
+    - **Inputs**:
+      - Input path: Directory containing the extracted SQL scripts.
+      - Schema name: Target schema for the Snowflake database (optional).
+    - **Output**: Converted scripts are saved in the specified output directory.
+
+### 3. **Process Converted Scripts**
+    - **Description**: Processes the converted SQL scripts to ensure they are ready for testing and deployment.
+    - **Implementation**: Uses the `ScScriptProcessor` class to process all converted files.
+    - **Output**: Processed scripts are saved in the designated output folder.
+
+### 4. **Run Unit Tests**
+    - **Description**: Executes PyUnit tests on the processed SQL scripts to validate their functionality.
+    - **Implementation**:
+      - Reads test data from a JSON file (`py_tests/py_data.json`).
+      - Iterates through each test case and runs unit tests using the `TestStoredProcedure` class.
+    - **Tests**:
+      - Validates the creation of stored procedures from files.
+      - Tests the execution of stored procedures.
+
+### 5. **Perform Quality Testing**
+    - **Description**: Compares the behavior of Snowflake and SQL Server stored procedures to ensure functional equivalence.
+    - **Implementation**:
+      - Reads test data from a JSON file (`Dq_analysis/dq_data.json`).
+      - Uses the `DatabaseProcedureExecutor` class to execute and compare procedures.
+      - Generates an HTML report summarizing the comparison results.
+    - **Output**: A data quality report is generated in HTML format.
+
+### 6. **Run the Entire Pipeline**
+    - **Description**: Orchestrates the execution of all pipeline stages in sequence.
+    - **Implementation**: Calls the following methods in order:
+      1. `generate_sql_scripts()`
+      2. `convert_sql_scripts()`
+      3. `process_sc_scripts()`
+      4. `run_py_tests()`
+      5. `quality_testing()`
+    - **Output**: Logs the progress and completion of the pipeline.
+
+---
+
+## Key Components
+- **SQLServerScripter**: Extracts SQL scripts from SQL Server.
+- **SnowConvertRunner**: Converts SQL scripts to Snowflake-compatible format.
+- **ScScriptProcessor**: Processes converted scripts for testing and deployment.
+- **TestStoredProcedure**: Runs unit tests on stored procedures.
+- **DatabaseProcedureExecutor**: Performs quality testing and generates comparison reports.
+
+---
+
+## Configuration
+- **Output Directory**: Path to save extracted SQL scripts.
+- **Input Path**: Directory containing SQL scripts to be converted.
+- **Output Path**: Directory to save converted scripts.
+- **Schema Name**: Target schema for Snowflake (optional).
+- **Log File**: Path to save logs for the conversion process.
+- **Processed Input Folder**: Directory containing processed scripts for testing.
+- **Processed Output Folder**: Directory to save processed scripts.
+- **HTML Report**: Path to save the data quality comparison report.
+
+---
+
+## Best Practices
+- Ensure all input SQL scripts are backed up before running the pipeline.
+- Regularly update the SnowConvert tool and mapping rules for compatibility with new SQL features.
+- Perform thorough testing in a staging environment before deploying to production.
+
+---
+
+## Conclusion
+The `MigrationPipeline` class provides a comprehensive and automated solution for migrating stored procedures from SQL Server to Snowflake. By following the outlined workflow, users can ensure a smooth and efficient migration process with minimal manual intervention.

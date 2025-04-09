@@ -1,0 +1,37 @@
+SessionID,Category,Grammar Element,File Type,Total Count,Not Converted Count (Self)
+93b6ab91-366b-421f-8ada-328e04dffa5f,Functions & Expressions,SCOPE_IDENTITY,SQL,1,1
+93b6ab91-366b-421f-8ada-328e04dffa5f,Statement,DECLARE VARIABLE,SQL,2,0
+93b6ab91-366b-421f-8ada-328e04dffa5f,Statement,DECLARE,SQL,2,0
+93b6ab91-366b-421f-8ada-328e04dffa5f,Data Type,DATETIME,SQL,1,0
+93b6ab91-366b-421f-8ada-328e04dffa5f,Query,LEFT JOIN,SQL,1,0
+93b6ab91-366b-421f-8ada-328e04dffa5f,Query,SELECT,SQL,5,0
+93b6ab91-366b-421f-8ada-328e04dffa5f,Query,HAVING,SQL,1,0
+93b6ab91-366b-421f-8ada-328e04dffa5f,Functions & Expressions,SUM,SQL,1,0
+93b6ab91-366b-421f-8ada-328e04dffa5f,Query,ORDER BY,SQL,2,0
+93b6ab91-366b-421f-8ada-328e04dffa5f,<TSqlsBatch-UNKNOWN>,GOTO / LABEL,SQL,5,0
+93b6ab91-366b-421f-8ada-328e04dffa5f,Data Type,INT,SQL,6,0
+93b6ab91-366b-421f-8ada-328e04dffa5f,Statement - Control of Flow,BEGIN...END,SQL,5,0
+93b6ab91-366b-421f-8ada-328e04dffa5f,Set Operator,EXCEPT,SQL,12,0
+93b6ab91-366b-421f-8ada-328e04dffa5f,Functions & Expressions,NULL,SQL,2,0
+93b6ab91-366b-421f-8ada-328e04dffa5f,Functions & Expressions,MAX,SQL,3,0
+93b6ab91-366b-421f-8ada-328e04dffa5f,Query,VALUES,SQL,1,0
+93b6ab91-366b-421f-8ada-328e04dffa5f,Query,DESC,SQL,2,0
+93b6ab91-366b-421f-8ada-328e04dffa5f,Operator,-,SQL,1,0
+93b6ab91-366b-421f-8ada-328e04dffa5f,Operator,=,SQL,11,0
+93b6ab91-366b-421f-8ada-328e04dffa5f,Operator,OR,SQL,1,0
+93b6ab91-366b-421f-8ada-328e04dffa5f,Query,GROUP BY,SQL,3,0
+93b6ab91-366b-421f-8ada-328e04dffa5f,Statement,SET @local_variable,SQL,1,0
+93b6ab91-366b-421f-8ada-328e04dffa5f,DML,INTO,SQL,1,0
+93b6ab91-366b-421f-8ada-328e04dffa5f,Functions & Expressions,GETDATE,SQL,2,0
+93b6ab91-366b-421f-8ada-328e04dffa5f,Functions & Expressions,COUNT,SQL,1,0
+93b6ab91-366b-421f-8ada-328e04dffa5f,Statement,ASSIGNMENT EXPR,SQL,1,0
+93b6ab91-366b-421f-8ada-328e04dffa5f,Functions & Expressions,DATEADD,SQL,1,0
+93b6ab91-366b-421f-8ada-328e04dffa5f,Operator,<,SQL,1,0
+93b6ab91-366b-421f-8ada-328e04dffa5f,Query,TOP,SQL,1,0
+93b6ab91-366b-421f-8ada-328e04dffa5f,Query,FROM,SQL,4,0
+93b6ab91-366b-421f-8ada-328e04dffa5f,Query,ON,SQL,8,0
+93b6ab91-366b-421f-8ada-328e04dffa5f,Query,INNER JOIN,SQL,7,0
+93b6ab91-366b-421f-8ada-328e04dffa5f,Statement,SET,SQL,5,5
+93b6ab91-366b-421f-8ada-328e04dffa5f,Query,WHERE,SQL,2,0
+93b6ab91-366b-421f-8ada-328e04dffa5f,DML,INSERT,SQL,1,0
+93b6ab91-366b-421f-8ada-328e04dffa5f,DDL,CREATE PROCEDURE,SQL,5,0

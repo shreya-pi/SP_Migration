@@ -1,0 +1,6 @@
+PartitionKey,FileType,Category,CodeUnit,CodeUnitName,FileName,LineNumber,LinesOfCode,EWI Count,FDM Count,PRF Count,HighestEWISeverity,UDFsUsed,EWI,FDM,PRF,ConversionStatus,LoCConversionPercentage
+93b6ab91-366b-421f-8ada-328e04dffa5f,SQL,PROCEDURE,CREATE PROCEDURE,[GetInactiveCustomers],dbo_GetInactiveCustomers.sql,1,10,1,1,0,Low,N/A,SSC-EWI-0040,SSC-FDM-0007,N/A,Partial,90%
+93b6ab91-366b-421f-8ada-328e04dffa5f,SQL,PROCEDURE,CREATE PROCEDURE,[GetStoreRevenue](INT),dbo_GetStoreRevenue.sql,1,13,1,1,0,Low,N/A,SSC-EWI-0040,SSC-FDM-0007,N/A,Partial,92.31%
+93b6ab91-366b-421f-8ada-328e04dffa5f,SQL,PROCEDURE,CREATE PROCEDURE,[GetCustomerRentals](INT),dbo_GetCustomerRentals.sql,1,12,1,1,0,Low,N/A,SSC-EWI-0040,SSC-FDM-0007,N/A,Partial,91.67%
+93b6ab91-366b-421f-8ada-328e04dffa5f,SQL,PROCEDURE,CREATE PROCEDURE,[GetTopRentedMovies],dbo_GetTopRentedMovies.sql,1,11,1,1,0,Low,N/A,SSC-EWI-0040,SSC-FDM-0007,N/A,Partial,90.91%
+93b6ab91-366b-421f-8ada-328e04dffa5f,SQL,PROCEDURE,CREATE PROCEDURE,"[AddRental](INT,INT,INT)",dbo_AddRental.sql,1,17,2,1,0,Medium,N/A,SSC-EWI-0040 | SSC-EWI-0073,SSC-FDM-0007,N/A,Partial,88.24%
