@@ -358,7 +358,7 @@ open Dq_analysis/data_quality_report.html
 ### 📂 `py_tests/`
 - `py_data.json` – Input parameters for PyUnit stored procedure testing  
 - `py_results.html` – HTML dashboard with PyUnit test results  
- ![Output Report of PyUnit Testing](py_tests/SP_PyUnit_Output_dashboard.png)
+ <!-- ![Output Report of PyUnit Testing](py_tests/SP_PyUnit_Output_dashboard.png) -->
 
 ---
 

@@ -4,7 +4,7 @@
 - `generate_sp_exp.py` – Documents the logic of stored procedures  
 - `generate_sql_query.py` – Converts user queries to SQL  
 - `generate_test_case.py` – Auto-generates test cases for stored procedures 
-![Generated Test Cases for Stored Procedure](gen_ai_layer/SP_Created_Test_cases.png) 
+![Generated Test Cases for Stored Procedure](SP_Created_Test_cases.png) 
 - `extract_schema.py` – Extracts DB schema metadata  
 - `spapp_modelfile` – Ollama model file for stored procedure explanations  
 - `sqapp_modelfile` – Ollama model file for SQL query generation  
