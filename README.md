@@ -15,7 +15,7 @@ The **Migration Pipeline** provides a fully automated system for migrating SQL S
    ```bash
    git clone https://github.com/shreya-pi/SP_Migration.git
    cd SP_Migration
-```
+   ```
 
 2. **Build Docker image**
 
@@ -24,8 +24,8 @@ The **Migration Pipeline** provides a fully automated system for migrating SQL S
    ```
 3. **Configure credentials**
    Update `config.py` (see **Configuration** below).
-4. **Install Python dependencies**
 
+4. **Install Python dependencies**
    ```bash
    pip install -r requirements.txt
    ```
