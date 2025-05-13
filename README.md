@@ -334,7 +334,7 @@ open Dq_analysis/data_quality_report.html
 
 ### 📂 `Dq_analysis/`
 - `data_quality_report.html` – HTML dashboard comparing output differences  
- ![Data Quality Comparison Dashboard](Dq_analysis/Data%20Quality%20comparison%20Dashboard.png)
+ <!-- ![Data Quality Comparison Dashboard](Dq_analysis/Data%20Quality%20comparison%20Dashboard.png) -->
 - `SP_name_differences.csv` – Differences found in stored procedure outputs  
 - `dq_data.json` – Input JSON containing execution parameters  
 
@@ -342,7 +342,7 @@ open Dq_analysis/data_quality_report.html
 - `generate_sp_exp.py` – Documents the logic of stored procedures  
 - `generate_sql_query.py` – Converts user queries to SQL  
 - `generate_test_case.py` – Auto-generates test cases for stored procedures 
-![Generated Test Cases for Stored Procedure](gen_ai_layer/SP_Created_Test_cases.png) 
+<!-- ![Generated Test Cases for Stored Procedure](gen_ai_layer/SP_Created_Test_cases.png)  -->
 - `extract_schema.py` – Extracts DB schema metadata  
 - `spapp_modelfile` – Ollama model file for stored procedure explanations  
 - `sqapp_modelfile` – Ollama model file for SQL query generation  
