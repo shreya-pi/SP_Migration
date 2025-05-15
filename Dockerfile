@@ -12,7 +12,9 @@ COPY . /app
  
 # Install any dependencies specified in requirements.txt
 
-RUN pip install --no-cache-dir -r requirements.txt
+# RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --default-timeout=100 --no-cache-dir -r requirements.txt
+
  
 # Expose the port the app runs on (adjust based on your app)
 
