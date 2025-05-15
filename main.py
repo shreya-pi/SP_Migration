@@ -1,5 +1,8 @@
 import unittest
 import json
+import os
+from helper_scripts.create_metadata_table import CreateMetadataTable
+from helper_scripts.extract_procedures import ExtractProcedures
 from helper_scripts.generate_scripts import SQLServerScripter
 from helper_scripts.convert_scripts import SnowConvertRunner
 from helper_scripts.process_sc_script import ScScriptProcessor
@@ -14,14 +17,22 @@ class MigrationPipeline:
     
     def __init__(self):
         # Configuration settings
+
+        #extracting the scripts from the SQL Server database and loading it into the metadata table in Snowflake
+        self.TARGET_TABLE = "PROCEDURES_METADATA"
+    #-------------------------------------------------------------------------------
         #to extract the scripts from the SQL Server database
-        self.output_dir = r"C:\Users\shreya.naik\Documents\SP_Demo\Sp_demo_Copy\sql_output"
+        # self.output_dir = r"C:\Users\shreya.naik\Documents\SP_Demo\Sp_demo_Copy\sql_output"
+        
+        #to extract the scripts from the metadata table in Snowflake
+        self.output_dir = "./extracted_procedures"
 
     #------------------------------------------------------------------------------- 
         #to convert the extracted scripts to Snowflake compatible scripts
-        self.input_path = r"C:\Users\shreya.naik\Documents\SP_Demo\Sp_demo_Copy\sql_output\Airbyte_demo_base"
+        # self.input_path = r"C:\Users\shreya.naik\Documents\SP_Demo\Sp_demo_Copy\sql_output\staging_sakila"
+        self.input_path = "./extracted_procedures"
         self.output_path = r"C:\Users\shreya.naik\Documents\SP_Demo\Sp_demo_Copy\converted_output"
-        self.schema_name = "DB_SCHEMA" #target schema (Optional)
+        self.schema_name = "MY_SCHEMA" #target schema (Optional)
         self.log_file = r"C:\Users\shreya.naik\Documents\SP_Demo\Sp_demo_Copy\logs\assessment_log.txt"
         # C:\Users\shreya.naik\Documents\SP_Demo\Sp_demo - Copy\main.py
     #-------------------------------------------------------------------------------
@@ -31,15 +42,15 @@ class MigrationPipeline:
 
     #-------------------------------------------------------------------------------
         #to PyUnit run tests on the processed scripts
-
+        self.py_input_folder = "processed_output"
         # self.proc_name = "GetStoreRevenue(1)"
         # self.sql_file = r"processed_output\processed_dbo_GetStoreRevenue.sql"
 
         # self.proc_name = "GetTopRentedMovies()"
         # self.sql_file = r"processed_output\processed_dbo_GetTopRentedMovies.sql"
 
-        self.proc_name = "GetInActiveCustomers()"
-        self.sql_file = r"processed_output\processed_dbo_GetInActiveCustomers.sql"
+        # self.proc_name = "GetInActiveCustomers()"
+        # self.sql_file = r"processed_output\processed_dbo_GetInActiveCustomers.sql"
 
         #-------------------------------------------------------------------------------
 
@@ -59,6 +70,17 @@ class MigrationPipeline:
 
         self.output_html_file = "Dq_analysis/data_quality_report.html"
 
+    def create_metadata_table(self):
+        """Create the metadata table in Snowflake."""
+        log_info("🔹 Creating metadata table in Snowflake...")
+        metadata_creator = CreateMetadataTable(self.TARGET_TABLE)
+        metadata_creator.create_metadata_table()
+    
+    def extract_procedures(self):
+        """Extract procedures from SQL Server and load them into Snowflake."""
+        log_info("🔹 Extracting procedures from SQL Server...")
+        extractor = ExtractProcedures(self.output_dir)
+        extractor.extract_procedures()
 
     def generate_sql_scripts(self):
         """Generate SQL scripts from the SQL Server database."""
@@ -79,31 +101,44 @@ class MigrationPipeline:
         sql_processor = ScScriptProcessor(self.processed_input_folder, self.processed_output_folder)
         sql_processor.process_all_files()
 
-    def run_py_tests(self):
-        """Run PyUnit tests on the processed SQL scripts."""
-        log_info("🔹 Running unit tests on stored procedures...")
+    #based on test query provide in py_tests/py_data.json
+    # def run_py_tests(self):
+    #     """Run PyUnit tests on the processed SQL scripts."""
+    #     log_info("🔹 Running unit tests on stored procedures...")
 
-        with open("py_tests/py_data.json", "r") as file:
-            py_data = json.load(file)
+    #     with open("py_tests/py_data.json", "r") as file:
+    #         py_data = json.load(file)
         
-        # Iterate through each query and access values
-        for query in py_data:
-            proc_query = query["query"]
-            input_file = query["input_file"]
+    #     # Iterate through each query and access values
+    #     for query in py_data:
+    #         proc_query = query["query"]
+    #         input_file = query["input_file"]
 
+    #         suite = unittest.TestSuite()
+    #         suite.addTest(TestStoredProcedure(proc_query, input_file, "test_create_procedure_from_file"))
+    #         suite.addTest(TestStoredProcedure(proc_query, input_file, "test_procedure_execution"))
+
+    #         runner = unittest.TextTestRunner()
+    #         runner.run(suite)
+   
+    #based on test query generated with nullvalues as parameters
+    def run_py_tests(self):
+        """Run PyUnit tests on all SQL files in the provided directory."""
+        log_info("🔹 Running unit tests on stored procedures...")
+    
+        # Get all .sql files from the directory
+        sql_files = [f for f in os.listdir(self.py_input_folder) if f.endswith(".sql")]
+    
+        for file_name in sql_files:
+            input_file = os.path.join(self.py_input_folder, file_name)
+            
             suite = unittest.TestSuite()
-            suite.addTest(TestStoredProcedure(proc_query, input_file, "test_create_procedure_from_file"))
-            suite.addTest(TestStoredProcedure(proc_query, input_file, "test_procedure_execution"))
-
+            suite.addTest(TestStoredProcedure(input_file, "test_create_procedure_from_file"))
+            suite.addTest(TestStoredProcedure(input_file, "test_procedure_execution"))
+    
             runner = unittest.TextTestRunner()
             runner.run(suite)
 
-        # suite = unittest.TestSuite()
-        # suite.addTest(TestStoredProcedure(self.proc_name, self.sql_file, "test_create_procedure_from_file"))
-        # suite.addTest(TestStoredProcedure(self.proc_name, self.sql_file, "test_procedure_execution"))
-
-        # runner = unittest.TextTestRunner()
-        # runner.run(suite)
 
     def quality_testing(self):
         """Perform quality testing on database procedures."""
@@ -126,11 +161,13 @@ class MigrationPipeline:
     def run_pipeline(self):
         """Run the entire migration pipeline."""
         log_info("🚀 Starting the migration pipeline...\n")
-        self.generate_sql_scripts()
+        self.create_metadata_table()
+        self.extract_procedures()
+        # self.generate_sql_scripts()
         self.convert_sql_scripts()
         self.process_sc_scripts()
         self.run_py_tests()
-        self.quality_testing()
+        # self.quality_testing()
         log_info("\n✅ Pipeline execution completed successfully!")
 
 if __name__ == "__main__":
