@@ -164,6 +164,8 @@ We leverage Ollama to host and serve local LLMs. The `gen_ai_layer` folder conta
 │
 ├── helper_scripts/               # Core conversion & testing utilities
 │   ├── convert_scripts.py        # SnowConvert wrapper
+│   ├── create_metadata_table.py  # Creates initial metadata table of all SPs on snowflake
+│   ├── extract_procedures.py     # Extracts def of only flagged SPs(alternative to generate.scripts.py)
 │   ├── generate_scripts.py       # PowerShell → .sql extraction
 │   ├── log.py                    # Logging helper
 │   ├── process_sc_script.py      # Format & sanitize converted SQL
@@ -204,37 +206,43 @@ We leverage Ollama to host and serve local LLMs. The `gen_ai_layer` folder conta
 
 ## Workflow Stages
 
-### 1. **Generate SQL Scripts**
-- **Tool**: `SQLServerScripter`
-- **Function**: Extracts stored procedures from SQL Server using PowerShell automation.
-- **Output**: Raw SQL scripts.
-- **Script**: [`generate_scripts.py`](helper_scripts/generate_scripts.py)
+### 1. **Cretes Metadata Table**
+- **Tool**: `CreateMetadataTable`
+- **Function**: Creates metadata table on Snowflake by extracting all stored procedure from source SQL Server
+- **Output**: Metadata Table creation with SP data
+- **Script**: [`create_metadata_table.py`](helper_scripts/create_metadata_table.py)
 
-### 2. **Convert SQL Scripts**
+### 2. **Extract SQL Scripts**
+- **Tool**: `ExtractProcedures`
+- **Function**: Extracts stored procedures from Snowflake metadata table based on Conversion flag value
+- **Output**: Raw SQL scripts.
+- **Script**: [`extract_procedures.py`](helper_scripts/extract_procedures.py)
+
+### 3. **Convert SQL Scripts**
 - **Tool**: `SnowConvertRunner`
 - **Function**: Transforms extracted SQL into Snowflake-compatible scripts using SnowConvert.
 - **Output**: Converted `.sql` files.
 - **Script**: [`convert_scripts.py`](helper_scripts/convert_scripts.py)
 
-### 3. **Process Converted Scripts**
+### 4. **Process Converted Scripts**
 - **Tool**: `ScScriptProcessor`
 - **Function**: Cleans, formats, and prepares scripts for testing and deployment.
 - **Output**: Finalized Snowflake-ready SQL.
 - **Script**: [`process_sc_script.py`](helper_scripts/process_sc_script.py)
 
-### 4. **Run Unit Tests**
+### 5. **Run Unit Tests**
 - **Tool**: `TestStoredProcedure`
 - **Function**: Validates converted procedures using PyUnit tests and sample inputs.
 - **Output**: Pass/fail status for functional correctness.
 - **Script**: [`py_test.py`](helper_scripts/py_test.py)
 
-### 5. **Quality Assurance Testing**
+### 6. **Quality Assurance Testing**
 - **Tool**: `DatabaseProcedureExecutor`
 - **Function**: Compares execution results between SQL Server and Snowflake.
 - **Output**: HTML report with detected data differences.
 - **Script**: [`qt_test.py`](helper_scripts/qt_test.py)
 
-### 6. **Run the Pipeline**
+### 7. **Run the Pipeline**
 - **Command**: `python main.py`
 - **Function**: Sequentially runs all stages of the migration process.
 
@@ -244,7 +252,8 @@ We leverage Ollama to host and serve local LLMs. The `gen_ai_layer` folder conta
 
 | Component                   | Responsibility                                           | Source Code                                      |
 |----------------------------|-----------------------------------------------------------|--------------------------------------------------|
-| `SQLServerScripter`         | Extract SQL Server procedures using PowerShell            | [generate_scripts.py](helper_scripts/generate_scripts.py) |
+| `CreateMetadataTable`       | Creates initial metadata table of all SPs on snowflake    | [create_metadata_table.py](helper_scripts/create_metadata_table.py) |
+| `ExtractProcedures`         | Extracts def of only flagged SPs                          | [generate_scripts.py](helper_scripts/extract_procedures.py) |
 | `SnowConvertRunner`         | Apply SnowConvert transformation to SQL files             | [convert_scripts.py](helper_scripts/convert_scripts.py)   |
 | `ScScriptProcessor`         | Sanitize and format Snowflake SQL for deployment          | [process_sc_script.py](helper_scripts/process_sc_script.py) |
 | `TestStoredProcedure`       | Run unit tests on Snowflake scripts                       | [py_test.py](helper_scripts/py_test.py)         |
@@ -258,8 +267,8 @@ Set the following variables in your config before executing the pipeline:
 
 | Parameter               | Description                                           |
 |------------------------|-------------------------------------------------------|
-| `output_dir`           | Folder to save extracted SQL scripts                  |
-| `input_path`           | Path to the folder with raw SQL scripts               |
+| `output_dir`           | Folder to save extracted SQL scripts from metadata    |
+| `input_path`           | Path to the folder with raw SQL scripts for SC        |
 | `converted_path`       | Directory to save Snowflake-compatible scripts        |
 | `processed_input`      | Folder with scripts ready for testing                 |
 | `processed_output`     | Destination folder for finalized scripts              |
@@ -356,7 +365,7 @@ open Dq_analysis/data_quality_report.html
 - `call_statements.json` – Stored procedure call statements for testing  
 
 ### 📂 `py_tests/`
-- `py_data.json` – Input parameters for PyUnit stored procedure testing  
+- `py_data.json` – Input parameters for PyUnit stored procedure testing (Not needed in latest version)  
 - `py_results.html` – HTML dashboard with PyUnit test results  
  <!-- ![Output Report of PyUnit Testing](py_tests/SP_PyUnit_Output_dashboard.png) -->
 
@@ -366,7 +375,7 @@ open Dq_analysis/data_quality_report.html
 
 - Always back up your SQL Server procedures before migration.
 - Test Snowflake scripts in a sandbox environment before production deployment.
-- Customize `dq_data.json` and `py_data.json` to fine-tune your validation.
+- Customize `dq_data.json` and to fine-tune your validation.
 - Ensure consistent schema naming across SQL Server and Snowflake.
 - Regularly update the SnowConvert CLI for latest syntax support.
 
