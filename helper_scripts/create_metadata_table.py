@@ -8,8 +8,8 @@ from datetime import datetime
 # TARGET_TABLE = "procedures_metadata"
 
 class CreateMetadataTable:
-    def __init__(self, TARGET_TABLE):
-        self.TARGET_TABLE = TARGET_TABLE
+    def __init__(self, METADATA_TABLE):
+        self.METADATA_TABLE = METADATA_TABLE
 
     def fetch_sqlserver_procedures(self):
         """Connects to SQL Server and returns a list of dicts with procedure metadata."""
@@ -93,7 +93,7 @@ class CreateMetadataTable:
         # create table
         # Check if the table already exists
         cs.execute(f"""
-        CREATE TABLE IF NOT EXISTS {self.TARGET_TABLE} (
+        CREATE TABLE IF NOT EXISTS {self.METADATA_TABLE} (
           SOURCE                STRING,
           DBNAME                STRING,
           SCHEMA_NAME           STRING,
@@ -111,7 +111,7 @@ class CreateMetadataTable:
         """)
     
         insert_sql = f"""
-        INSERT INTO {self.TARGET_TABLE} (
+        INSERT INTO {self.METADATA_TABLE} (
           SOURCE, DBNAME, SCHEMA_NAME, PROCEDURE_NAME, PROCEDURE_DEFINITION,
           CONVERSION_FLAG, LOAD_TIMESTAMP,
           SNOWFLAKE_DBNAME, SNOWFLAKE_SCHEMA_NAME, SNOWFLAKE_DDL,

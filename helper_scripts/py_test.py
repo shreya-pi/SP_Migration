@@ -27,8 +27,8 @@ test_case_id_counter = 0
 test_results = []
 
 # Snowflake DDL target table
-TARGET_TABLE = "TEST_RESULTS_LOG"
-METADATA_TABLE = "PROCEDURES_METADATA"
+# PYUNIT_OUTPUT_TABLE = "TEST_RESULTS_LOG"
+# METADATA_TABLE = "PROCEDURES_METADATA"
 
 def generate_html_report(results, output_file="py_tests/py_results.html"):
     """Generates a dynamic HTML file with test results."""
@@ -81,13 +81,15 @@ def generate_html_report(results, output_file="py_tests/py_results.html"):
 
 class TestStoredProcedure(unittest.TestCase):
 
-    def __init__(self, sql_file, *args, **kwargs):
+    def __init__(self, sql_file, PYUNIT_OUTPUT_TABLE, METADATA_TABLE, *args, **kwargs):
         super().__init__(*args, **kwargs)
         # self.proc_name = proc_name
         self.sql_file = sql_file
         filename = os.path.basename(self.sql_file)  
         m = re.match(r'.*_(?P<proc>[^.]+)\.sql$', filename)
         self.proc_name = m.group('proc') 
+        self.PYUNIT_OUTPUT_TABLE = PYUNIT_OUTPUT_TABLE
+        self.METADATA_TABLE = METADATA_TABLE
 
     @classmethod
     def setUpClass(cls):
@@ -136,7 +138,7 @@ class TestStoredProcedure(unittest.TestCase):
         ts = naive.strftime("%Y-%m-%d %H:%M:%S.%f")[:-3]
         # ts = datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S.%f")[:-3]
         insert_sql = f"""
-          INSERT INTO {TARGET_TABLE} (
+          INSERT INTO {self.PYUNIT_OUTPUT_TABLE} (
             TEST_CASE_ID,
             TEST_CASE_NAME,
             PROCEDURE_NAME,
@@ -162,13 +164,13 @@ class TestStoredProcedure(unittest.TestCase):
             clean_proc_name = re.sub(r'\(.*\)$', '', self.proc_name)
             try:
                 update_sql = f"""
-                UPDATE {METADATA_TABLE}
+                UPDATE {self.METADATA_TABLE}
                    SET IS_DEPLOYED = TRUE
                  WHERE PROCEDURE_NAME = %s
                 """
                 self.cursor.execute(update_sql, (clean_proc_name))
                 self.conn.commit()
-                log_info(f"Marked {self.proc_name} as deployed in {METADATA_TABLE}")
+                log_info(f"Marked {self.proc_name} as deployed in {self.METADATA_TABLE}")
             except Exception as upd_e:
                 log_error(f"Failed to update IS_DEPLOYED for {clean_proc_name}: {upd_e}")
 

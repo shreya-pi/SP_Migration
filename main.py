@@ -19,7 +19,7 @@ class MigrationPipeline:
         # Configuration settings
 
         #extracting the scripts from the SQL Server database and loading it into the metadata table in Snowflake
-        self.TARGET_TABLE = "PROCEDURES_METADATA"
+        self.METADATA_TABLE = "PROCEDURES_METADATA"
     #-------------------------------------------------------------------------------
         #to extract the scripts from the SQL Server database
         # self.output_dir = r"C:\Users\shreya.naik\Documents\SP_Demo\Sp_demo_Copy\sql_output"
@@ -43,6 +43,7 @@ class MigrationPipeline:
     #-------------------------------------------------------------------------------
         #to PyUnit run tests on the processed scripts
         self.py_input_folder = "processed_output"
+        self.PYUNIT_OUTPUT_TABLE = "TEST_RESULTS_LOG"
         # self.proc_name = "GetStoreRevenue(1)"
         # self.sql_file = r"processed_output\processed_dbo_GetStoreRevenue.sql"
 
@@ -73,7 +74,7 @@ class MigrationPipeline:
     def create_metadata_table(self):
         """Create the metadata table in Snowflake."""
         log_info("🔹 Creating metadata table in Snowflake...")
-        metadata_creator = CreateMetadataTable(self.TARGET_TABLE)
+        metadata_creator = CreateMetadataTable(self.METADATA_TABLE)
         metadata_creator.create_metadata_table()
     
     def extract_procedures(self):
@@ -133,8 +134,8 @@ class MigrationPipeline:
             input_file = os.path.join(self.py_input_folder, file_name)
             
             suite = unittest.TestSuite()
-            suite.addTest(TestStoredProcedure(input_file, "test_create_procedure_from_file"))
-            suite.addTest(TestStoredProcedure(input_file, "test_procedure_execution"))
+            suite.addTest(TestStoredProcedure(input_file, self.METADATA_TABLE, self.PYUNIT_OUTPUT_TABLE,  "test_create_procedure_from_file"))
+            suite.addTest(TestStoredProcedure(input_file, self.METADATA_TABLE, self.PYUNIT_OUTPUT_TABLE,  "test_procedure_execution"))
     
             runner = unittest.TextTestRunner()
             runner.run(suite)
