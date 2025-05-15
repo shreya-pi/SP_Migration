@@ -1,7 +1,3 @@
-Absolutely, Shreya! Here's a detailed `README.md` for the `automate_input_parameters_Dq/` folder that explains the full pipeline of dynamically generating and executing Snowflake `CALL` statements for stored procedures using LLM-driven SQL query generation.
-
----
-
 # 🤖 Automated Input Parameter Generator for Snowflake Procedures (DQ Testing)
 
 This module dynamically constructs valid `CALL` statements for Snowflake **stored procedures** by generating input parameter values using a **Huggingface transformer model** trained on database schemas.
@@ -180,4 +176,4 @@ You can change:
 
 ---
 
-Let me know if you’d like this `README.md` written directly to the folder or if you’d like usage screenshots / command logs added as well.
+.
