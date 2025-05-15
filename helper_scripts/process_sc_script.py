@@ -16,8 +16,9 @@ class ScScriptProcessor:
         sql_script = re.sub(r'--.*', '', sql_script)  # Remove single-line comments
         sql_script = re.sub(r'/\*.*?\*/', '', sql_script, flags=re.DOTALL)  # Remove multi-line comments
 
-                # Step 4: Convert sakila.[table_name] to MYSQL_[table_name]
-        sql_script = re.sub(r'sakila\.([a-zA-Z_]+)', r'MYSQL_\1', sql_script)
+
+        # Convert 'dbo' to 'MYSQL_' for all occurrences except for 'PROCEDURE'
+        sql_script = re.sub(r'(?<!PROCEDURE\s)dbo\.([A-Za-z_][A-Za-z0-9_]*)', r'MYSQL_\1', sql_script)
 
         # Step 2: Convert column names to string format (except for `dbo.table_name`)
         sql_script = re.sub(
@@ -44,9 +45,11 @@ class ScScriptProcessor:
 
 
         # Step 5: Convert 'dbo' to 'TESTSCHEMA_MG'
-        sql_script = re.sub(r'\bdbo\b', 'DB_SCHEMA', sql_script)
+        sql_script = re.sub(r'\bdbo\b', 'MY_SCHEMA', sql_script)
 
         return sql_script
+    
+    
 
     def process_all_files(self):
         """Processes all SQL files in the input folder and saves the processed versions."""

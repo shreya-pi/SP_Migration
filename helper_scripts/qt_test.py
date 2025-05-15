@@ -3,6 +3,7 @@ import pyodbc
 import pandas as pd
 from config import SNOWFLAKE_CONFIG, SQL_SERVER_CONFIG
 from .log import log_info,log_error, log_dq_info, log_dq_error
+import json
 
 comparison_data = []
 
@@ -51,64 +52,6 @@ class DatabaseProcedureExecutor:
 
 
 
-    # def generate_comparison_html(self, output_filename):
-    #     # Convert the list of dictionaries to a DataFrame
-    #     # df = pd.DataFrame(comparison_data)
-    #     df = pd.DataFrame(self.all_comparisons)
-        
-    #     # Generate HTML table
-    #     html_content = f"""
-    #     <html>
-    #     <head>
-    #         <title>Comparison Report</title>
-    #     <style>
-    #         body {{
-    #             font-family: Arial, sans-serif;
-    #             margin: 20px;
-    #         }}
-    #         table {{
-    #             width: 100%;
-    #             border-collapse: collapse;
-    #             margin-bottom: 20px;
-    #         }}
-    #         th, td {{
-    #             border: 1px solid black;
-    #             padding: 8px;
-    #             text-align: left;
-    #         }}
-    #         th {{
-    #             background-color: #4CAF50;
-    #             color: white;
-    #         }}
-    #         .mismatch {{
-    #             background-color: #ffcccc;
-    #         }}
-    #         .procedure-header {{
-    #             font-size: 18px;
-    #             font-weight: bold;
-    #             background-color: #ddd;
-    #             padding: 10px;
-    #             margin-top: 20px;
-    #             border: 1px solid black;
-    #             text-align: center;
-    #         }}
-    #     </style>
-
-  
-    #         </style>
-    #     </head>
-    #     <body>
-    #         <h2>Comparison Report</h2>
-    #     {df.to_html(index=False, escape=False)}
-    #     </body>
-    #     </html>
-    #     """
-        
-    #     # Write to an HTML file
-    #     with open(output_filename, "w", encoding="utf-8") as file:
-    #         file.write(html_content)
-        
-    #     log_dq_info(f"HTML report generated: {output_filename}")
 
     def generate_comparison_html(self, output_filename):
         html_content = """
@@ -257,34 +200,45 @@ class DatabaseProcedureExecutor:
     
             # Find common columns for merging
             common_columns = df1.columns.intersection(df2.columns).tolist()
-    
-            # Perform an outer merge to detect differences
-            merged_df = pd.merge(df1, df2, how='outer', indicator=True, on=common_columns)
-    
-            # Extract differing rows
-            diff = merged_df[merged_df['_merge'] != 'both'].copy()
-    
-            # Handle categorical columns properly
-            for col in diff.select_dtypes(['category']).columns:
-                diff[col] = diff[col].astype('category')
-                if 'NaN' not in diff[col].cat.categories:
-                    diff[col] = diff[col].cat.add_categories(['NaN'])
-            
-            diff = diff.fillna('NaN')
-    
-            # Save differences to CSV
-            diff.to_csv(f"Dq_analysis/{proc_snowflake}differences.csv", index=True)
-    
-            count_diff = len(diff)
-            log_dq_info(f"Number of differences detected: {count_diff}")
-    
-            comparison_data.append({
-                "Attribute": "Data Comparison",
-                "Snowflake Procedure Output": count_diff,
-                "SQL Server Procedure Output": count_diff,
-                "Comparison": "Data mismatch detected"
-            })
 
+            if not common_columns:
+                log_dq_error("No common columns found for merging!")
+                comparison_data.append({
+                    "Attribute": "Data Comparison",
+                    "Snowflake Procedure Output": "N/A",
+                    "SQL Server Procedure Output": "N/A",
+                    "Comparison": "No common columns to compare"
+                })
+
+            else:
+        
+                # Perform an outer merge to detect differences
+                merged_df = pd.merge(df1, df2, how='outer', indicator=True, on=common_columns)
+        
+                # Extract differing rows
+                diff = merged_df[merged_df['_merge'] != 'both'].copy()
+        
+                # Handle categorical columns properly
+                for col in diff.select_dtypes(['category']).columns:
+                    diff[col] = diff[col].astype('category')
+                    if 'NaN' not in diff[col].cat.categories:
+                        diff[col] = diff[col].cat.add_categories(['NaN'])
+                
+                diff = diff.fillna('NaN')
+        
+                # Save differences to CSV
+                diff.to_csv(f"Dq_analysis/{proc_snowflake}differences.csv", index=True)
+        
+                count_diff = len(diff)
+                log_dq_info(f"Number of differences detected: {count_diff}")
+        
+                comparison_data.append({
+                    "Attribute": "Data Comparison",
+                    "Snowflake Procedure Output": count_diff,
+                    "SQL Server Procedure Output": count_diff,
+                    "Comparison": "Data mismatch detected"
+                })
+    
     
         # Log the results
         for row in comparison_data:
@@ -301,16 +255,7 @@ class DatabaseProcedureExecutor:
 
 
     def run(self, snowflake_proc, sqlserver_proc):
-        # """Runs the procedures and compares the results."""
-        # log_dq_info(f"Executing Snowflake procedure: {snowflake_proc}")
-        # snowflake_result = self.execute_snowflake_procedure(snowflake_proc)
-        
-        # log_dq_info(f"Executing SQL Server procedure: {sqlserver_proc}")
-        # sqlserver_result = self.execute_sqlserver_procedure(sqlserver_proc)
-        
-        # log_dq_info("Comparing results...")
-        # # self.compare_results(snowflake_result, sqlserver_result)
-        # self.compare_results(snowflake_result, sqlserver_result, snowflake_proc, sqlserver_proc)
+
 
         """Runs the procedures and compares the results."""
         log_dq_info(f"Executing Snowflake procedure: {snowflake_proc}")
